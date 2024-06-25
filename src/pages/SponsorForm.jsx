@@ -7,16 +7,15 @@ function SponsorForm() {
  const sponsorData = [
   {
    level: "Title Sponsor",
-   included: ["$5000+ donation", "Title Sponsor, eg., 'THS Open Presented by [Your Company]'"]
+   included: ["Title Sponsor, eg., 'THS Open Presented by [Your Company]'"]
   },
   {
    level: "Gold Sponsor",
-   included: ["$5000+ donation", "Burger and Brew Sponsor"]
+   included: ["Burger and Brew Sponsor"]
   },
   {
    level: "Silver Sponsor",
    included: [
-    "$1000+ donation",
     "Golf Cart Sponsor #1",
     "Golf Cart Sponsor #2",
     "Beverage Ticket Sponsor",
@@ -27,7 +26,6 @@ function SponsorForm() {
   {
    level: "Bronze Sponsor",
    included: [
-    "$500+ donation",
     "Includes signage or activation on a hole",
     "We also welcome and appreciate any branded items for tee gifts and raffle prizes."
    ]
