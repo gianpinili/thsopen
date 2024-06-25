@@ -43,7 +43,7 @@ function Event() {
     </a>
     <div className='absolute border-b border-white w-[70%] top-20 md:top-10 md:w-[50%]'></div>
    </div>
-   <Link to="/events" className="text-[.7rem] md:text-[.8rem] lg:text-[.9rem]  xl:text-[1rem] 2xl:text-[1.1rem] absolute bottom-10 right-[8rem] uppercase font-bold flex gap-2 hover:scale-110 duration-300"> <Eye />All Events</Link>
+   <Link to="/events" className="text-[.7rem] md:text-[.8rem] lg:text-[.9rem]  xl:text-[1rem] 2xl:text-[1.1rem] absolute bottom-5 right-10 md:bottom-10 md:right-[8rem] uppercase font-bold flex gap-2 hover:scale-110 duration-300 items-center"><Eye />All Events</Link>
   </div>
  );
 }
