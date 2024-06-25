@@ -28,7 +28,7 @@ function Nav() {
     </Link>
     <div className='hidden md:block'>
      {/* https://docs.google.com/forms/d/e/1FAIpQLSdXnnFZA88NFBH-Fg546B_edYD9xTRObjKpZX3C82Igq5Ls4A/viewform?vc=0&c=0&w=1&flr=0 */}
-     <a href='/contact' className='border-white border py-2 px-4 hover:bg-slate-200 hover:text-black duration-200 rounded-md hover:scale-110'>Registration Coming Soon</a>
+     <Link to='/contact' className='border-white border py-2 px-4 hover:bg-slate-200 hover:text-black duration-200 rounded-md hover:scale-110'>Registration Coming Soon</Link>
     </div>
     <div className='md:hidden'>
      <Menu onClick={toggleModal} className='mr-[-2rem] cursor-pointer hover:scale-125 duration-200' />
