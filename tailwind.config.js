@@ -12,5 +12,11 @@ export default {
       },
     },
   },
+  variants: {
+    extend: {
+      opacity: ["responsive", "hover", "focus", "group-hover"],
+      transitionProperty: ["responsive", "motion-safe", "motion-reduce"],
+    },
+  },
   plugins: [],
 };

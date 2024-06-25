@@ -17,3 +17,23 @@ body {
   transform: scaleY(2);
   transform-origin: bottom;
 }
+
+.marquee {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.marquee-content {
+  display: flex;
+  animation: marquee 5s linear infinite;
+  gap: 8rem;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-125%);
+  }
+}
