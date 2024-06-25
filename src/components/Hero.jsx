@@ -20,7 +20,8 @@ function Hero() {
    <div className="absolute top-[35%] bg-none z-10 flex flex-col items-center justify-center gap-10 md:mx-[5rem] lg:mx-[10rem] xl:mx-[15rem] 2xl:mx-[20rem]">
     <h1 className="text-white leading-9 scale-y-200 tracking-wide text-[2rem] md:text-[3rem] xl:text-[3.1rem] bg-transparent uppercase font-poppins font-extrabold text-center">Register Your Team</h1>
     <p className='text-center text-[.8rem] md:text-[1rem] mx-6 lg:text-[1.1rem]'>This isn&apos;t just any golf tournament--it&apos;s an opportunnity to enjoy 18 holes of challenging play while supporting a fantastic cause. All proceeds from the event will go the the Canucks Autism Network (CAN) helping to raise awareness and support for autism.</p>
-    <a href='https://docs.google.com/forms/d/e/1FAIpQLSdXnnFZA88NFBH-Fg546B_edYD9xTRObjKpZX3C82Igq5Ls4A/viewform?vc=0&c=0&w=1&flr=0' target='_blank' className="border-white border py-2 px-4 rounded mt-4 hover:bg-slate-100 hover:text-black duration-200 md:py-4 md:px-8">Register</a>
+    <a href='/contact' className="border-white border py-2 px-4 rounded mt-4 hover:bg-slate-100 hover:text-black duration-200 md:py-4 md:px-8">Registration Coming Soon</a>
+    {/* https://docs.google.com/forms/d/e/1FAIpQLSdXnnFZA88NFBH-Fg546B_edYD9xTRObjKpZX3C82Igq5Ls4A/viewform?vc=0&c=0&w=1&flr=0 */}
    </div>
   </div>
  );
