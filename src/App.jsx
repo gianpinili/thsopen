@@ -16,7 +16,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/events" element={<EventsList />} />
-          <Route path="/events/open2024" element={<Open2024 />} />
+          <Route path="/events/thsopen2024" element={<Open2024 />} />
           <Route path="/merch" element={<MerchList />} />
           <Route path="/sponsorship" element={<SponsorForm />} />
           <Route path="*" element={<Home />} />

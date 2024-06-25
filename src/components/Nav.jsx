@@ -19,7 +19,7 @@ function Nav() {
   <>
    <div className='font-spacemono fixed top-0 flex justify-between items-center pt-6 pb-6 px-[4rem] md:mb-14 z-20 bg-black bg-opacity-60 w-full max-h-[10rem]'>
     <div className='hidden md:flex gap-6'>
-     <Link to={'/events'} className={`${getNavLinkClass('/events')} duration-200`}>Event</Link>
+     <Link to={'/events'} className={`${getNavLinkClass('/events')} duration-200`}>Events</Link>
      <Link to={'/merch'} className={`${getNavLinkClass('/merch')} duration-200`}>Merch</Link>
      <Link to={'/sponsorship'} className={`${getNavLinkClass('/sponsorship')} duration-200`}>Sponsor</Link>
     </div>
@@ -39,7 +39,7 @@ function Nav() {
      <div className=' w-full h-full p-2 rounded shadow-lg'>
       <X className='top-8 right-8 absolute cursor-pointer hover:scale-125 duration-200' onClick={toggleModal} />
       <div className='flex flex-col gap-5 m-3 pt-[4rem]'>
-       <Link to={'/events'} onClick={toggleModal} className='text-3xl'>Event</Link>
+       <Link to={'/events'} onClick={toggleModal} className='text-3xl'>Events</Link>
        <Link to={'/merch'} onClick={toggleModal} className='text-3xl'>Merch</Link>
        <Link to={'/sponsorship'} onClick={toggleModal} className='text-3xl'>Sponsorship</Link>
        <Link to={'https://docs.google.com/forms/d/e/1FAIpQLSdXnnFZA88NFBH-Fg546B_edYD9xTRObjKpZX3C82Igq5Ls4A/viewform?vc=0&c=0&w=1&flr=0'} target='_blank' className='text-3xl'>Register</Link>
