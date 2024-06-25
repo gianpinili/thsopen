@@ -66,7 +66,7 @@ function MerchList() {
           <li className='flex gap-3 text-[.9rem]' key={featureIndex}><Dot />{feature}</li>
          ))}
         </ul>
-        <a href="" target='_blank' className='px-8 py-3 rounded-md font-semibold border hover:bg-slate-50 hover:text-black duration-300 hover:scale-110 flex w-1/2 justify-center' >Buy Now</a>
+        <a href="" target='_blank' className='px-8 py-3 rounded-md font-semibold border hover:bg-slate-50 hover:text-black duration-300 hover:scale-110 flex w-1/2 justify-center' >Coming Soon</a>
        </div>
       </div>
      </div>

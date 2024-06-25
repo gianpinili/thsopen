@@ -15,10 +15,10 @@ function Merch() {
    <div className='my-10 flex flex-col-reverse md:flex-row md:items-center md:gap-10 md:justify-center'>
     <div className='md:w-1/2 lg:px-[3rem]'>
      <p className="my-10">Swing for a cause. All proceeds go to Canucks Autism Network (CAN), helping to raise awareness and support for autism.</p>
-     <a className="border border-white px-6 py-3 rounded-md hover:bg-slate-100 hover:text-black duration-200" href="www.thehockeyshop.com">Buy Now</a>
+     <a className="border border-white px-6 py-3 rounded-md hover:bg-slate-100 hover:text-black duration-200" target="_blank" href="https://www.thehockeyshop.com/">Coming Soon</a>
     </div>
     <div className='flex justify-center items-center'>
-     <img src={merchImage} alt="Merchandise" className='max-w-[20rem] md:max-w-[30rem]' />
+     <img src={merchImage} alt="THS Open Merch" className='max-w-[20rem] md:max-w-[30rem]' />
     </div>
    </div>
   </div>

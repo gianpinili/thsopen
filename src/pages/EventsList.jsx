@@ -43,17 +43,17 @@ function EventsList() {
     >
      {/* LEFT SIDE */}
      <div className="flex flex-col gap-4 relative md:w-1/3">
-      <img src={image3} alt="" className="w-full md:min-h-[200px]" />
+      <img src={image3} alt="Newlands Golf Course" className="w-full md:min-h-[200px]" />
       <div className="absolute right-0 border text-black bg-white py-3 px-5 text-center">
-       <p>Jul.</p>
-       <p className="font-bold text-xl">23</p>
+       <p>Sep.</p>
+       <p className="font-bold text-xl">16</p>
       </div>
      </div>
      {/* RIGHT SIDE */}
      <div className="flex flex-col gap-4 justify-evenly font-spacemono md:w-1/2">
       <h4 className="font-bold font-poppins text-[1.25rem]">THS OPEN 2024</h4>
       <p>10:00 AM - 5:30 PM</p>
-      <p>Get ready to tee off for a great cause at the 1st Annual THS Open, proudly presented by The Hockey Shop! We&apos;re excited to invite you to join us at the stunning Newlands Golf and Country Club on July 23rd, 2024, for a day of fun, competition, and breathtaking scenery.</p>
+      <p>Get ready to tee off for a great cause at the 1st Annual THS Open, proudly presented by The Hockey Shop! We&apos;re excited to invite you to join us at the stunning Newlands Golf and Country Club on September 16, 2024, for a day of fun, competition, and breathtaking scenery.</p>
       <p>This isn&apos;t just any golf tournament - it&apos;s an opportunity to enjoy 18 holes of challenging play while supporting a fantastic cause. All proceeds from the event will go to the Canucks Autism Network (CAN), helping to raise awareness and support for autism.</p>
       <div className="mt-5 flex justify-start">
        <Link to={'/events/thsopen2024'} className="border-white flex gap-2 border px-3 py-4 hover:bg-white hover:text-black duration-300 hover:scale-105 rounded-md">
