@@ -2,7 +2,15 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        spacemono: ["SpaceMono", "monospace"],
+        poppins: ["Poppins", "sans-serif"],
+      },
+      scale: {
+        200: "2",
+      },
+    },
   },
   plugins: [],
 };

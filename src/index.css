@@ -1,8 +1,19 @@
+@import "./assets/fonts.css";
+@layer utilities {
+  .font-condensed {
+    font-stretch: 50%;
+  }
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-* {
+body {
   background-color: black;
   color: white;
+}
+
+.scale-y-200 {
+  transform: scaleY(2);
+  transform-origin: bottom;
 }
