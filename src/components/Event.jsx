@@ -22,17 +22,17 @@ function Event() {
     <img
      src={image2}
      alt="Newlands Golf Course"
-     className="absolute top-[8rem] object-cover left-0 w-[50%] h-[40%] max-w-[500px] lg:left-20 xl:left-[4rem] xl:max-w-[600px] xl:h-[50%] 2xl:max-w-[690px]"
+     className="absolute top-[8rem] object-cover left-0 w-[50%] h-[40%] max-w-[500px] lg:left-20 xl:left-[4rem] xl:max-w-[600px] xl:h-[50%] 2xl:max-w-[690px] rounded-md"
     />
     <img
      src={image1}
      alt="Newlands Golf Course"
-     className="absolute top-[30%] z-10 left-[50%] transform -translate-x-1/2 w-[60%] h-auto max-w-[800px] md:left-[60%] md:w-[50%] lg:left-[50%] xl:left-[60%] xl:top-[40%]"
+     className="absolute top-[30%] z-10 left-[50%] transform -translate-x-1/2 w-[60%] h-auto max-w-[800px] md:left-[60%] md:w-[50%] lg:left-[50%] xl:left-[60%] xl:top-[40%] rounded-md"
     />
     <img
      src={image3}
      alt="Newlands Golf Course"
-     className="absolute top-10 right-0 min-w-[80px] w-[60%] md:top-[-12rem] md:right-[-1rem] md:h-[82%] object-cover h-[90%] min-h-[120px] 2xl:right-[-3rem]"
+     className="absolute top-10 right-0 min-w-[80px] w-[60%] md:top-[-12rem] md:right-[-1rem] md:h-[82%] object-cover h-[90%] min-h-[120px] 2xl:right-[-3rem] rounded-md"
     />
     <a href="https://www.google.com/maps?rlz=1C1ONGR_enCA1054CA1054&gs_lcrp=EgZjaHJvbWUqEAgAEAAYgwEY4wIYsQMYgAQyEAgAEAAYgwEY4wIYsQMYgAQyFggBEC4YgwEYrwEYxwEYsQMYgAQYjgUyBwgCEAAYgAQyBwgDEAAYgAQyBwgEEAAYgAQyBwgFEAAYgAQyBwgGEAAYgAQyBggHEEUYPNIBCDI4MTNqMGoxqAIAsAIA&um=1&ie=UTF-8&fb=1&gl=ca&sa=X&geocode=KdMmNYm0z4VUMb_x0fIholZ8&daddr=21025+48+Ave,+Langley,+BC+V3A+3M3" target='_blank' rel='noopener noreferrer'>
      <div className="absolute bottom-[8em] left-[1rem] text-white text-md md:text-2xl font-bold md:bottom-[20rem] z-10 xl:left-[2.75rem] 2xl:left-[3.5rem] xl:bottom-[13rem] ">
@@ -43,7 +43,7 @@ function Event() {
     </a>
     <div className='absolute border-b border-white w-[70%] top-20 md:top-10 md:w-[50%]'></div>
    </div>
-   <Link to="/events" className="text-[.7rem] md:text-[.8rem] lg:text-[.9rem]  xl:text-[1rem] 2xl:text-[1.1rem] absolute bottom-10 right-[8rem] uppercase font-bold flex gap-2 hover:scale-110 duration-300"> All Events<Eye /></Link>
+   <Link to="/events" className="text-[.7rem] md:text-[.8rem] lg:text-[.9rem]  xl:text-[1rem] 2xl:text-[1.1rem] absolute bottom-10 right-[8rem] uppercase font-bold flex gap-2 hover:scale-110 duration-300"> <Eye />All Events</Link>
   </div>
  );
 }

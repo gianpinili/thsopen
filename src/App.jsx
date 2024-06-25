@@ -4,6 +4,7 @@ import EventsList from './pages/EventsList.jsx'
 import Open2024 from './pages/Open2024.jsx'
 import MerchList from './pages/MerchList.jsx'
 import SponsorForm from './pages/SponsorForm.jsx'
+import Contact from './pages/Contact.jsx'
 import Footer from './components/Footer.jsx'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
@@ -19,6 +20,7 @@ function App() {
           <Route path="/events/thsopen2024" element={<Open2024 />} />
           <Route path="/merch" element={<MerchList />} />
           <Route path="/sponsorship" element={<SponsorForm />} />
+          <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<Home />} />
         </Routes>
         <Footer />

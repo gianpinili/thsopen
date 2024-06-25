@@ -10,8 +10,8 @@ function Home() {
    <div>
     <Hero />
     <Event />
-    <Merch />
     <Sponsor />
+    <Merch />
     <Donation />
    </div>
   </>

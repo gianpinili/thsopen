@@ -24,8 +24,8 @@ function Open2024() {
      </Link>
      <h1 className='font-poppins text-[1.5rem] font-bold'>THS OPEN 2024</h1>
      <div>
-      <p className='text-[1rem]'>Tuesday, July 23, 2024</p>
-      <p>10:00 AM - 5:30 PM</p>
+      <p className='text-[1rem]'>Monday, September 16, 2024</p>
+      <p>1:00 PM - 5:30 PM</p>
      </div>
      <div className='hover:scale-110 duration-300'>
       <a href="https://www.google.com/maps?rlz=1C1ONGR_enCA1054CA1054&gs_lcrp=EgZjaHJvbWUqEAgAEAAYgwEY4wIYsQMYgAQyEAgAEAAYgwEY4wIYsQMYgAQyFggBEC4YgwEYrwEYxwEYsQMYgAQYjgUyBwgCEAAYgAQyBwgDEAAYgAQyBwgEEAAYgAQyBwgFEAAYgAQyBwgGEAAYgAQyBggHEEUYPNIBCDI4MTNqMGoxqAIAsAIA&um=1&ie=UTF-8&fb=1&gl=ca&sa=X&geocode=KdMmNYm0z4VUMb_x0fIholZ8&daddr=21025+48+Ave,+Langley,+BC+V3A+3M3" target='_blank'>

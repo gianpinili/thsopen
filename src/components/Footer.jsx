@@ -14,6 +14,7 @@ function Footer() {
      <Link to={'/events'} className='hover:scale-110 md:hover:scale-125 hover:ml-[1.5rem] md:hover:border-b border-black duration-300 md:text-xl'>Events</Link>
      <Link to={'/merch'} className='hover:scale-110 md:hover:scale-125 hover:ml-[1.5rem] duration-300 md:hover:border-b border-black md:text-xl'>Merch</Link>
      <Link to={'/sponsorship'} className='hover:scale-110 md:hover:scale-125 hover:ml-[1.5rem] duration-300 md:hover:border-b border-black md:text-xl'>Sponsor</Link>
+     <Link to={'/contact'} className='hover:scale-110 md:hover:scale-125 hover:ml-[1.5rem] duration-300 md:hover:border-b border-black md:text-xl'>Contact</Link>
     </div>
     <div className='flex flex-col items-center justify-center gap-8 mb-10 md:flex-row md:my-12 md:gap-14'>
      <a href="https://www.thehockeyshop.com" target='_blank'>
@@ -29,7 +30,7 @@ function Footer() {
     <div>
      <p className="text-center mt-[4rem] text-[.8rem] md:text-[.9rem] lg:text-[1rem]">© {new Date().getFullYear()} THS Open. All rights reserved.</p>
     </div>
-   </footer>
+   </footer >
   </>
  )
 }
