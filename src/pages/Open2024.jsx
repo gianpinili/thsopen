@@ -36,7 +36,7 @@ function Open2024() {
      <div className='flex flex-col gap-2'>
       <Link to={'/sponsorship'} className='text-blue-500 duration-300 hover:scale-110'>Become a Sponsor</Link>
       {/* https://docs.google.com/forms/d/e/1FAIpQLSdXnnFZA88NFBH-Fg546B_edYD9xTRObjKpZX3C82Igq5Ls4A/viewform?vc=0&c=0&w=1&flr=0' */}
-      <Link href={'/contact'} target='_blank' className='text-green-300 hover:scale-110 duration-300'>Register Today</Link>
+      <Link to={'/contact'} target='_blank' className='text-green-300 hover:scale-110 duration-300'>Register Today</Link>
       <a href="https://support.canucksautism.ca/site/TR/CANPro-Am/Pro-Am?team_id=3280&pg=team&fr_id=1280" target='_blank' className='text-blue-500 duration-300 hover:scale-110'>Donate to CAN</a>
      </div>
     </div>
