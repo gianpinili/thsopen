@@ -13,7 +13,7 @@ function Hero() {
     autoPlay
     loop
     muted
-    className="w-full mt-[-2rem] md:mt-[-2rem] lg:mt-[-2rem] xl:mt-[-2rem] 2xl:mt-[-2.25rem] h-[100vh] md:h-[100vh] lg:h-[100vh] xl:h-[100vh] object-cover opacity-70"
+    className="w-full mt-[-2rem] md:mt-[-2rem] lg:mt-[-2rem] xl:mt-[-2rem] 2xl:mt-[-2.25rem] h-[100vh] md:h-[100vh] lg:h-[100vh] xl:h-[100vh] object-cover opacity-70 pointer-events-none"
    >
     <source src={heroVid} type="video/mp4" />
     Your browser does not support the video tag.
