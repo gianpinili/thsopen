@@ -16,10 +16,10 @@ function ContactInfo() {
      <div className="flex flex-col bg-black rounded-md w-full p-4 min-h-[10rem] md:min-h-[13rem] text-center gap-10">
       <h3 className="font-poppins font-bold text-xl">Check Out Our Social Media</h3>
       <div className='flex justify-evenly gap-4'>
-       <a href="https://www.facebook.com/TheHockeyShop" className='hover:scale-125 duration-200'><Facebook /></a>
-       <a href="https://www.instagram.com/thehockeyshop" className='hover:scale-125 duration-200'><Instagram /></a>
-       <a href="https://www.youtube.com/@TheHockeyShop" className='hover:scale-125 duration-200'><Youtube /></a>
-       <a href="https://www.tiktok.com/@thehockeyshop" className='hover:scale-125 duration-200'><Smartphone /></a>
+       <a href="https://www.facebook.com/TheHockeyShop" target='_blank' className='hover:scale-125 duration-200 flex flex-col items-center gap-6 text-[.8rem]'><Facebook />Facebook</a>
+       <a href="https://www.instagram.com/thehockeyshopbc" target='_blank' className='hover:scale-125 duration-200 flex flex-col items-center gap-6 text-[.8rem]'><Instagram />Instagram</a>
+       <a href="https://www.youtube.com/@thehockeyshopbc" target='_blank' className='hover:scale-125 duration-200 flex flex-col items-center gap-6 text-[.8rem]'><Youtube />Youtube</a>
+       <a href="https://www.tiktok.com/@thehockeyshop" target='_blank' className='hover:scale-125 duration-200 flex flex-col items-center gap-6 text-[.8rem]'><Smartphone />TikTok</a>
       </div>
      </div>
      <div className="flex flex-col relative bg-black rounded-md w-full p-4 min-h-[10rem] md:min-h-[13rem] text-center">

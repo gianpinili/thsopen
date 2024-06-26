@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { ChevronDown, ChevronUp } from 'lucide-react';
-import { Link } from 'react-router-dom';
 import useIntersectionObserver from '../useIntersectionObserver';
 
 function Sponsor() {
@@ -45,7 +44,7 @@ function Sponsor() {
  return (
   <div
    ref={ref}
-   className={`bg-white text-black py-12 px-[1.5rem] md:px-[2rem] lg:px-[3rem] font-spacemono 2xl:px-[8rem] transition-opacity duration-[2.25s] ${isIntersecting ? 'opacity-100' : 'opacity-0'}`}
+   className={`bg-white text-black py-12 px-[1.5rem] md:px-[2rem] lg:px-[3rem] font-spacemono 2xl:px-[8rem] transition-opacity duration-[2s] ${isIntersecting ? 'opacity-100' : 'opacity-0'}`}
   >
    <h1 className="font-poppins font-semibold text-[2rem] md:text-5xl uppercase tracking-tighter text-black">
     Sponsorship Opportunities
@@ -67,7 +66,7 @@ function Sponsor() {
      </div>
     ))}
     <div className='flex justify-center my-8'>
-     <Link to="/sponsorship" className='rounded-md border-2 border-black px-3 py-5 hover:bg-black hover:text-white duration-300 uppercase'>Sponsorship Inquiry</Link>
+     <a href="https://docs.google.com/forms/d/e/1FAIpQLSfhl-5aWzEn6Qt9EbLzamzGTDAPge4M-QHQYpSGgzJhtXg5VQ/viewform" target="_blank" rel="noreferrer" className='rounded-md border-2 border-black px-3 py-5 hover:bg-black hover:text-white duration-300 uppercase'>Sponsorship Inquiry</a>
     </div>
    </div>
   </div>

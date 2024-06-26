@@ -55,7 +55,7 @@ function MerchList() {
      <div
       key={index}
       ref={ref}
-      className={`my-[10rem] mx-8 transition-opacity duration-[1s] ${isIntersecting ? 'opacity-100' : 'opacity-0'}`}
+      className={`my-[10rem] mx-8 transition-opacity duration-[.2s] ${isIntersecting ? 'opacity-100' : 'opacity-90'}`}
      >
       <div className={`flex flex-col gap-8 md:gap-[5rem] items-center justify-center md:flex-row ${index % 2 === 0 ? 'md:flex-row-reverse' : 'md:flex-row'}`}>
        <img src={product.image} alt={product.name} className="w-[90%] md:w-[40%] md:max-w-[500px] h-auto" />

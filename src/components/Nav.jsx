@@ -27,8 +27,7 @@ function Nav() {
      <img className='w-[50%] md:max-w-[150px] max-h-[80px] mr-[6rem] lg:mr-[6rem] z-50' src={Logo} alt="THS Open Logo" />
     </Link>
     <div className='hidden md:block'>
-     {/* https://docs.google.com/forms/d/e/1FAIpQLSdXnnFZA88NFBH-Fg546B_edYD9xTRObjKpZX3C82Igq5Ls4A/viewform?vc=0&c=0&w=1&flr=0 */}
-     <Link to={'/contact'} className='border-white border py-2 px-4 hover:bg-slate-200 hover:text-black duration-200 rounded-md hover:scale-110'>Registration Coming Soon</Link>
+     <Link to={'/register'} className='border-white border py-2 px-4 hover:bg-slate-200 hover:text-black duration-200 rounded-md hover:scale-110'>Registration Coming Soon</Link>
     </div>
     <div className='md:hidden'>
      <Menu onClick={toggleModal} className='mr-[-2rem] cursor-pointer hover:scale-125 duration-200' />
@@ -39,11 +38,11 @@ function Nav() {
     <div className='fixed inset-0 bg-black bg-opacity-90 flex justify-center items-center z-40'>
      <div className=' w-full h-full p-2 rounded shadow-lg'>
       <X className='top-8 right-8 absolute cursor-pointer hover:scale-125 duration-200' onClick={toggleModal} />
-      <div className='flex flex-col gap-5 m-3 pt-[4rem]'>
+      <div className='flex flex-col gap-5 m-3 pt-[4rem] items-center'>
        <Link to={'/events'} onClick={toggleModal} className='text-3xl'>Events</Link>
        <Link to={'/merch'} onClick={toggleModal} className='text-3xl'>Merch</Link>
        <Link to={'/sponsorship'} onClick={toggleModal} className='text-3xl'>Sponsorship</Link>
-       {/* <Link to={'https://docs.google.com/forms/d/e/1FAIpQLSdXnnFZA88NFBH-Fg546B_edYD9xTRObjKpZX3C82Igq5Ls4A/viewform?vc=0&c=0&w=1&flr=0'} target='_blank' className='text-3xl'>Register</Link> */}
+       <Link to={'/register'} onClick={toggleModal} className='text-3xl'>Register</Link>
       </div>
      </div>
     </div >

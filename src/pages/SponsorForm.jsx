@@ -1,6 +1,5 @@
 import { ChevronDown, ChevronUp } from 'lucide-react';
 import { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 
 function SponsorForm() {
 
@@ -47,7 +46,7 @@ function SponsorForm() {
    <div className='md:w-1/2 flex flex-col md:px-[2rem] md:pt-[5rem] lg:px-[4rem] xl:px-[6rem] 2xl:px-[8rem] items-center md:items-start'>
     <h1 className="text-black font-poppins font-extrabold text-2xl md:text-3xl lg:text-4xl text-left uppercase tracking-tighter">For all sponsorship inquiries, please reach out to us using the form here:</h1>
     <div className='flex my-8'>
-     <Link to={"/contact"} className='rounded-md border border-black px-8 py-5 text-black font-bold hover:bg-black hover:text-white duration-300 uppercase md:mt-[3rem]'>Sponsorship Inquiry</Link>
+     <a href='https://docs.google.com/forms/d/e/1FAIpQLSfhl-5aWzEn6Qt9EbLzamzGTDAPge4M-QHQYpSGgzJhtXg5VQ/viewform' target='_blank' rel="noreferrer" className='rounded-md border border-black px-8 py-5 text-black font-bold hover:bg-black hover:text-white duration-300 uppercase md:mt-[3rem]'>Sponsorship Inquiry</a>
     </div>
    </div>
    <div className="text-black mt-10 bg-white py-6 px-[.5rem] md:px-[1rem] font-spacemono md:w-1/2 md:mt-[6rem]">

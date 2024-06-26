@@ -13,7 +13,7 @@ function Open2024() {
 
  return (
   <>
-   <div className="py-[10rem] bg-[#1c1c1c] px-[1rem] md:px-[1.5rem] font-spacemono flex flex-col md:flex-row md:justify-center">
+   <div className="py-[10rem] bg-[#1c1c1c] px-[1rem] md:px-[1.5rem] font-spacemono flex flex-col md:flex-row md:justify-center gap-12 md:gap-0">
     {/* LEFT SIDE */}
     <div
      ref={leftSideRef}
@@ -34,9 +34,8 @@ function Open2024() {
       </a>
      </div>
      <div className='flex flex-col gap-2'>
-      <Link to={'/sponsorship'} className='text-blue-500 duration-300 hover:scale-110'>Become a Sponsor</Link>
-      {/* https://docs.google.com/forms/d/e/1FAIpQLSdXnnFZA88NFBH-Fg546B_edYD9xTRObjKpZX3C82Igq5Ls4A/viewform?vc=0&c=0&w=1&flr=0' */}
-      <Link to={'/contact'} target='_blank' className='text-green-300 hover:scale-110 duration-300'>Register Today</Link>
+      <a href='https://docs.google.com/forms/d/e/1FAIpQLSfhl-5aWzEn6Qt9EbLzamzGTDAPge4M-QHQYpSGgzJhtXg5VQ/viewform' target='_blank' className='text-blue-500 duration-300 hover:scale-110'>Become a Sponsor</a>
+      <a href='https://docs.google.com/forms/d/e/1FAIpQLSdXnnFZA88NFBH-Fg546B_edYD9xTRObjKpZX3C82Igq5Ls4A/viewform?vc=0&c=0&w=1&flr=0' target='_blank' className='text-green-300 hover:scale-110 duration-300'>Register Today</a>
       <a href="https://support.canucksautism.ca/site/TR/CANPro-Am/Pro-Am?team_id=3280&pg=team&fr_id=1280" target='_blank' className='text-blue-500 duration-300 hover:scale-110'>Donate to CAN</a>
      </div>
     </div>
@@ -48,7 +47,7 @@ function Open2024() {
      <p>Get ready to tee off for a great cause at the 1st Annual THS Open, proudly presented by The Hockey Shop!</p>
      <p>This isn&apos;t just any golf tournament - it&apos;s an opportunity to enjoy 18 holes of challenging play while supporting a fantastic cause. All proceeds from the event will go to the Canucks Autism Network (CAN), helping to raise awareness and support for autism.</p>
      <p>We look forward to seeing you out there and making the first THS Open a huge success! Let&apos;s make some memories and support a great cause together. See you on the green!</p>
-     <p>FORMAT: Texas Scramble</p>
+     <p><span className='font-bold underline'>FORMAT</span>: Texas Scramble</p>
      <p>Each player in the four-person scramble hits a drive. The team chooses the best drive and selects that position for the next shot. Each player hits from the chosen spot, and the process continues until someone from the team sinks a putt. The group records its score for the hole and moves on to the next teeing ground.</p>
      <p>Minimum of 3 drives per player must be used.</p>
     </div>
