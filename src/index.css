@@ -37,3 +37,7 @@ body {
     transform: translateX(-125%);
   }
 }
+
+.disable-video-interaction {
+  pointer-events: none;
+}
