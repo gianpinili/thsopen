@@ -11,7 +11,7 @@ function Event() {
  });
 
  return (
-  <div ref={ref} className={`bg-[#1c1c1c] font-spacemono pt-[3rem] px-[1.5rem] flex flex-col md:px-[2rem] lg:px-[3rem] relative h-[80vh] md:h-full 2xl:px-[8rem] transition-opacity duration-[1.3s] ${isIntersecting ? 'opacity-100' : 'opacity-0'}`}>
+  <div ref={ref} className={`bg-[#1c1c1c] mt-[-1.5rem] md:mt-[-3rem] 2xl:mt-[-4rem] font-spacemono pt-[3rem] px-[1.5rem] flex flex-col md:px-[2rem] lg:px-[3rem] relative h-[80vh] md:h-full 2xl:px-[8rem] transition-opacity duration-[1.3s] ${isIntersecting ? 'opacity-100' : 'opacity-0'}`}>
    <div>
     <h1 className="font-poppins font-semibold text-[2rem] sm:text-5xl uppercase tracking-tighter">The Event</h1>
     <p className=" mt-[3rem] text-[.8rem] md:max-w-[300px] md:mt-[5rem] md:text-[.9rem] lg:max-w-[400px] lg:text-[1rem] xl:max-w-[500px] xl:text-[1.1rem] 2xl:max-w-[530px] 2xl:text-[1.2rem]">
