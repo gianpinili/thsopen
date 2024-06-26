@@ -15,7 +15,6 @@ function Sponsor() {
   {
    level: "Silver Sponsor",
    included: [
-
     "Golf Cart Sponsor #1",
     "Golf Cart Sponsor #2",
     "Beverage Ticket Sponsor",
@@ -56,13 +55,13 @@ function Sponsor() {
        <h2 className="font-poppins text-xl md:text-2xl font-bold uppercase tracking-tighter text-black bg-white">{sponsor.level}</h2>
        {expandedSponsor === sponsor.level ? <ChevronUp className="text-black" /> : <ChevronDown className="text-black" />}
       </div>
-      {expandedSponsor === sponsor.level && (
+      <div className={`overflow-hidden transition-all duration-[1.5s] ${expandedSponsor === sponsor.level ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'}`}>
        <ul className="text-black mt-2 ml-4 list-disc text-sm md:px-[2rem] md:text-lg">
         {sponsor.included.map((item, index) => (
          <li key={index}>{item}</li>
         ))}
        </ul>
-      )}
+      </div>
      </div>
     ))}
     <div className='flex justify-center my-8'>

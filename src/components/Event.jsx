@@ -39,11 +39,11 @@ function Event() {
      <div className="absolute hidden sm:inline bottom-[6.5rem] left-[3rem] text-white text-md md:text-2xl font-bold md:bottom-[18rem] md:left-[4rem] z-10 xl:left-[5rem] 2xl:left-[6rem] xl:bottom-[11rem]">
       <img src={NewlandsLogo} alt="Newlands Golf and Country Club" className='md:w-[10rem]' />
      </div>
-     <div className="absolute hidden sm:inline bottom-[2rem] md:bottom-[12rem] md:left-[-.5rem] left-[-.5rem] w-[15rem] h-[15rem] md:w-[18rem] md:h-[18rem] border border-white rounded-full z-20 xl:left-[.5rem] 2xl:left-[1.57rem] xl:bottom-[5rem] hover:bg-white hover:opacity-40 duration-200"></div>
+     <div className="absolute hidden sm:inline bottom-[2rem] md:bottom-[12rem] md:left-[-.5rem] left-[-.5rem] w-[15rem] h-[15rem] md:w-[18rem] md:h-[18rem] border border-white rounded-full z-20 xl:left-[.5rem] 2xl:left-[1.57rem] xl:bottom-[5rem] hover:bg-[#062c0b] hover:opacity-40 duration-200 hover:border-black "></div>
     </a>
     <div className='absolute border-b border-white w-[70%] top-20 md:top-10 md:w-[50%]'></div>
    </div>
-   <Link to="/events" className="text-[.7rem] md:text-[.8rem] lg:text-[.9rem]  xl:text-[1rem] 2xl:text-[1.1rem] absolute bottom-5 right-10 md:bottom-[16rem] md:right-[8rem] xl:bottom-[8rem] 2xl:bottom-[4rem] uppercase font-bold flex gap-2 hover:scale-110 duration-300 items-center z-20"><Eye />All Events</Link>
+   <Link to="/events" className="text-[.7rem] md:text-[.8rem] lg:text-[.9rem]  xl:text-[1rem] 2xl:text-[1.1rem] absolute bottom-5 right-10 md:bottom-[16rem] md:right-[8rem] xl:bottom-[5rem] 2xl:bottom-[1rem] uppercase font-bold flex gap-2 hover:scale-110 duration-300 items-center z-20"><Eye />All Events</Link>
   </div>
  );
 }

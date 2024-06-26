@@ -11,28 +11,32 @@ function MerchList() {
    price: "$30.00",
    image: hatImage,
    features: [
-    "100% polyester with Sphere Dry moisture control",
-    "6-panel with double mesh insets",
+    "90/10 polyester/spandex",
     "Adjustable hook and loop closure",
-    "Unstructured",
-    "Low profile",
     "Embroidered logo",
+    "Moisture wicking",
+    "Mid profile",
+    "Structured",
+    "6-panel",
     "Proceeds go to CAN Network",
     "Made to order"
    ]
   },
   {
    name: "THS OPEN POLO",
-   price: "$45.00",
+   price: "$55.00",
    image: shirtImage,
    features: [
-    "8.8-oz, 100% Dri-FIT polyester with moisture management technology",
-    "Rib-knit collar",
-    "Tagless",
+    "7.2-oz, 100% Dri-FIT polyester with moisture management technology",
+    "Contrast embroidered swoosh logo at left sleeve",
+    "Nike embossed pearlized buttons",
+    "Rolled forward shoulder seams",
+    "Double needle hemmed bottom",
     "3-button placket",
+    "Rib-knit collar",
+    "Classic fit",
     "Breathable",
-    "Relaxed fit",
-    "Embroidered logo",
+    "Tagless",
     "Proceeds go to CAN Network",
     "Made to order"
    ]
