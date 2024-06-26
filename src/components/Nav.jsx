@@ -24,7 +24,7 @@ function Nav() {
      <Link to={'/sponsorship'} className={`${getNavLinkClass('/sponsorship')} duration-200`}>Sponsor</Link>
     </div>
     <Link to={'/'} onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className='flex justify-center'>
-     <img className='w-[50%] md:max-w-[150px] max-h-[80px] mr-[6rem] lg:mr-[6rem] z-50' src={Logo} alt="THS Open Logo" />
+     <img className='w-[40%] md:max-w-[150px] max-h-[70px] mr-[6rem] lg:mr-[6rem] z-50' src={Logo} alt="THS Open Logo" />
     </Link>
     <div className='hidden md:block'>
      <Link to={'/register'} className='border-white border py-2 px-4 hover:bg-slate-200 hover:text-black duration-200 rounded-md hover:scale-110'>Registration Coming Soon</Link>
