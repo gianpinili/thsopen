@@ -17,7 +17,7 @@ function Nav() {
 
  return (
   <>
-   <div className='font-spacemono fixed top-0 flex justify-between items-center pt-6 pb-6 px-[4rem] md:mb-14 z-20 bg-black bg-opacity-60 w-full max-h-[10rem]'>
+   <div className='font-spacemono fixed top-0 flex justify-between items-center pt-6 pb-6 px-[4rem] md:mb-14 z-20 bg-black bg-opacity-95 w-full max-h-[10rem]'>
     <div className='hidden md:flex gap-6'>
      <Link to={'/events'} className={`${getNavLinkClass('/events')} duration-200`}>Events</Link>
      <Link to={'/merch'} className={`${getNavLinkClass('/merch')} duration-200`}>Merch</Link>
@@ -27,7 +27,7 @@ function Nav() {
      <img className='w-[40%] md:max-w-[150px] max-h-[70px] mr-[6rem] lg:mr-[6rem] z-50' src={Logo} alt="THS Open Logo" loading='lazy' />
     </Link>
     <div className='hidden md:block'>
-     <Link to={'/register'} className='border-white border py-2 px-4 hover:bg-slate-200 hover:text-black duration-200 rounded-md hover:scale-110'>Registration Coming Soon</Link>
+     <Link to={'/register'} className='border-white border py-2 px-4 hover:bg-slate-200 hover:text-black duration-200 rounded-md hover:scale-110'>Register</Link>
     </div>
     <div className='md:hidden'>
      <Menu onClick={toggleModal} className='mr-[-2rem] cursor-pointer hover:scale-125 duration-200' />
