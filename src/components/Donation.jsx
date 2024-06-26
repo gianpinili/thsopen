@@ -26,7 +26,7 @@ function Donation() {
     </div>
     <div className='flex flex-col gap-8 items-center justify-center'>
      <a href="https://www.canucksautism.ca/about-us/" target='_blank' rel='noopener noreferrer'>
-      <img src={CanWhiteLogo} alt="Canucks Autism Network Logo" className='hover:scale-110 duration-200' />
+      <img src={CanWhiteLogo} alt="Canucks Autism Network Logo" className='hover:scale-110 duration-200' loading='lazy' />
      </a>
      <a href="https://support.canucksautism.ca/site/TR/CANPro-Am/Pro-Am?team_id=3280&pg=team&fr_id=1280" target='_blank' rel='noopener noreferrer' className="border border-white px-12 py-3 rounded-md hover:bg-slate-100 hover:text-black duration-200 text-center">Donate</a>
     </div>

@@ -58,7 +58,7 @@ function MerchList() {
       className={`my-[10rem] mx-8 transition-opacity duration-[.2s] ${isIntersecting ? 'opacity-100' : 'opacity-90'}`}
      >
       <div className={`flex flex-col gap-8 md:gap-[5rem] items-center justify-center md:flex-row ${index % 2 === 0 ? 'md:flex-row-reverse' : 'md:flex-row'}`}>
-       <img src={product.image} alt={product.name} className="w-[90%] md:w-[40%] md:max-w-[500px] h-auto" />
+       <img src={product.image} alt={product.name} className="w-[90%] md:w-[40%] md:max-w-[500px] h-auto" loading='lazy' />
        <div className='flex flex-col gap-4 md:gap-8'>
         <h1 className='text-4xl font-poppins font-bold md:text-[3rem] lg:text-[4rem] xl:text-[4.5rem]'>{product.name}</h1>
         <p className='text-3xl md:text-4xl'>{product.price}</p>

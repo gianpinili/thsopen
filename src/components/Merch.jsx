@@ -18,7 +18,7 @@ function Merch() {
      <a className="border border-white px-6 py-3 rounded-md hover:bg-slate-100 hover:text-black duration-200" target="_blank" href="https://www.thehockeyshop.com/">Coming Soon</a>
     </div>
     <div className='flex justify-center items-center'>
-     <img src={merchImage} alt="THS Open Merch" className='max-w-[20rem] md:max-w-[30rem]' />
+     <img src={merchImage} alt="THS Open Merch" className='max-w-[20rem] md:max-w-[30rem]' loading='lazy' />
     </div>
    </div>
   </div>
