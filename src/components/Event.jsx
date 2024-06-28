@@ -16,7 +16,7 @@ function Event() {
    <div>
     <h1 className="font-poppins font-semibold text-[2rem] sm:text-5xl uppercase tracking-tighter">The Event</h1>
     <p className=" mt-[3rem] text-[.8rem] md:max-w-[300px] md:mt-[5rem] md:text-[.9rem] lg:max-w-[400px] lg:text-[1rem] xl:max-w-[500px] xl:text-[1.1rem] 2xl:max-w-[530px] 2xl:text-[1.2rem]">
-     Get ready to tee off for a great cause at the <span className="font-bold text-[.9rem] md:text-[1.1rem] lg:text-[1.2rem] xl:text-[1.3rem] 2xl:text-[1.4rem]">1st Annual THS Open,</span> proudly presented by The Hockey Shop! We&apos;re excited to invite you to join us at the stunning Newlands Golf and Country Club on <span className="font-bold text-[.9rem] md:text-[1.1rem] lg:text-[1.2rem] xl:text-[1.3rem] 2xl:text-[1.4rem]">September 16, 2024,</span> for a day of fun, competition, and breathtaking scenery.
+     Get ready to tee off for a great cause at the <span className="font-bold text-[.9rem] md:text-[1.1rem] lg:text-[1.2rem] xl:text-[1.3rem] 2xl:text-[1.4rem]">1st Annual THS Open,</span> proudly presented by The Hockey Shop! We&apos;re excited to invite you to join us at the stunning Newlands Golf and Country Club [Championship Course] on <span className="font-bold text-[.9rem] md:text-[1.1rem] lg:text-[1.2rem] xl:text-[1.3rem] 2xl:text-[1.4rem]">September 16, 2024,</span> for a day of fun, competition, and breathtaking scenery.
     </p>
    </div>
    <div className="relative w-full h-screen bg-[#1c1c1c]">

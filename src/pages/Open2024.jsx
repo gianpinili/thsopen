@@ -29,7 +29,8 @@ function Open2024() {
      </div>
      <div className='hover:scale-110 duration-300'>
       <a href="https://www.google.com/maps?rlz=1C1ONGR_enCA1054CA1054&gs_lcrp=EgZjaHJvbWUqEAgAEAAYgwEY4wIYsQMYgAQyEAgAEAAYgwEY4wIYsQMYgAQyFggBEC4YgwEYrwEYxwEYsQMYgAQYjgUyBwgCEAAYgAQyBwgDEAAYgAQyBwgEEAAYgAQyBwgFEAAYgAQyBwgGEAAYgAQyBggHEEUYPNIBCDI4MTNqMGoxqAIAsAIA&um=1&ie=UTF-8&fb=1&gl=ca&sa=X&geocode=KdMmNYm0z4VUMb_x0fIholZ8&daddr=21025+48+Ave,+Langley,+BC+V3A+3M3" target='_blank'>
-       <p>Newlands Golf Course</p>
+       <p>Newlands Golf Club</p>
+       <p className='text-[#ffffff]'>Championship Course</p>
        <p>21025 48 Ave, Langley, BC V3A 3M3</p>
       </a>
      </div>
