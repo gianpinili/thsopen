@@ -8,7 +8,7 @@ function MerchList() {
  const products = [
   {
    name: "THS OPEN HAT",
-   price: "$30.00",
+   price: "$34.99",
    image: hatImage,
    features: [
     "90/10 polyester/spandex",
@@ -24,7 +24,7 @@ function MerchList() {
   },
   {
    name: "THS OPEN POLO",
-   price: "$55.00",
+   price: "$59.99",
    image: shirtImage,
    features: [
     "7.2-oz, 100% Dri-FIT polyester with moisture management technology",
