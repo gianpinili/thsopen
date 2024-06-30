@@ -43,12 +43,12 @@ function Sponsor() {
  return (
   <div
    ref={ref}
-   className={`bg-white text-black py-12 px-[1.5rem] md:px-[2rem] lg:px-[3rem] font-spacemono 2xl:px-[8rem] transition-opacity duration-[2s] ${isIntersecting ? 'opacity-100' : 'opacity-0'}`}
+   className={`bg-white text-black py-36 px-[1.5rem] md:px-[2rem] lg:px-[3rem] font-spacemono 2xl:px-[8rem] transition-opacity duration-[2s] ${isIntersecting ? 'opacity-100' : 'opacity-0'}`}
   >
    <h1 className="font-poppins font-semibold text-[2rem] md:text-5xl uppercase tracking-tighter text-black">
     Sponsorship Opportunities
    </h1>
-   <div className="text-black mt-10 bg-white py-6 px-[1.5rem] md:px-[2rem] font-spacemono lg:px-[8rem] xl:px-[10rem] 2xl:px-[15rem]">
+   <div className="text-black mt-10 bg-white py-6 px-[1.5rem] md:px-[2rem] font-spacemono lg:px-[8rem] xl:px-[10rem] 2xl:px-[15rem] scale-110">
     {sponsorData.map((sponsor, index) => (
      <div key={index} className="border-b border-gray-400 py-4 text-black md:px-[2rem]">
       <div className="text-black flex justify-between items-center cursor-pointer" onClick={() => toggleSponsor(sponsor.level)}>

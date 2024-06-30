@@ -1,6 +1,5 @@
 import merchImage from '../assets/hatnshirt.png';
 import useIntersectionObserver from '../useIntersectionObserver';
-import { Link } from 'react-router-dom';
 
 function Merch() {
  const [ref, isIntersecting] = useIntersectionObserver({
@@ -16,7 +15,7 @@ function Merch() {
    <div className='my-10 flex flex-col-reverse md:flex-row md:items-center md:gap-10 md:justify-center'>
     <div className='md:w-1/2 lg:px-[3rem] md:mt-[-2rem] lg:mt-[-3rem] xl:mt-[-5rem]'>
      <p className="my-10 md:text-xl md:my-20">Swing for a cause. All proceeds go to Canucks Autism Network (CAN), helping to raise awareness and support for autism.</p>
-     <Link className="border border-white px-6 py-3 rounded-md hover:bg-slate-100 hover:text-black duration-200" to={"/merch"}>Coming Soon</Link>
+     <a className="border border-white px-6 py-3 rounded-md hover:bg-slate-100 hover:text-black duration-200" target='_blank' href="https://www.thehockeyshop.com/collections/ths-open">Shop THS Open</a>
     </div>
     <div className='flex justify-center items-center'>
      <img src={merchImage} alt="THS Open Merch" className='max-w-[25rem] md:max-w-[35rem]' loading='lazy' />

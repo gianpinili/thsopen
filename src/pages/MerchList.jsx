@@ -19,6 +19,7 @@ function MerchList() {
   {
    name: "THS OPEN HAT",
    price: "$34.99",
+   href: "https://www.thehockeyshop.com/products/ths-open-nike-adjustable-hat",
    images: [hatImage, hatImage1, hatImage2, hatImage3], // Add multiple images here
    features: [
     "90/10 polyester/spandex",
@@ -35,6 +36,7 @@ function MerchList() {
   {
    name: "THS OPEN POLO",
    price: "$59.99",
+   href: "https://www.thehockeyshop.com/products/ths-open-nike-polo",
    images: [shirtImage, shirtImage1, shirtImage2, shirtImage3], // Add multiple images here
    features: [
     "7.2-oz, 100% Dri-FIT polyester with moisture management technology",
@@ -83,8 +85,8 @@ function MerchList() {
      >
       <div className={`flex flex-col gap-8 md:gap-[4rem] lg:gap-[6rem] items-center justify-center md:flex-row ${index % 2 === 0 ? 'md:flex-row-reverse' : 'md:flex-row'}`}>
        <div className='relative w-[90%] md:w-[90%] max-h-[600px] md:max-w-[300px] lg:max-w-[400px] xl:max-w-[500px] flex justify-center items-center'>
-        <img src={product.images[currentImageIndex]} alt={product.name} className=" h-auto rounded-md duration-500 mb-20 sm:mb-[5rem] max-w-[100%] sm:max-w-[60%] md:w-[100%] md:max-w-[100%]" loading='lazy' />
-        <div className="flex items-center justify-center gap-[.5rem] absolute md:gap-[12rem] bottom-[-1rem] left-1/2 -translate-x-1/2 -translate-y-1/2 xl:top-1/2 xl:gap-[32rem]">
+        <img src={product.images[currentImageIndex]} alt={product.name} className=" h-auto rounded-md duration-500 mb-20 sm:mb-[3rem] max-w-[100%] sm:max-w-[60%] md:w-[100%] md:max-w-[100%]" loading='lazy' />
+        <div className="flex items-center justify-center gap-[.5rem] sm:gap-[23rem] sm:top-1/2 absolute md:gap-[18rem] lg:gap-[24rem] bottom-[-1rem] left-1/2 -translate-x-1/2 -translate-y-1/2 xl:top-1/2 xl:gap-[32rem]">
          <button onClick={() => prevImage(index)} className="  duration-300 text-gray-800 font-semibold py-2 px-4 rounded-xl hover:scale-125 z-20">
           <ChevronLeft />
          </button>
@@ -102,7 +104,7 @@ function MerchList() {
          ))}
         </ul>
 
-        <a href="https://www.thehockeyshop.com" target='_blank' rel="noopener noreferrer" className='px-4 sm:px-8 py-3 rounded-md font-semibold border border-black hover:bg-black hover:text-white duration-300 hover:scale-110 flex w-1/2 justify-center tracking-wider' >Buy Now</a>
+        <a href={product.href} target='_blank' rel="noopener noreferrer" className='px-4 sm:px-8 py-3 rounded-md font-semibold border border-black hover:bg-black hover:text-white duration-300 hover:scale-110 flex w-1/2 justify-center tracking-wider' >Buy Now</a>
        </div>
       </div>
      </div>
