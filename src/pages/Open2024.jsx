@@ -13,7 +13,7 @@ function Open2024() {
 
  return (
   <>
-   <div className="py-[10rem] bg-[#1c1c1c] px-[1rem] md:px-[1.5rem] font-spacemono flex flex-col md:flex-row md:justify-center gap-12 md:gap-0">
+   <div className="py-[10rem] bg-[#1c1c1c] px-[1rem] md:px-[1.5rem] font-spacemono flex flex-col md:flex-row md:justify-center gap-12 md:gap-[6rem] xl:gap-0">
     {/* LEFT SIDE */}
     <div
      ref={leftSideRef}
