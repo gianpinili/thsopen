@@ -1,4 +1,6 @@
 import CanWhiteLogo from '../assets/canwhitelogo.png';
+import CanWhiteLogoW from '../assets/canwhitelogo.webp';
+
 import useIntersectionObserver from '../useIntersectionObserver';
 
 function Donation() {
@@ -25,8 +27,11 @@ function Donation() {
      <p>CAN is dedicated to providing programs to individuals on the autism spectrum and their families, while promoting acceptance and inclusion through community engagement and training initiatives across BC and beyond.</p>
     </div>
     <div className='flex flex-col gap-8 items-center justify-center'>
-     <a href="https://www.canucksautism.ca/about-us/" target='_blank' rel='noopener noreferrer'>
-      <img src={CanWhiteLogo} alt="Canucks Autism Network Logo" className='hover:scale-110 duration-200' loading='lazy' width={400} height={300} />
+     <a href="https://www.canucksautism.ca/about-us/" target='_blank' rel='noopener noreferrer' aria-label='Canucks Autism Network'>
+      <picture>
+       <source srcSet={CanWhiteLogoW} type="image/webp" />
+       <img src={CanWhiteLogo} alt="Canucks Autism Network Logo" className='hover:scale-110 duration-200' loading='lazy' width={400} height={300} />
+      </picture>
      </a>
      <a href="https://support.canucksautism.ca/site/TR/CANPro-Am/Pro-Am?team_id=3280&pg=team&fr_id=1280" target='_blank' rel='noopener noreferrer' className="border border-white px-12 py-3 rounded-md hover:bg-slate-100 hover:text-black duration-200 text-center">Donate</a>
     </div>

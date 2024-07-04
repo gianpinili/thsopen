@@ -1,6 +1,9 @@
 import { Link } from 'react-router-dom';
 import ColourLogo from '../assets/cancolourlogo.png';
+import ColourLogoW from '../assets/cancolourlogo.webp';
 import THS from '../assets/thslogo.png';
+import THSW from '../assets/thslogo.webp';
+import ThoBlackLogoW from '../assets/thsopenblacklogo.webp';
 import ThoBlackLogo from '../assets/thsopenblacklogo.png';
 
 function Footer() {
@@ -18,16 +21,25 @@ function Footer() {
     </div>
     <div className='flex flex-col items-center justify-center gap-8 mb-10 md:flex-row md:my-12 md:gap-14'>
      <a href="https://www.thehockeyshop.com" target='_blank'>
-      <img className='w-[150px] hover:scale-125 duration-300' src={THS} alt="The Hockey Shop" loading='lazy' width={500}
-       height={500} />
+      <picture>
+       <source srcSet={THSW} type="image/webp" />
+       <img className='w-[150px] hover:scale-125 duration-300' src={THS} alt="The Hockey Shop" loading='lazy' width={500}
+        height={500} />
+      </picture>
      </a>
      <Link to={'/'} onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
-      <img className='w-[125px] md:ml-[1.5rem] hover:scale-125 duration-300' src={ThoBlackLogo} alt="THS Open" loading='lazy' width={500}
-       height={500} />
+      <picture>
+       <source srcSet={ThoBlackLogoW} type="image/webp" />
+       <img className='w-[125px] md:ml-[1.5rem] hover:scale-125 duration-300' src={ThoBlackLogo} alt="THS Open" loading='lazy' width={500}
+        height={500} />
+      </picture>
      </Link>
      <a href="https://www.canucksautism.ca" target='_blank'>
-      <img className='w-[200px] md:w-[175px] hover:scale-125 duration-300' src={ColourLogo} alt="Canucks Autism Network" loading='lazy' width={500}
-       height={500} />
+      <picture>
+       <source srcSet={ColourLogoW} type="image/webp" />
+       <img className='w-[200px] md:w-[175px] hover:scale-125 duration-300' src={ColourLogo} alt="Canucks Autism Network" loading='lazy' width={500}
+        height={500} />
+      </picture>
      </a>
     </div>
     <div>

@@ -1,7 +1,11 @@
 import hatImage from '../assets/hatimage2.png';
+import hatImageW from '../assets/hatimage2.webp';
 import hatImage1 from '../assets/hatimage1.png';
+import hatImage1W from '../assets/hatimage1.webp';
 import shirtImage from '../assets/shirtimage2.png';
+import shirtImageW from '../assets/shirtimage2.png';
 import shirtImage1 from '../assets/shirtimage3.png';
+import shirtImage1W from '../assets/shirtimage3.webp';
 import { useState } from 'react';
 import { X } from 'lucide-react';
 
@@ -26,7 +30,6 @@ function Merch() {
    ref={ref}
    className={`py-12 bg-black text-white px-[1.5rem] md:px-[2rem] lg:px-[3rem] font-spacemono 2xl:px-[8rem] transition-opacity duration-[1s] ${isIntersecting ? 'opacity-100' : 'opacity-0'}`}
   >
-   {/* <h1 className="font-poppins font-semibold text-[2rem] md:text-5xl uppercase tracking-tighter">Shop the merch</h1> */}
    <div className='mt-[1rem] mb-12 flex flex-col-reverse lg:flex-row-reverse md:items-center md:gap-10 md:justify-center'>
     <div className='md:w-1/2 lg:px-[3rem] mt-[3rem]  lg:mt-[-3rem] xl:mt-[-5rem]'>
      <h1 className="font-poppins font-bold text-[4rem] md:text-[6rem] uppercase tracking-tighter">MERCH</h1>
@@ -34,14 +37,26 @@ function Merch() {
      <a className="border border-white px-6 py-3 rounded-md hover:bg-white hover:text-black hover:font-bold duration-200" target='_blank' href="https://www.thehockeyshop.com/collections/ths-open">Shop THS Open</a>
     </div>
     <div className='grid grid-cols-2 gap-4 m-auto'>
-     <img src={hatImage} alt="THS Open Merch" className='min-w-[9rem] md:max-w-[17.5rem] cursor-pointer hover:scale-105 duration-300' loading='lazy' onClick={() => toggleModal(hatImage)} width={500}
-      height={500} />
-     <img src={hatImage1} alt="THS Open Merch" className='min-w-[9rem] md:max-w-[17.5rem] cursor-pointer hover:scale-105 duration-300' loading='lazy' onClick={() => toggleModal(hatImage1)} width={500}
-      height={500} />
-     <img src={shirtImage1} alt="THS Open Merch" className='min-w-[9rem] md:max-w-[17.5rem] cursor-pointer hover:scale-105 duration-300' loading='lazy' onClick={() => toggleModal(shirtImage1)} width={500}
-      height={500} />
-     <img src={shirtImage} alt="THS Open Merch" className='min-w-[9rem] md:max-w-[17.5rem] cursor-pointer hover:scale-105 duration-300' loading='lazy' onClick={() => toggleModal(shirtImage)} width={500}
-      height={500} />
+     <picture>
+      <source srcSet={hatImageW} type="image/webp" />
+      <img src={hatImage} alt="THS Open Merch" className='min-w-[9rem] md:max-w-[17.5rem] cursor-pointer hover:scale-105 duration-300' loading='lazy' onClick={() => toggleModal(hatImage)} width={500}
+       height={500} />
+     </picture>
+     <picture>
+      <source srcSet={hatImage1W} type="image/webp" />
+      <img src={hatImage1} alt="THS Open Merch" className='min-w-[9rem] md:max-w-[17.5rem] cursor-pointer hover:scale-105 duration-300' loading='lazy' onClick={() => toggleModal(hatImage1)} width={500}
+       height={500} />
+     </picture>
+     <picture>
+      <source srcSet={shirtImage1W} type="image/webp" />
+      <img src={shirtImage1} alt="THS Open Merch" className='min-w-[9rem] md:max-w-[17.5rem] cursor-pointer hover:scale-105 duration-300' loading='lazy' onClick={() => toggleModal(shirtImage1)} width={500}
+       height={500} />
+     </picture>
+     <picture>
+      <source srcSet={shirtImageW} type="image/webp" />
+      <img src={shirtImage} alt="THS Open Merch" className='min-w-[9rem] md:max-w-[17.5rem] cursor-pointer hover:scale-105 duration-300' loading='lazy' onClick={() => toggleModal(shirtImage)} width={500}
+       height={500} />
+     </picture>
     </div>
    </div>
 

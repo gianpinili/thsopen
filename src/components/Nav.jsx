@@ -2,6 +2,8 @@ import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
 import Logo from '../assets/thsopenlogo.png';
+import LogoW from '../assets/thsopenlogo.webp';
+
 
 function Nav() {
  const [isModalOpen, setIsModalOpen] = useState(false);
@@ -23,8 +25,11 @@ function Nav() {
      <Link to={'/sponsorship'} className={`${getNavLinkClass('/sponsorship')} duration-200`}>Sponsor</Link>
     </div>
     <Link to={'/'} onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className='flex justify-center'>
-     <img className='w-[40%] md:max-w-[150px] max-h-[70px] mr-[3rem]  z-50' src={Logo} alt="THS Open Logo" loading='lazy' width={500}
-      height={500} />
+     <picture>
+      <source srcSet={LogoW} type='image/webp' />
+      <img className='w-[40%] md:max-w-[150px] max-h-[70px] ml-[3rem]  z-50' src={Logo} alt="THS Open Logo" loading='lazy' width={500}
+       height={500} />
+     </picture>
     </Link>
     <div className='hidden md:block'>
      <Link to={'/register'} className='border-white border py-2 px-4 hover:bg-slate-200 hover:text-black duration-200 rounded-md hover:scale-110'>Register</Link>

@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import image1 from '../assets/image1.jpg';
 import image3 from '../assets/image3.jpg';
+import image3W from '../assets/image3.webp';
 import { useEffect } from 'react';
 import { MoveDown, MoveRight } from 'lucide-react';
 import useIntersectionObserver from '../useIntersectionObserver'; // Adjust the path if necessary
@@ -43,8 +44,11 @@ function EventsList() {
     >
      {/* LEFT SIDE */}
      <div className="flex flex-col gap-4 relative md:w-1/3">
-      <img src={image3} alt="Newlands Golf Course" className="w-full md:min-h-[200px] rounded-md" loading='lazy' width={500}
-       height={500} />
+      <picture>
+       <source srcSet={image3W} type="image/webp" />
+       <img src={image3} alt="Newlands Golf Course" className="w-full md:min-h-[200px] rounded-md" loading='lazy' width={500}
+        height={500} />
+      </picture>
       <div className="absolute right-0 border text-black bg-white py-3 px-5 text-center rounded-tr-md">
        <p>Sep.</p>
        <p className="font-bold text-xl">16</p>
