@@ -41,10 +41,10 @@ function Event() {
      width={500}
      height={500}
     />
-    <a href="https://www.google.com/maps?rlz=1C1ONGR_enCA1054CA1054&gs_lcrp=EgZjaHJvbWUqEAgAEAAYgwEY4wIYsQMYgAQyEAgAEAAYgwEY4wIYsQMYgAQyFggBEC4YgwEYrwEYxwEYsQMYgAQYjgUyBwgCEAAYgAQyBwgDEAAYgAQyBwgEEAAYgAQyBwgFEAAYgAQyBwgGEAAYgAQyBggHEEUYPNIBCDI4MTNqMGoxqAIAsAIA&um=1&ie=UTF-8&fb=1&gl=ca&sa=X&geocode=KdMmNYm0z4VUMb_x0fIholZ8&daddr=21025+48+Ave,+Langley,+BC+V3A+3M3" target='_blank' rel='noopener noreferrer'>
+    <a href="https://www.google.com/maps?rlz=1C1ONGR_enCA1054CA1054&gs_lcrp=EgZjaHJvbWUqEAgAEAAYgwEY4wIYsQMYgAQyEAgAEAAYgwEY4wIYsQMYgAQyFggBEC4YgwEYrwEYxwEYsQMYgAQYjgUyBwgCEAAYgAQyBwgDEAAYgAQyBwgEEAAYgAQyBwgFEAAYgAQyBwgGEAAYgAQyBggHEEUYPNIBCDI4MTNqMGoxqAIAsAIA&um=1&ie=UTF-8&fb=1&gl=ca&sa=X&geocode=KdMmNYm0z4VUMb_x0fIholZ8&daddr=21025+48+Ave,+Langley,+BC+V3A+3M3" target='_blank' rel='noopener noreferrer' aria-label="Newlands Golf and Country Club">
      <div className="absolute hidden sm:inline bottom-[6.5rem] left-[3rem] text-white text-md md:text-2xl font-bold md:bottom-[18rem] md:left-[4rem] z-10 xl:left-[5rem] 2xl:left-[6rem] xl:bottom-[11rem]">
       <img src={NewlandsLogo} alt="Newlands Golf and Country Club" className='md:w-[10rem]' width={500}
-       height={500} />
+       height={361} />
      </div>
      <div className="absolute hidden sm:inline bottom-[2rem] md:bottom-[12rem] md:left-[-.5rem] left-[-.5rem] w-[15rem] h-[15rem] md:w-[18rem] md:h-[18rem] border border-white rounded-full z-20 xl:left-[.5rem] 2xl:left-[1.57rem] xl:bottom-[5rem] hover:bg-[#062c0b] hover:opacity-40 duration-200 hover:border-black "></div>
     </a>
