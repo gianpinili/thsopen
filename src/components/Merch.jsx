@@ -34,17 +34,22 @@ function Merch() {
      <a className="border border-white px-6 py-3 rounded-md hover:bg-white hover:text-black hover:font-bold duration-200" target='_blank' href="https://www.thehockeyshop.com/collections/ths-open">Shop THS Open</a>
     </div>
     <div className='grid grid-cols-2 gap-4 m-auto'>
-     <img src={hatImage} alt="THS Open Merch" className='min-w-[9rem] md:max-w-[17.5rem] cursor-pointer hover:scale-105 duration-300' loading='lazy' onClick={() => toggleModal(hatImage)} />
-     <img src={hatImage1} alt="THS Open Merch" className='min-w-[9rem] md:max-w-[17.5rem] cursor-pointer hover:scale-105 duration-300' loading='lazy' onClick={() => toggleModal(hatImage1)} />
-     <img src={shirtImage1} alt="THS Open Merch" className='min-w-[9rem] md:max-w-[17.5rem] cursor-pointer hover:scale-105 duration-300' loading='lazy' onClick={() => toggleModal(shirtImage1)} />
-     <img src={shirtImage} alt="THS Open Merch" className='min-w-[9rem] md:max-w-[17.5rem] cursor-pointer hover:scale-105 duration-300' loading='lazy' onClick={() => toggleModal(shirtImage)} />
+     <img src={hatImage} alt="THS Open Merch" className='min-w-[9rem] md:max-w-[17.5rem] cursor-pointer hover:scale-105 duration-300' loading='lazy' onClick={() => toggleModal(hatImage)} width={500}
+      height={500} />
+     <img src={hatImage1} alt="THS Open Merch" className='min-w-[9rem] md:max-w-[17.5rem] cursor-pointer hover:scale-105 duration-300' loading='lazy' onClick={() => toggleModal(hatImage1)} width={500}
+      height={500} />
+     <img src={shirtImage1} alt="THS Open Merch" className='min-w-[9rem] md:max-w-[17.5rem] cursor-pointer hover:scale-105 duration-300' loading='lazy' onClick={() => toggleModal(shirtImage1)} width={500}
+      height={500} />
+     <img src={shirtImage} alt="THS Open Merch" className='min-w-[9rem] md:max-w-[17.5rem] cursor-pointer hover:scale-105 duration-300' loading='lazy' onClick={() => toggleModal(shirtImage)} width={500}
+      height={500} />
     </div>
    </div>
 
    {showModal && (
     <div className='fixed inset-0 bg-black bg-opacity-90 flex justify-center items-center z-40 p-[2rem] sm:p-[3rem] md:p-[5rem] lg:p-[8rem]'>
      <X className='top-8 right-8 absolute cursor-pointer hover:scale-125 duration-200 text-white' onClick={toggleModal} />
-     <img src={selectedImage} alt="Selected Merch" className='max-w-full max-h-full' />
+     <img src={selectedImage} alt="Selected Merch" className='max-w-full max-h-full' width={500}
+      height={500} />
     </div >
    )}
   </div>

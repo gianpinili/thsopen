@@ -43,7 +43,8 @@ function EventsList() {
     >
      {/* LEFT SIDE */}
      <div className="flex flex-col gap-4 relative md:w-1/3">
-      <img src={image3} alt="Newlands Golf Course" className="w-full md:min-h-[200px] rounded-md" loading='lazy' />
+      <img src={image3} alt="Newlands Golf Course" className="w-full md:min-h-[200px] rounded-md" loading='lazy' width={500}
+       height={500} />
       <div className="absolute right-0 border text-black bg-white py-3 px-5 text-center rounded-tr-md">
        <p>Sep.</p>
        <p className="font-bold text-xl">16</p>

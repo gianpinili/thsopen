@@ -18,13 +18,16 @@ function Footer() {
     </div>
     <div className='flex flex-col items-center justify-center gap-8 mb-10 md:flex-row md:my-12 md:gap-14'>
      <a href="https://www.thehockeyshop.com" target='_blank'>
-      <img className='w-[150px] hover:scale-125 duration-300' src={THS} alt="The Hockey Shop" loading='lazy' />
+      <img className='w-[150px] hover:scale-125 duration-300' src={THS} alt="The Hockey Shop" loading='lazy' width={500}
+       height={500} />
      </a>
      <Link to={'/'} onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
-      <img className='w-[125px] md:ml-[1.5rem] hover:scale-125 duration-300' src={ThoBlackLogo} alt="THS Open" loading='lazy' />
+      <img className='w-[125px] md:ml-[1.5rem] hover:scale-125 duration-300' src={ThoBlackLogo} alt="THS Open" loading='lazy' width={500}
+       height={500} />
      </Link>
      <a href="https://www.canucksautism.ca" target='_blank'>
-      <img className='w-[200px] md:w-[175px] hover:scale-125 duration-300' src={ColourLogo} alt="Canucks Autism Network" loading='lazy' />
+      <img className='w-[200px] md:w-[175px] hover:scale-125 duration-300' src={ColourLogo} alt="Canucks Autism Network" loading='lazy' width={500}
+       height={500} />
      </a>
     </div>
     <div>
