@@ -15,7 +15,7 @@ function Event() {
  });
 
  return (
-  <div ref={ref} className={`bg-[#1c1c1c] mt-[-3.5rem] md:mt-[-3rem] 2xl:mt-[-4rem] font-spacemono pt-[5rem] px-[1.5rem] py-12 md:pb-[0] flex flex-col md:px-[2rem] lg:px-[3rem] relative h-[80vh] md:h-full 2xl:px-[8rem] transition-opacity duration-[1.3s] ${isIntersecting ? 'opacity-100' : 'opacity-0'}`}>
+  <div ref={ref} className={`bg-[#1c1c1c] mt-[-3.5rem] md:mt-[-3rem] 2xl:mt-[-4rem] font-spacemono pt-[5rem] px-[1.5rem] py-12 md:pb-[0] flex flex-col md:px-[2rem] lg:px-[3rem] relative h-[80vh] md:h-auto 2xl:px-[8rem] transition-opacity duration-[1.3s] ${isIntersecting ? 'opacity-100' : 'opacity-0'}`}>
    <div>
     <h1 className="font-poppins font-semibold text-[2rem] sm:text-5xl uppercase tracking-tighter">The Event</h1>
     <p className=" mt-[3rem] text-[.8rem] md:max-w-[300px] md:mt-[5rem] md:text-[.9rem] lg:max-w-[400px] lg:text-[1rem] xl:max-w-[500px] xl:text-[1.1rem] 2xl:max-w-[530px] 2xl:text-[1.2rem]">
@@ -24,7 +24,7 @@ function Event() {
    </div>
    <div className="relative w-full h-screen bg-[#1c1c1c]">
     <picture>
-     <source srcSet={image1W} type="image/webp" />
+     <source srcSet={image2W} type="image/webp" />
      <img
       src={image2}
       alt="Newlands Golf Course"
@@ -34,7 +34,7 @@ function Event() {
      />
     </picture>
     <picture>
-     <source srcSet={image2W} type="image/webp" />
+     <source srcSet={image1W} type="image/webp" />
      <img
       src={image1}
       alt="Newlands Golf Course"
@@ -55,14 +55,14 @@ function Event() {
     </picture>
     <a href="https://www.google.com/maps?rlz=1C1ONGR_enCA1054CA1054&gs_lcrp=EgZjaHJvbWUqEAgAEAAYgwEY4wIYsQMYgAQyEAgAEAAYgwEY4wIYsQMYgAQyFggBEC4YgwEYrwEYxwEYsQMYgAQYjgUyBwgCEAAYgAQyBwgDEAAYgAQyBwgEEAAYgAQyBwgFEAAYgAQyBwgGEAAYgAQyBggHEEUYPNIBCDI4MTNqMGoxqAIAsAIA&um=1&ie=UTF-8&fb=1&gl=ca&sa=X&geocode=KdMmNYm0z4VUMb_x0fIholZ8&daddr=21025+48+Ave,+Langley,+BC+V3A+3M3" target='_blank' rel='noopener noreferrer' aria-label="Newlands Golf and Country Club">
      <div className="absolute hidden sm:inline bottom-[6.5rem] left-[3rem] text-white text-md md:text-2xl font-bold md:bottom-[18rem] md:left-[4rem] z-10 xl:left-[5rem] 2xl:left-[6rem] xl:bottom-[11rem]">
-      <img src={NewlandsLogo} alt="Newlands Golf and Country Club" className='md:w-[10rem]' width={500}
+      <img src={NewlandsLogo} alt="Newlands Golf and Country Club" className='sm:w-[9rem] md:w-[10rem]' width={500}
        height={361} />
      </div>
      <div className="absolute hidden sm:inline bottom-[2rem] md:bottom-[12rem] md:left-[-.5rem] left-[-.5rem] w-[15rem] h-[15rem] md:w-[18rem] md:h-[18rem] border border-white rounded-full z-20 xl:left-[.5rem] 2xl:left-[1.57rem] xl:bottom-[5rem] hover:bg-[#062c0b] hover:opacity-40 duration-200 hover:border-black "></div>
     </a>
     <div className='absolute border-b border-white w-[70%] top-20 md:top-10 md:w-[50%]'></div>
    </div>
-   <Link to="/events" className="text-[.7rem] md:text-[.8rem] lg:text-[.9rem]  xl:text-[1rem] 2xl:text-[1.1rem] absolute bottom-5 right-10 md:bottom-[16rem] md:right-[8rem] xl:bottom-[5rem] 2xl:bottom-[1rem] uppercase font-bold flex gap-2 hover:scale-110 duration-300 items-center z-20"><Eye />All Events</Link>
+   <Link to="/events" className="text-[.7rem] md:text-[.8rem] lg:text-[.9rem]  xl:text-[1rem] 2xl:text-[1.1rem] absolute bottom-5 right-10 md:bottom-[16rem] md:right-[8rem] lg:bottom-[14rem] xl:bottom-[3rem] 2xl:bottom-[1rem] uppercase font-bold flex gap-2 hover:scale-110 duration-300 items-center z-20"><Eye />All Events</Link>
   </div>
  );
 }
