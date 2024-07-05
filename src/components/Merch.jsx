@@ -1,7 +1,15 @@
 import hatImage from '../assets/hatimage2.png';
 import hatImageW from '../assets/hatimage2.webp';
+import hatImageMD from '../assets/hatimage2-md.webp';
+import hatImageLG from '../assets/hatimage2-lg.webp';
+import hatImageXL from '../assets/hatimage2-xl.webp';
+import hatImage2xl from '../assets/hatimage2-2xl.webp';
 import hatImage1 from '../assets/hatimage1.png';
 import hatImage1W from '../assets/hatimage1.webp';
+import hatImage1MD from '../assets/hatimage1-md.webp';
+import hatImage1LG from '../assets/hatimage1-lg.webp';
+import hatImage1XL from '../assets/hatimage1-xl.webp';
+import hatImage12xl from '../assets/hatimage1-2xl.webp';
 import shirtImage from '../assets/shirtimage2.png';
 import shirtImageW from '../assets/shirtimage2.png';
 import shirtImage1 from '../assets/shirtimage3.png';
@@ -38,12 +46,33 @@ function Merch() {
     </div>
     <div className='grid grid-cols-2 gap-4 m-auto'>
      <picture>
-      <source srcSet={hatImageW} type="image/webp" />
+      <source
+       srcSet={`${hatImageW} 2048w,
+      ${hatImageMD} 768w, 
+      ${hatImageLG} 1024w, 
+      ${hatImageXL} 1280w, 
+      ${hatImage2xl} 1536w`}
+       sizes='(max-width: 768px) 768px,
+             (max-width: 1024px) 1024px,
+             (max-width: 1280px) 1280px,
+             (max-width: 1536px) 1536px,
+             2048px'
+       type="image/webp" />
       <img src={hatImage} alt="THS Open Merch" className='min-w-[9rem] md:max-w-[17.5rem] cursor-pointer hover:scale-105 duration-300' loading='lazy' onClick={() => toggleModal(hatImage)} width={500}
        height={500} />
      </picture>
      <picture>
-      <source srcSet={hatImage1W} type="image/webp" />
+      <source
+       srcSet={`${hatImage1W} 2048w,
+      ${hatImage1MD} 768w,
+      ${hatImage1LG} 1024w,
+      ${hatImage1XL} 1280w,
+      ${hatImage12xl} 1536w`}
+       sizes='(max-width: 768px) 768px,
+             (max-width: 1024px) 1024px,
+             (max-width: 1280px) 1280px,
+             (max-width: 1536px) 1536px,'
+       type="image/webp" />
       <img src={hatImage1} alt="THS Open Merch" className='min-w-[9rem] md:max-w-[17.5rem] cursor-pointer hover:scale-105 duration-300' loading='lazy' onClick={() => toggleModal(hatImage1)} width={500}
        height={500} />
      </picture>

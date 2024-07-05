@@ -1,9 +1,16 @@
 import image1 from '../assets/image1.jpg';
 import image1W from '../assets/image1.webp';
+import image1MD from '../assets/image1-md.webp';
+import image1LG from '../assets/image1-lg.webp';
+import image1XL from '../assets/image1-xl.webp';
+import image12XL from '../assets/image1-2xl.webp';
 import image2 from '../assets/image2.jpg';
 import image2W from '../assets/image2.webp';
 import image3 from '../assets/image3.jpg';
 import image3W from '../assets/image3.webp';
+import image3MD from '../assets/image3-md.webp';
+import image3LG from '../assets/image3-lg.webp';
+import image3XL from '../assets/image3-xl.webp';
 import NewlandsLogo from '../assets/newlandslogo.webp';
 import useIntersectionObserver from '../useIntersectionObserver';
 import { Link } from 'react-router-dom';
@@ -24,7 +31,9 @@ function Event() {
    </div>
    <div className="relative w-full h-screen bg-[#1c1c1c]">
     <picture>
-     <source srcSet={image2W} type="image/webp" />
+     <source
+      srcSet={image2W}
+      type="image/webp" />
      <img
       src={image2}
       alt="Newlands Golf Course"
@@ -34,7 +43,18 @@ function Event() {
      />
     </picture>
     <picture>
-     <source srcSet={image1W} type="image/webp" />
+     <source
+      srcSet={`${image1W} 2048w,
+     ${image1MD} 768w,
+     ${image1LG} 1024w,
+     ${image1XL} 1280w,
+     ${image12XL} 1536w`}
+      sizes='(max-width: 768px) 768w,
+     (max-width: 1024px) 1024w,
+     (max-width: 1280px) 1280w,
+     (max-width: 1536px) 1536w,
+     2048w'
+      type="image/webp" />
      <img
       src={image1}
       alt="Newlands Golf Course"
@@ -44,7 +64,15 @@ function Event() {
      />
     </picture>
     <picture>
-     <source srcSet={image3W} type="image/webp" />
+     <source
+      srcSet={`${image3W} 2048w,
+     ${image3MD} 768w,
+     ${image3LG} 1024w,
+     ${image3XL} 1280w,`}
+      sizes='(max-width: 768px) 768w,
+     (max-width: 1024px) 1024w,
+     (max-width: 1280px) 1280w,'
+      type="image/webp" />
      <img
       src={image3}
       alt="Newlands Golf Course"

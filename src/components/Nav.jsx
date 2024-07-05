@@ -3,6 +3,9 @@ import { Menu, X } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
 import Logo from '../assets/thsopenlogo.png';
 import LogoW from '../assets/thsopenlogo.webp';
+import LogoMD from '../assets/thsopenlogo-md.webp';
+import LogoLG from '../assets/thsopenlogo-lg.webp';
+import LogoXL from '../assets/thsopenlogo-xl.webp';
 
 
 function Nav() {
@@ -26,7 +29,17 @@ function Nav() {
     </div>
     <Link to={'/'} onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className='flex justify-center'>
      <picture>
-      <source srcSet={LogoW} type='image/webp' />
+      <source
+       srcSet={`${LogoW} 2048w,
+      ${LogoMD} 768w,
+      ${LogoLG} 1024w,
+      ${LogoXL} 1280w`}
+       sizes='(max-width: 768px) 768w,
+      (max-width: 1024px) 1024w,
+      (max-width: 1280px) 1280w,
+      (max-width: 1536px) 1536w
+      2048w'
+       type='image/webp' />
       <img className='w-[40%] md:max-w-[150px] max-h-[70px] ml-[3rem]  z-50' src={Logo} alt="THS Open Logo" loading='lazy' width={500}
        height={500} />
      </picture>
