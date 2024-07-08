@@ -1,8 +1,10 @@
+import RegisterHero from "../components/RegisterHero"
 
 function Register() {
  return (
   <>
-   <div className="mt-[10rem] font-spacemono flex flex-col md:flex-row mx-[1rem] gap-12 mb-12 sm:mx-[2rem] md:gap-4 lg:mx-[3rem] lg:gap-8 2xl:mx-[5rem]">
+   <RegisterHero />
+   <div className="mt-[5rem] font-spacemono flex flex-col md:flex-row mx-[1rem] gap-12 mb-12 sm:mx-[2rem] md:gap-4 lg:mx-[3rem] lg:gap-8 2xl:mx-[5rem]">
     <div className="flex flex-col gap-12 md:gap-[5rem] items-start md:w-1/2 md:pl-[1rem] lg:pl-[3rem]">
      <h1 className="font-poppins font-extrabold tracking-tight text-4xl sm:text-[2.5rem] uppercase md:text-[2.75rem] lg:text-[3rem] xl:text-[3.25rem] 2xl:text-[3.5rem] 2xl:leading-[3rem]">Register Your Team</h1>
      <div>
