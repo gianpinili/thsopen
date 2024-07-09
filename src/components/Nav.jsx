@@ -36,7 +36,7 @@ function Nav() {
       (max-width: 1536px) 1536w
       2048w'
               type='image/webp' />
-            <img className='w-[40%] md:max-w-[150px] max-h-[70px] ml-[3rem]  z-50' src={Logo} alt="THS Open Logo" loading='lazy' width={500}
+            <img className='w-[40%] md:max-w-[150px] max-h-[70px] ml-[3rem]  z-50' src={Logo} alt="THS Open Logo" width={500}
               height={500} />
           </picture>
         </Link>
