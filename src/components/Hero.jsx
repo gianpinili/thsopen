@@ -40,16 +40,16 @@ function Hero() {
  return (
   <div
    ref={ref}
-   className={`mt-[2rem] 2xl:mt-[3.3rem] font-spacemono relative w-full max-h-screen overflow-hidden transition-opacity duration-[1.5s] ${isIntersecting ? 'opacity-100' : 'opacity-0'}`}
+   className={`pt-[2rem] 2xl:pt-[3.3rem] font-spacemono relative w-full max-h-screen overflow-hidden transition-opacity duration-[1.5s] ${isIntersecting ? 'opacity-100' : 'opacity-0'}`}
   >
-   <div className="absolute inset-0 overflow-hidden">
+   <div className="absolute inset-0 overflow-hidden bg-white">
     <video
      ref={desktopVideoRef}
      autoPlay
      loop
      muted
      playsInline
-     className={`absolute top-0 left-0 w-full h-full object-cover opacity-70 mt-[-3.5rem] md:mt-[-2.75rem] 2xl:mt-[-4rem] ${isMobile ? 'hidden' : 'block'}`}
+     className={`absolute top-0 left-0 w-[100%] h-[110%]  object-cover opacity-80 mt-[-3.5rem] md:mt-[-2.75rem] 2xl:mt-[-4rem] ${isMobile ? 'hidden' : 'block'}`}
      style={{ pointerEvents: 'none' }}
     >
      <source src={heroVid} type="video/mp4" />

@@ -22,7 +22,7 @@ function Nav() {
 
   return (
     <>
-      <div className='font-spacemono fixed top-0 flex justify-between items-center pt-6 pb-6 px-[4rem] md:mb-14 z-20 bg-black bg-opacity-95 w-full max-h-[10rem]'>
+      <div className='font-spacemono fixed top-0 flex justify-between items-center pt-6 pb-6 px-[4rem] md:mb-14 z-20 bg-transparent bg-opacity-95 w-full max-h-[10rem] text-white'>
         <Link to={'/'} onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className='flex justify-center'>
           <picture>
             <source
