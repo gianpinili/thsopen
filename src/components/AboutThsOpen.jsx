@@ -16,7 +16,7 @@ function AboutThsOpen() {
     {/* RIGHT SIDE TEXT */}
     <div className='flex flex-col gap-[2rem] mb-8 md:w-1/2 md:px-6 md:justify-center lg:px-8 xl:px-10 2xl:[px-14] xl:pl-[4rem]'>
      <h2 className='font-poppins font-bold text-3xl'>What is the THS Open?</h2>
-     <p className='text-sm md:text-md lg:text-[1rem] xl:text-[1rem] lg:leading-8 2xl:text-[1.1rem]'>The THS Open aims to bring togeher our community for a day of fun, competition, and fundraising. Many of our store employees are avid golfers, and we believe this is a fantastic way to unite people for a great cause. By participating, you will help us raise essential funds to support the Canucks Autism Network (CAN)&apos;s mission of providing critical resources and opportunities for individuals with autism and their families. Join us on the green as we make a positive impact. Swing for a cause!</p>
+     <p className='text-sm md:text-md lg:text-[1rem] xl:text-[1rem] lg:leading-8 2xl:text-[1.1rem]'>The THS Open aims to bring together our community for a day of fun, competition, and fundraising. Many of our store employees are avid golfers, and we believe this is a fantastic way to unite people for a great cause. By participating, you will help us raise essential funds to support the Canucks Autism Network (CAN)&apos;s mission of providing critical resources and opportunities for individuals with autism and their families. Join us on the green as we make a positive impact. Swing for a cause!</p>
      <Link to={'/register'} className="border px-6 py-4 rounded-md hover:bg-white hover:text-black duration-300 text-center lg:w-2/3 md:mt-8">Register Now</Link>
     </div>
    </section>

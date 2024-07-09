@@ -61,7 +61,7 @@ function Nav() {
             <div className='flex flex-col gap-5 m-3 pt-[4rem] items-center'>
               <Link to={'/about'} onClick={toggleModal} className='text-3xl'>About</Link>
               <Link to={'/events'} onClick={toggleModal} className='text-3xl'>Events</Link>
-              <a href='https://www.thehockeyshop.com/collections/ths-open' target='_blank' onClick={toggleModal} className='text-3xl'>Merch</a>
+              <Link to={'/merch'} onClick={toggleModal} className='text-3xl'>Merch</Link>
               <Link to={'/sponsorship'} onClick={toggleModal} className='text-3xl'>Sponsorship</Link>
               <Link to={'/register'} onClick={toggleModal} className='text-3xl'>Register</Link>
             </div>
