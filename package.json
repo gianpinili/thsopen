@@ -10,9 +10,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@googlemaps/js-api-loader": "^1.16.6",
+    "dotenv": "^16.4.5",
     "lucide-react": "^0.396.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-photo-album": "^2.4.1",
     "react-router-dom": "^6.24.0"
   },
   "devDependencies": {

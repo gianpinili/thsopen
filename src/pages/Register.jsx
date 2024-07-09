@@ -1,6 +1,12 @@
 import RegisterHero from "../components/RegisterHero"
+import { useEffect } from "react"
 
 function Register() {
+
+ useEffect(() => {
+  window.scrollTo(0, 0);
+ })
+
  return (
   <>
    <RegisterHero />

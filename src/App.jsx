@@ -3,12 +3,12 @@ import Home from './pages/Home.jsx'
 import About from './pages/About.jsx';
 import EventsList from './pages/EventsList.jsx'
 import Open2024 from './pages/Open2024.jsx'
-import MerchList from './pages/MerchList.jsx'
+import MerchPage from './pages/MerchPage.jsx'
 import SponsorForm from './pages/SponsorForm.jsx'
 import Register from './pages/Register.jsx'
 import Contact from './pages/Contact.jsx'
 import Footer from './components/Footer.jsx'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
 
@@ -21,7 +21,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/events" element={<EventsList />} />
           <Route path="/events/thsopen2024" element={<Open2024 />} />
-          <Route path="/merch" element={<MerchList />} />
+          <Route path="/merch" element={<MerchPage />} />
           <Route path="/sponsorship" element={<SponsorForm />} />
           <Route path="/register" element={<Register />} />
           <Route path="/contact" element={<Contact />} />
