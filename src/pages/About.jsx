@@ -1,12 +1,10 @@
 import TheShop from '../assets/thehockeyshop.jpg';
 import AboutThsOpen from '../components/AboutThsOpen.jsx';
-// import GoogleMaps from '../components/GoogleMaps.jsx';
 import GoogleMap from '../assets/map.png';
 import { useEffect } from 'react';
 
 function About() {
 
- //on mount, scroll to top
  useEffect(() => {
   window.scrollTo(0, 0);
  })
