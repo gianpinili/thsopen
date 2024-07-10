@@ -22,7 +22,7 @@ function Nav() {
 
   return (
     <>
-      <div className='font-spacemono fixed top-0 flex justify-between items-center pt-6 pb-6 px-[4rem] md:mb-14 z-20 bg-transparent bg-opacity-95 w-full max-h-[10rem] text-white'>
+      <div className='font-spacemono fixed top-0 flex justify-between items-center pt-6 pb-6 pr-[4rem] md:mb-14 z-20 bg-transparent bg-opacity-95 w-full max-h-[10rem] text-white'>
         <Link to={'/'} onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className='flex justify-center'>
           <picture>
             <source
@@ -40,7 +40,7 @@ function Nav() {
               height={500} />
           </picture>
         </Link>
-        <div className='hidden md:flex gap-6 mr-[5.5rem]'>
+        <div className='hidden md:flex gap-6 mr-[2rem]'>
           <Link to={'/about'} className={`${getNavLinkClass('/about')} duration-200`}>About</Link>
           <Link to={'/sponsorship'} className={`${getNavLinkClass('/sponsorship')} duration-200`}>Sponsor</Link>
           <Link to={'/events'} className={`${getNavLinkClass('/events')} duration-200`}>Events</Link>

@@ -1,15 +1,16 @@
 import Hero from "../components/Hero";
-import Event from "../components/Event";
 import Merch from "../components/Merch";
 import Sponsor from "../components/Sponsor";
 import Donation from "../components/Donation";
+
+import Events from '../components/Events';
 
 function Home() {
  return (
   <>
    <div>
     <Hero />
-    <Event />
+    <Events />
     <Sponsor />
     <Merch />
     <Donation />
