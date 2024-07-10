@@ -1,8 +1,8 @@
 import { useState, useEffect, useRef } from 'react';
-import { Link } from 'react-router-dom';
 import heroVid from '../assets/herooption.mp4';
 import heroVidMobile from '../assets/heromobile.mp4';
 import useIntersectionObserver from '../useIntersectionObserver';
+import { MoveDown } from 'lucide-react';
 
 function Hero() {
  const [ref, isIntersecting] = useIntersectionObserver({
@@ -37,6 +37,13 @@ function Hero() {
   }
  }, [isMobile]);
 
+ const scrollTo = (id) => {
+  const element = document.getElementById(id);
+  if (element) {
+   element.scrollIntoView({ behavior: 'smooth' });
+  }
+ };
+
  return (
   <div
    ref={ref}
@@ -69,9 +76,7 @@ function Hero() {
     </video>
    </div>
    <div className="relative z-10 flex flex-col items-center justify-center h-[100vh] gap-10 md:mx-[5rem] lg:mx-[10rem] xl:mx-[15rem] 2xl:mx-[20rem]">
-    <Link to={'/register'} className="border-white border py-2 px-4 rounded mt-[34rem] hover:bg-slate-100 hover:text-black duration-200 md:py-4 md:px-8">
-     Register
-    </Link>
+    <MoveDown onClick={() => scrollTo('events')} className="border rounded-full p-2 w-[50px] h-[50px] hover:bg-white hover:text-black duration-300 cursor-pointer hover:scale-110 mx-auto mt-[35rem]" />
    </div>
   </div>
  );

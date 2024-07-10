@@ -9,6 +9,7 @@ import Register from './pages/Register.jsx'
 import Contact from './pages/Contact.jsx'
 import Footer from './components/Footer.jsx'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import './index.css';
 
 function App() {
 

@@ -34,7 +34,7 @@ function EventsList() {
             style={{ backgroundImage: `url(${MitchHero})` }}
           >
           </div>
-          <p className="text-[#ffffff] text-[4rem] font-bold font-poppins absolute top-[30%] left-[50%] translate-x-[-50%] translate-y-[-50%] md:text-[6rem] lg:text-[8rem] xl:text-[10rem] 2xl:text-[11rem]">
+          <p className="text-[#ffffff] text-[4rem] font-bold font-poppins absolute top-[37%] left-[50%] translate-x-[-50%] translate-y-[-50%] md:text-[6rem] lg:text-[8rem] xl:text-[10rem] 2xl:text-[11rem]">
             <span className="title-shadow">EVENTS</span>
             <MoveDown onClick={() => scrollTo('events')} className="border rounded-full p-2 w-[50px] h-[50px] hover:bg-white hover:text-black duration-300 cursor-pointer hover:scale-110 mx-auto" />
           </p>
