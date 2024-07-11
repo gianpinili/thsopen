@@ -43,7 +43,7 @@ function Sponsor() {
  return (
   <div
    ref={ref}
-   className={`bg-white text-black py-36 px-[1.5rem] md:px-[2rem] lg:px-[3rem] font-spacemono 2xl:px-[8rem] transition-opacity duration-[2s] ${isIntersecting ? 'opacity-100' : 'opacity-0'}`}
+   className={`bg-[#ffffff] text-black py-36 px-[1.5rem] md:px-[2rem] lg:px-[3rem] font-spacemono 2xl:px-[8rem] transition-opacity duration-[2s] ${isIntersecting ? 'opacity-100' : 'opacity-0'}`}
   >
    <h1 className="font-poppins font-semibold text-[2rem] md:text-5xl uppercase tracking-tighter text-black">
     Sponsorship Opportunities
