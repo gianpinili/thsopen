@@ -48,6 +48,7 @@ function Open2024() {
      <p>Get ready to tee off for a great cause at the 1st Annual THS Open, proudly presented by The Hockey Shop!</p>
      <p>This isn&apos;t just any golf tournament - it&apos;s an opportunity to enjoy 18 holes of challenging play while supporting a fantastic cause. All proceeds from the event will go to the Canucks Autism Network (CAN), helping to raise awareness and support for autism.</p>
      <p>We look forward to seeing you out there and making the first THS Open a huge success! Let&apos;s make some memories and support a great cause together. See you on the green!</p>
+     <p><span className='font-bold underline'>LUNCH</span>: Burger & Brew (or drink of your choice)</p>
      <p><span className='font-bold underline'>FORMAT</span>: Texas Scramble</p>
      <p>Each player in the four-person scramble hits a drive. The team chooses the best drive and selects that position for the next shot. Each player hits from the chosen spot, and the process continues until someone from the team sinks a putt. The group records its score for the hole and moves on to the next teeing ground.</p>
      <p>Minimum of 3 drives per player must be used.</p>
