@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import useIntersectionObserver from '../useIntersectionObserver';
 import MitchHero from '../assets/mitchblacknwhite.jpg';
 import { MoveDown } from 'lucide-react';
+import OurSponsors from '../components/OurSponsors';
 
 function SponsorForm() {
 
@@ -92,6 +93,7 @@ function SponsorForm() {
      ))}
     </div>
    </div>
+   <OurSponsors />
   </>
  );
 }

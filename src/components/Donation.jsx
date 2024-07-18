@@ -1,4 +1,4 @@
-import CanWhiteLogo from '../assets/canwhitelogo.png';
+import CanWhiteLogo from '../assets/whitecanlogo.png';
 import CanWhiteLogoW from '../assets/canwhitelogo.webp';
 
 import useIntersectionObserver from '../useIntersectionObserver';
