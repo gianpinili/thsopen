@@ -17,11 +17,11 @@ function Contact() {
     <div>
      <div
       ref={headerRef}
-      className={`h-[90vh] mt-[-1rem] opacity-0 bg-no-repeat bg-cover bg-center relative transition-opacity duration-[2s] ${isHeaderIntersecting ? 'opacity-70' : 'opacity-0'}`}
+      className={`h-[100vh] mt-[-8rem] opacity-0 bg-no-repeat bg-cover bg-center relative transition-opacity duration-[2s] ${isHeaderIntersecting ? 'opacity-70' : 'opacity-0'}`}
       style={{ backgroundImage: `url(${Newlands})` }}
      >
      </div>
-     <p className="text-white text-[3rem] font-bold font-poppins absolute top-[30%] left-[50%] translate-x-[-50%] translate-y-[-50%] md:text-[5rem] lg:text-[7rem] xl:text-[9rem] 2xl:text-[10rem] uppercase">
+     <p className="text-white text-[3rem] font-bold font-poppins absolute top-[30%] left-[50%] translate-x-[-50%] translate-y-[-50%] md:text-[5rem] lg:text-[7rem] xl:text-[9rem] 2xl:text-[10rem] uppercase title-shadow">
       Contact
      </p>
     </div>

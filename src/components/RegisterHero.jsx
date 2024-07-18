@@ -17,7 +17,7 @@ function RegisterHero() {
       loop
       muted
       playsInline
-      className="absolute top-0 left-0 w-full h-full object-cover opacity-70 mt-[-3.5rem] md:mt-[-2.75rem] 2xl:mt-[-4rem]"
+      className="absolute top-[-1rem] left-0 w-full h-[115vh] object-cover opacity-70 mt-[-8.5rem] md:mt-[-8rem] 2xl:mt-[-10rem]"
       style={{ pointerEvents: 'none' }}
      >
       <source src={heroVideo} type="video/mp4" />

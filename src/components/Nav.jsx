@@ -47,7 +47,7 @@ function Nav() {
           <Link to={'/merch'} className={`${getNavLinkClass('/merch')} duration-200`}>Merch</Link>
         </div>
         <div className='hidden md:block'>
-          <Link to={'/register'} className='border-white border py-2 px-4 hover:bg-slate-200 hover:text-black duration-200 rounded-md hover:scale-110'>Register</Link>
+          <Link to={'/register'} className='border-white border py-2 px-4 hover:bg-slate-200 hover:text-black duration-200 rounded-md hover:scale-110'>Register: Aug 10</Link>
         </div>
         <div className='md:hidden'>
           <Menu onClick={toggleModal} className='mr-[-2rem] cursor-pointer hover:scale-125 duration-200' />
@@ -63,7 +63,7 @@ function Nav() {
               <Link to={'/events'} onClick={toggleModal} className='text-3xl'>Events</Link>
               <Link to={'/merch'} onClick={toggleModal} className='text-3xl'>Merch</Link>
               <Link to={'/sponsorship'} onClick={toggleModal} className='text-3xl'>Sponsorship</Link>
-              <Link to={'/register'} onClick={toggleModal} className='text-3xl'>Register</Link>
+              <Link to={'/register'} onClick={toggleModal} className='text-3xl'>Register: Aug 10</Link>
             </div>
           </div>
         </div >
