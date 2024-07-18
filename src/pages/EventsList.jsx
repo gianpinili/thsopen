@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import MitchHero from '../assets/mitchblacknwhite2.jpg';
+import MitchHeroMobile from '../assets/mitchheromobile.png';
 import image3 from '../assets/image3.jpg';
 import image3W from '../assets/image3.webp';
 import image3MD from '../assets/image3-md.webp';
@@ -7,7 +8,7 @@ import image3LG from '../assets/image3-lg.webp';
 import image3XL from '../assets/image3-xl.webp';
 import { useEffect } from 'react';
 import { MoveDown, MoveRight } from 'lucide-react';
-import useIntersectionObserver from '../useIntersectionObserver'; // Adjust the path if necessary
+import useIntersectionObserver from '../useIntersectionObserver';
 
 function EventsList() {
   const scrollTo = (id) => {
@@ -28,12 +29,13 @@ function EventsList() {
     <>
       <div className="relative ">
         <div>
-          <div
+          <picture
             ref={headerRef}
             className={`h-[100vh]  opacity-0 bg-no-repeat bg-cover bg-center relative transition-opacity duration-[2s] ${isHeaderIntersecting ? 'opacity-100' : 'opacity-0'}`}
-            style={{ backgroundImage: `url(${MitchHero})` }}
           >
-          </div>
+            <source srcSet={MitchHeroMobile} media="(max-width: 768px)" />
+            <img src={MitchHero} alt="Mitch Hero" className="w-full h-[100vh] object-cover" />
+          </picture>
           <p className="text-[#ffffff] text-[4rem] font-bold font-poppins absolute top-[37%] left-[50%] translate-x-[-50%] translate-y-[-50%] md:text-[6rem] lg:text-[8rem] xl:text-[10rem] 2xl:text-[11rem]">
             <span className="title-shadow">EVENTS</span>
             <MoveDown onClick={() => scrollTo('events')} className="border rounded-full p-2 w-[50px] h-[50px] hover:bg-white hover:text-black duration-300 cursor-pointer hover:scale-110 mx-auto" />
