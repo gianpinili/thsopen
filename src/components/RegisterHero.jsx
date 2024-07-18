@@ -26,7 +26,7 @@ function RegisterHero() {
     </div>
     <div className="relative z-10 flex flex-col items-center justify-center h-[100vh] gap-10 md:mx-[5rem] lg:mx-[10rem] xl:mx-[15rem] 2xl:mx-[20rem]">
      <h1 className="text-white leading-9 scale-y-200 tracking-wide text-[2rem] md:text-[3rem] xl:text-[3.1rem] bg-transparent uppercase font-poppins font-extrabold text-center title-shadow justify-self-stretch">Register Your Team</h1>
-     <p className='text-center text-[.8rem] md:text-[1rem] mx-6 lg:text-[1.1rem]'>This isn&apos;t just any golf tournament--it&apos;s an opportunity to enjoy 18 holes of challenging play while supporting a fantastic cause. All proceeds from the event will go to the Canucks Autism Network (CAN) helping to raise awareness and support for autism.</p>
+     <p className='text-center text-[.8rem] md:text-[1rem] mx-6 lg:text-[1.1rem]'>This isn&apos;t just any golf tournament - it&apos;s an opportunity to enjoy 18 holes of challenging play while supporting a fantastic cause. All proceeds from the event will go to the Canucks Autism Network (CAN), helping deliver programs for children, youth, and adults, while promoting inclusion and acceptance across BC and beyond.</p>
     </div>
    </div>
   </>
