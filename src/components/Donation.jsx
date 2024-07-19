@@ -12,13 +12,13 @@ function Donation() {
   <div ref={ref} className={`transition-opacity duration-[2s] ${isIntersecting ? 'opacity-100' : 'opacity-0'}`}>
    <div className="marquee bg-[#1c1c1c] pt-[3rem]">
     <div className="marquee-content">
-     <h1 className="uppercase font-poppins text-[6rem] font-bold">Swing for a cause</h1>
-     <h1 className="uppercase font-poppins text-[6rem] font-bold">Swing for a cause</h1>
-     <h1 className="uppercase font-poppins text-[6rem] font-bold">Swing for a cause</h1>
+     <h1 className="uppercase font-poppins text-[6rem] font-bold">Swing for acceptance</h1>
+     <h1 className="uppercase font-poppins text-[6rem] font-bold">Swing for acceptance</h1>
+     <h1 className="uppercase font-poppins text-[6rem] font-bold">Swing for acceptance</h1>
      {/* Duplicate the content */}
-     <h1 className="uppercase font-poppins text-[6rem] font-bold">Swing for a cause</h1>
-     <h1 className="uppercase font-poppins text-[6rem] font-bold">Swing for a cause</h1>
-     <h1 className="uppercase font-poppins text-[6rem] font-bold">Swing for a cause</h1>
+     <h1 className="uppercase font-poppins text-[6rem] font-bold">Swing for acceptance</h1>
+     <h1 className="uppercase font-poppins text-[6rem] font-bold">Swing for acceptance</h1>
+     <h1 className="uppercase font-poppins text-[6rem] font-bold">Swing for acceptance</h1>
     </div>
    </div>
    <section className="bg-[#1c1c1c] font-spacemono py-[3rem] px-[1.5rem] flex flex-col md:px-[2rem] lg:px-[3rem] md:h-full 2xl:px-[8rem] gap-14 md:flex-row">

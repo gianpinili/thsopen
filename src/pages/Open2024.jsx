@@ -8,8 +8,8 @@ function Open2024() {
   window.scrollTo(0, 0);
  }, []);
 
- const [leftSideRef, isLeftSideIntersecting] = useIntersectionObserver({ threshold: 0.4 });
- const [rightSideRef, isRightSideIntersecting] = useIntersectionObserver({ threshold: 0.4 });
+ const [leftSideRef, isLeftSideIntersecting] = useIntersectionObserver({ threshold: 0.2 });
+ const [rightSideRef, isRightSideIntersecting] = useIntersectionObserver({ threshold: 0.2 });
 
  return (
   <>
@@ -17,7 +17,7 @@ function Open2024() {
     {/* LEFT SIDE */}
     <div
      ref={leftSideRef}
-     className={`flex flex-col items-start gap-8 md:w-1/3 md:mr-[-6rem] transition-opacity duration-[2s] ${isLeftSideIntersecting ? 'opacity-100' : 'opacity-0'}`}
+     className={`flex flex-col items-start gap-8 md:w-1/3 md:mr-[-6rem] transition-opacity duration-[1s] ${isLeftSideIntersecting ? 'opacity-100' : 'opacity-0'}`}
     >
      <Link to={'/events'} className='flex gap-3 mb-6 hover:scale-110 duration-300 hover:text-green-300'>
       <MoveLeft />Back to All Events
@@ -28,6 +28,16 @@ function Open2024() {
       <p>1:00 PM - 5:30 PM</p>
      </div>
      <div className='hover:scale-110 duration-300'>
+      <p className='font-semibold border-b text-start mb-2 pb-1'>Warmup Course</p>
+      <a href="https://www.google.com/maps?rlz=1C1ONGR_enCA1054CA1054&gs_lcrp=EgZjaHJvbWUqEAgAEAAYgwEY4wIYsQMYgAQyEAgAEAAYgwEY4wIYsQMYgAQyFggBEC4YgwEYrwEYxwEYsQMYgAQYjgUyBwgCEAAYgAQyBwgDEAAYgAQyBwgEEAAYgAQyBwgFEAAYgAQyBwgGEAAYgAQyBggHEEUYPNIBCDI4MTNqMGoxqAIAsAIA&um=1&ie=UTF-8&fb=1&gl=ca&sa=X&geocode=KdMmNYm0z4VUMb_x0fIholZ8&daddr=21025+48+Ave,+Langley,+BC+V3A+3M3" target='_blank'>
+       <p>Haus of Golf</p>
+       <p className='text-[#ffffff]'>6286 203 St. A130,</p>
+       <p>Langle TWP, BC V2Y3S1</p>
+       <p>Entrance off 62nd Avenue</p>
+      </a>
+     </div>
+     <div className='hover:scale-110 duration-300'>
+      <p className='font-semibold border-b text-start mb-2 pb-1'>Tournament Course</p>
       <a href="https://www.google.com/maps?rlz=1C1ONGR_enCA1054CA1054&gs_lcrp=EgZjaHJvbWUqEAgAEAAYgwEY4wIYsQMYgAQyEAgAEAAYgwEY4wIYsQMYgAQyFggBEC4YgwEYrwEYxwEYsQMYgAQYjgUyBwgCEAAYgAQyBwgDEAAYgAQyBwgEEAAYgAQyBwgFEAAYgAQyBwgGEAAYgAQyBggHEEUYPNIBCDI4MTNqMGoxqAIAsAIA&um=1&ie=UTF-8&fb=1&gl=ca&sa=X&geocode=KdMmNYm0z4VUMb_x0fIholZ8&daddr=21025+48+Ave,+Langley,+BC+V3A+3M3" target='_blank'>
        <p>Newlands Golf Club</p>
        <p className='text-[#ffffff]'>Championship Course</p>

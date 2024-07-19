@@ -40,7 +40,7 @@ function Nav() {
               height={500} />
           </picture>
         </Link>
-        <div className='hidden md:flex gap-6 mr-[2rem]'>
+        <div className='hidden md:flex gap-6 mr-[-2rem]'>
           <Link to={'/about'} className={`${getNavLinkClass('/about')} duration-200`}>About</Link>
           <Link to={'/sponsorship'} className={`${getNavLinkClass('/sponsorship')} duration-200`}>Sponsor</Link>
           <Link to={'/events'} className={`${getNavLinkClass('/events')} duration-200`}>Events</Link>

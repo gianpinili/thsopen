@@ -41,7 +41,7 @@ function Merch() {
       <div className='mt-[1rem] mb-12 flex flex-col-reverse lg:flex-row-reverse md:items-center md:gap-10 md:justify-center'>
         <div className='md:w-1/2 lg:px-[3rem] mt-[3rem]  lg:mt-[-3rem] xl:mt-[-5rem]'>
           <h1 className="font-poppins font-bold text-[4rem] md:text-[6rem] uppercase tracking-tighter">MERCH</h1>
-          <p className="my-3 mb-10 md:text-xl">Swing for a cause. All proceeds go to Canucks Autism Network (CAN), helping deliver programs for children, youth, and adults, while promoting inclusion and acceptance across BC and beyond.</p>
+          <p className="my-3 mb-10 md:text-xl">Swing for acceptance. All proceeds go to Canucks Autism Network (CAN), helping deliver programs for children, youth, and adults, while promoting inclusion and acceptance across BC and beyond.</p>
           <a className="border border-white px-6 py-3 rounded-md hover:bg-white hover:text-black hover:font-bold duration-200" target='_blank' href="https://www.thehockeyshop.com/collections/ths-open">Shop THS Open</a>
         </div>
         <div className='grid grid-cols-2 gap-4 m-auto'>
