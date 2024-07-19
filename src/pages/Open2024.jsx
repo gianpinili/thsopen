@@ -28,7 +28,7 @@ function Open2024() {
       <p>1:00 PM - 5:30 PM</p>
      </div>
      <div className='hover:scale-110 duration-300'>
-      <p className='font-semibold border-b text-start mb-2 pb-1'>Warmup Course</p>
+      <p className='font-semibold border-b text-start mb-2 pb-1'>Warmup Facility</p>
       <a href="https://maps.app.goo.gl/Pbj9RJAodRFLGJx67" target='_blank'>
        <p>Haus of Golf</p>
        <p className='text-[#ffffff]'>6286 203 St. A130,</p>
