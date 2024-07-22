@@ -11,7 +11,7 @@ function RegisterHero() {
  return (
   <>
    <div ref={ref} className={`mt-[2rem] 2xl:mt-[3.3rem] font-spacemono relative w-full max-h-screen overflow-hidden transition-opacity duration-[1.5s] ${isIntersecting ? 'opacity-100' : 'opacity-0'}`}>
-    <div className="absolute inset-0 overflow-hidden">
+    <div className="absolute inset-0 overflow-hidden mt-[1rem]">
      <video
       autoPlay
       loop
