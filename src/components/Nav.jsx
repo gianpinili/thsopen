@@ -22,8 +22,8 @@ function Nav() {
 
   return (
     <>
-      <div className='font-spacemono fixed top-0 flex justify-between items-center pt-6 pb-6 pr-[4rem] md:mb-14 z-20 bg-transparent bg-opacity-95 w-full max-h-[10rem] text-white'>
-        <Link to={'/'} onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className='flex justify-center'>
+      <div className='font-spacemono fixed top-0 flex justify-between items-center pt-6 pb-6 md:mb-14 z-20 bg-transparent bg-opacity-95 w-full max-h-[10rem] text-white'>
+        <Link to={'/'} onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className='flex mr-[4rem] justify-between'>
           <picture>
             <source
               srcSet={`${LogoW} 2048w,
@@ -36,21 +36,21 @@ function Nav() {
       (max-width: 1536px) 1536w
       2048w'
               type='image/webp' />
-            <img className='w-[40%] md:max-w-[150px] max-h-[70px] ml-[3rem]  z-50' src={Logo} alt="THS Open Logo" width={500}
+            <img className='w-[40%] md:max-w-[150px] max-h-[70px] ml-[3rem]  z-50 ' src={Logo} alt="THS Open Logo" width={500}
               height={500} />
           </picture>
         </Link>
-        <div className='hidden md:flex gap-6 mr-[-2rem]'>
+        <div className='hidden md:flex gap-6 ml-[-7rem]'>
           <Link to={'/about'} className={`${getNavLinkClass('/about')} duration-200`}>About</Link>
           <Link to={'/sponsorship'} className={`${getNavLinkClass('/sponsorship')} duration-200`}>Sponsor</Link>
           <Link to={'/events'} className={`${getNavLinkClass('/events')} duration-200`}>Events</Link>
           <Link to={'/merch'} className={`${getNavLinkClass('/merch')} duration-200`}>Merch</Link>
         </div>
         <div className='hidden md:block'>
-          <Link to={'/register'} className='border-white border py-2 px-4 hover:bg-slate-200 hover:text-black duration-200 rounded-md hover:scale-110'>Register: Aug 10</Link>
+          <Link to={'/register'} className='border-white border py-2 px-4 hover:bg-slate-200 hover:text-black duration-200 rounded-md hover:scale-110 mr-10'>Register</Link>
         </div>
         <div className='md:hidden'>
-          <Menu onClick={toggleModal} className='mr-[-2rem] cursor-pointer hover:scale-125 duration-200' />
+          <Menu onClick={toggleModal} className='mr-[2rem] cursor-pointer hover:scale-125 duration-200' />
         </div>
       </div>
 
@@ -63,7 +63,7 @@ function Nav() {
               <Link to={'/events'} onClick={toggleModal} className='text-3xl'>Events</Link>
               <Link to={'/merch'} onClick={toggleModal} className='text-3xl'>Merch</Link>
               <Link to={'/sponsorship'} onClick={toggleModal} className='text-3xl'>Sponsorship</Link>
-              <Link to={'/register'} onClick={toggleModal} className='text-3xl'>Register: Aug 10</Link>
+              <Link to={'/register'} onClick={toggleModal} className='text-3xl'></Link>
             </div>
           </div>
         </div >

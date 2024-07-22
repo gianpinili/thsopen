@@ -46,8 +46,8 @@ function Open2024() {
      </div>
      <div className='flex flex-col gap-2'>
       <a href='https://docs.google.com/forms/d/e/1FAIpQLSfhl-5aWzEn6Qt9EbLzamzGTDAPge4M-QHQYpSGgzJhtXg5VQ/viewform' target='_blank' className='text-blue-500 duration-300 hover:scale-110'>Become a Sponsor</a>
-      {/* <a href='https://docs.google.com/forms/d/e/1FAIpQLSdXnnFZA88NFBH-Fg546B_edYD9xTRObjKpZX3C82Igq5Ls4A/viewform?vc=0&c=0&w=1&flr=0' target='_blank' className='text-green-300 hover:scale-110 duration-300 underline'>Registration: August 10, 2024</a> */}
-      <p className='text-green-300 hover:scale-110 duration-300 underline'>Registration: August 10, 2024</p>
+      <a href='https://docs.google.com/forms/d/e/1FAIpQLSdXnnFZA88NFBH-Fg546B_edYD9xTRObjKpZX3C82Igq5Ls4A/viewform?vc=0&c=0&w=1&flr=0' target='_blank' className='text-green-300 hover:scale-110 duration-300 underline'>Register Your Team</a>
+      {/* <p className='text-green-300 hover:scale-110 duration-300 underline'>Registration: August 10, 2024</p> */}
       <a href="https://support.canucksautism.ca/site/TR/CANPro-Am/Pro-Am?team_id=3280&pg=team&fr_id=1280" target='_blank' className='text-blue-500 duration-300 hover:scale-110'>Donate to CAN</a>
      </div>
     </div>
