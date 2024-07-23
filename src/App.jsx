@@ -4,7 +4,8 @@ import About from './pages/About.jsx';
 import EventsList from './pages/EventsList.jsx'
 import Open2024 from './pages/Open2024.jsx'
 import MerchPage from './pages/MerchPage.jsx'
-import SponsorForm from './pages/SponsorForm.jsx'
+import SponsorPage from './pages/SponsorPage.jsx'
+import SponsorForm from './pages/SponsorForm.jsx';
 import Register from './pages/Register.jsx'
 import Contact from './pages/Contact.jsx'
 import Footer from './components/Footer.jsx'
@@ -23,7 +24,8 @@ function App() {
           <Route path="/events" element={<EventsList />} />
           <Route path="/events/thsopen2024" element={<Open2024 />} />
           <Route path="/merch" element={<MerchPage />} />
-          <Route path="/sponsorship" element={<SponsorForm />} />
+          <Route path="/sponsorship" element={<SponsorPage />} />
+          <Route path="/sponsor-form" element={<SponsorForm />} />
           <Route path="/register" element={<Register />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<Home />} />

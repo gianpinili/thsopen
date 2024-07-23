@@ -1,101 +1,71 @@
-import { ChevronDown, ChevronUp } from 'lucide-react';
-import { useState, useEffect } from 'react';
-import useIntersectionObserver from '../useIntersectionObserver';
-import MitchHero from '../assets/mitchblacknwhite.jpg';
-import { MoveDown } from 'lucide-react';
-import OurSponsors from '../components/OurSponsors';
+import SponsorDescription from "../components/SponsorDescription"
 
 function SponsorForm() {
-
- const sponsorData = [
-  {
-   level: "Title Sponsor",
-   included: ["Title Sponsor, eg., 'THS Open Presented by [Your Company]'"]
-  },
-  {
-   level: "Gold Sponsor",
-   included: ["Burger and Brew Sponsor"]
-  },
-  {
-   level: "Silver Sponsor",
-   included: [
-    "Golf Cart Sponsor #1",
-    "Golf Cart Sponsor #2",
-    "Beverage Ticket Sponsor",
-    "Putting Challenge Sponsor",
-    "Open to sponsorship ideas"
-   ]
-  },
-  {
-   level: "Bronze Sponsor",
-   included: [
-    "Includes signage or activation on a hole",
-    "We also welcome and appreciate any branded items for tee gifts and raffle prizes."
-   ]
-  }
- ];
-
- const scrollTo = (id) => {
-  const element = document.getElementById(id);
-  if (element) {
-   element.scrollIntoView({ behavior: 'smooth' });
-  }
- };
-
- const [expandedSponsor, setExpandedSponsor] = useState(null);
-
- const toggleSponsor = (level) => {
-  setExpandedSponsor(expandedSponsor === level ? null : level);
- };
-
- useEffect(() => {
-  window.scrollTo(0, 0);
- }, []);
-
- const [headerRef, isHeaderIntersecting] = useIntersectionObserver({ threshold: 0.5 });
-
  return (
   <>
-   <div>
-    <div
-     ref={headerRef}
-     className={`h-[100vh] opacity-0 bg-no-repeat bg-cover bg-center relative transition-opacity duration-[2s] ${isHeaderIntersecting ? 'opacity-100' : 'opacity-0'}`}
-     style={{ backgroundImage: `url(${MitchHero})` }}
-    >
-    </div>
-    <p className="text-[#ffffff] text-[4rem] font-bold font-poppins absolute top-[55%] left-[50%] translate-x-[-50%] translate-y-[-50%] md:text-[6rem] lg:text-[8rem] xl:text-[10rem] 2xl:text-[11rem]">
-     <span className="title-shadow">SPONSOR</span>
-     <MoveDown onClick={() => scrollTo('sponsors')} className="border rounded-full p-2 w-[50px] h-[50px] hover:bg-[#ffffff] hover:text-black duration-300 cursor-pointer hover:scale-110 mx-auto" />
-    </p>
-   </div>
-   <div className="pt-[5rem]  md:pt-[1rem] md:pb-[7rem] bg-black flex flex-col md:flex-row px-[1rem]">
-    <div className='md:w-1/2 flex flex-col md:px-[2rem] md:pt-[5rem] lg:px-[4rem] xl:px-[6rem] 2xl:px-[8rem] items-center md:items-start'>
-     <h1 className="text-white font-poppins font-extrabold text-2xl md:text-3xl lg:text-4xl text-left uppercase tracking-tighter">For all sponsorship inquiries, please reach out to us using the form here:</h1>
-     <div className='flex my-8'>
-      <a href='https://docs.google.com/forms/d/e/1FAIpQLSfhl-5aWzEn6Qt9EbLzamzGTDAPge4M-QHQYpSGgzJhtXg5VQ/viewform' target='_blank' rel="noreferrer" className='rounded-md border border-white px-8 py-5 text-white font-bold hover:bg-black hover:text-white duration-300 uppercase md:mt-[3rem]'>Sponsorship Inquiry</a>
-     </div>
-    </div>
-    <div id="sponsors" className="text-white mt-10 bg-black py-6 px-[.5rem] md:px-[1rem] font-spacemono md:w-1/2 md:mt-[6rem]">
-     {sponsorData.map((sponsor, index) => (
-      <div key={index} className="border-b border-gray-400 py-4 text-white md:px-[2rem]">
-       <div className="mb-3 text-white flex justify-between items-center cursor-pointer" onClick={() => toggleSponsor(sponsor.level)}>
-        <h2 className="font-poppins text-xl md:text-2xl font-bold uppercase tracking-tighter text-white bg-black">{sponsor.level}</h2>
-        {expandedSponsor === sponsor.level ? <ChevronUp className="text-white" /> : <ChevronDown className="text-white" />}
-       </div>
-       <div className={`overflow-hidden transition-all duration-[1.5s] ${expandedSponsor === sponsor.level ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'}`}>
-        <ul className="text-white mt-2 ml-4 list-disc text-sm md:px-[2rem] md:text-lg">
-         {sponsor.included.map((item, index) => (
-          <li key={index}>{item}</li>
-         ))}
-        </ul>
-       </div>
+   <SponsorDescription />
+   <h1 className="bg-[#1c1c1c] pt-10 font-poppins font-extrabold tracking-tight text-4xl sm:text-[2.5rem] uppercase md:text-[2.75rem] lg:text-[3rem] xl:text-[3.25rem] 2xl:text-[3.5rem] 2xl:leading-[3rem] text-center">Sponsorship Form</h1>
+   <div className="bg-[#1c1c1c] px-4 py-10 flex justify-center">
+    <form action="" className="border py-14 px-[1rem] md:px-[3rem] flex flex-col gap-4 rounded-lg" >
+     {/* first and last name */}
+     <div className="flex flex-col gap-4">
+      <div className="">
+       <label htmlFor="firstName">First Name</label>
+       <input type="text" id="firstName" className="bg-transparent border rounded-md w-full" />
       </div>
-     ))}
-    </div>
+      <div className="">
+       <label htmlFor="lastName" >Last Name</label>
+       <input type="text" id="lastName" className="bg-transparent border rounded-md w-full" />
+      </div>
+     </div>
+     {/* email */}
+     <div className="">
+      <label htmlFor="email" className="">Email</label>
+      <input type="email" id="email" className="bg-transparent border rounded-md w-full" />
+     </div>
+     {/* number */}
+     <div className="">
+      <label htmlFor="number" className="w-1/3">Phone Number</label>
+      <input type="text" id="number" className="bg-transparent border rounded-md w-full" />
+     </div>
+     {/* company */}
+     <div className="">
+      <label htmlFor="companyName" className="w-1/3">Company Name</label>
+      <input type="text" id="companyName" className="bg-transparent border rounded-md w-full" />
+     </div>
+     {/* sponsorship package checkboxes */}
+     <div className="flex flex-col gap-1">
+      <p>What type of Sponsorship Package are you interested in?</p>
+      <div className="flex gap-1">
+       <input type="checkbox" /><label htmlFor="">Bronze Sponsor</label>
+      </div>
+      <div className="flex gap-1">
+       <input type="checkbox" /><label htmlFor="">Silver Sponsor</label>
+      </div>
+      <div className="flex gap-1">
+       <input type="checkbox" /><label htmlFor="">Gold Sponsor</label>
+      </div>
+      <div className="flex gap-1">
+       <input type="checkbox" /><label htmlFor="">Title Sponsor</label>
+      </div>
+     </div>
+     {/* question for client */}
+     <div>
+      <p>Best way for us to contact you?</p>
+      <div className="flex gap-1">
+       <input type="radio" /><label htmlFor="">Email</label>
+      </div>
+      <div className="flex gap-1">
+       <input type="radio" /><label htmlFor="">Phone</label>
+      </div>
+     </div>
+     <div className="flex justify-center">
+      <button className="border border-black bg-white text-black px-8 py-2 rounded-lg hover:text-white hover:bg-black duration-300  font-semibold">Submit</button>
+     </div>
+    </form >
    </div>
-   <OurSponsors />
   </>
- );
+ )
 }
 
-export default SponsorForm;
+export default SponsorForm
