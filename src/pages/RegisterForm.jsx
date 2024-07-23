@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Alert, Snackbar, AlertTitle } from '@mui/material';
 import CheckIcon from '@mui/icons-material/Check';
 import emailjs from 'emailjs-com';
+import ShopifyPayment from '../ShopifyPayment';
 
 function RegisterForm() {
  const [firstPlayer, setFirstPlayer] = useState('');
@@ -14,6 +15,8 @@ function RegisterForm() {
  const [contactPlayerFour, setContactPlayerFour] = useState('');
  const [food, setFood] = useState('');
  const [alert, setAlert] = useState({ open: false, severity: '', message: '' });
+ const [isPaymentInitiated, setIsPaymentInitiated] = useState(false);
+ const productId = 'gid://shopify/ProductVariant/7316169883714'; // Hardcoded product ID
 
  const handleSubmit = async (e) => {
   e.preventDefault();
@@ -62,6 +65,9 @@ function RegisterForm() {
    setContactPlayerThree('');
    setContactPlayerFour('');
    setFood('');
+
+   // Initiate the Shopify payment
+   setIsPaymentInitiated(true);
   } catch (error) {
    setAlert({
     open: true,
@@ -78,6 +84,7 @@ function RegisterForm() {
 
  return (
   <>
+   {isPaymentInitiated && <ShopifyPayment productId={productId} />}
    <h1 className="bg-[#1c1c1c] pt-10 font-poppins font-extrabold tracking-tight text-4xl sm:text-[2.5rem] uppercase md:text-[2.75rem] lg:text-[3rem] xl:text-[3.25rem] 2xl:text-[3.5rem] 2xl:leading-[3rem] text-center">
     Registration Form
    </h1>
