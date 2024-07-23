@@ -10,8 +10,15 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emotion/react": "^11.13.0",
+    "@emotion/styled": "^11.13.0",
     "@googlemaps/js-api-loader": "^1.16.6",
+    "@mui/icons-material": "^5.16.4",
+    "@mui/material": "^5.16.4",
+    "@shopify/buy-button-js": "^2.4.0",
+    "axios": "^1.7.2",
     "dotenv": "^16.4.5",
+    "emailjs-com": "^3.2.0",
     "lucide-react": "^0.396.0",
     "prop-types": "^15.8.1",
     "react": "^18.3.1",

@@ -3,8 +3,8 @@ function SponsorDescription() {
  return (
   <>
    <div className="mt-24 mx-4 font-spacemono py-14 md:px-14 lg:px-[6rem] xl:px-[8rem] px-4">
-    <h3 className="font-semibold text-2xl mb-4 text-center">THS Open Golf Tournament Sponsorship Inquiry</h3>
-    <p className="text-center md:px-[3rem] lg:px-[5rem] 2xl:px-[18rem]">We thank you for your interest in sponsoring our upcoming THS Open Golf Tournament. Your support plays a crucial role in the success of this event. We offer several sponsorship packages to choose from:</p>
+    <h3 className="font-semibold text-2xl md:text-3xl lg:text-4xl xl:text-5xl mb-4 text-center">THS Open Golf Tournament Sponsorship Inquiry</h3>
+    <p className="text-center md:px-[3rem] lg:px-[5rem] 2xl:px-[18rem] xl:text-lg">We thank you for your interest in sponsoring our upcoming THS Open Golf Tournament. Your support plays a crucial role in the success of this event. We offer several sponsorship packages to choose from:</p>
     <div className="">
      <h3 className="font-semibold text-xl md:text-2xl mt-8">Sponsor Levels</h3>
      <div className="my-4 pl-10">

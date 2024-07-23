@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { ChevronDown, ChevronUp } from 'lucide-react';
 import useIntersectionObserver from '../useIntersectionObserver';
+import { Link } from 'react-router-dom';
 
 function Sponsor() {
  const sponsorData = [
@@ -65,7 +66,7 @@ function Sponsor() {
      </div>
     ))}
     <div className='flex justify-center my-8'>
-     <a href="https://docs.google.com/forms/d/e/1FAIpQLSfhl-5aWzEn6Qt9EbLzamzGTDAPge4M-QHQYpSGgzJhtXg5VQ/viewform" target="_blank" rel="noreferrer" className='rounded-md border-2 border-black px-3 py-5 hover:bg-black hover:text-white duration-300 uppercase'>Sponsorship Inquiry</a>
+     <Link to={'/sponsor-form'} className='rounded-md border-2 border-black px-3 py-5 hover:bg-black hover:text-white duration-300 uppercase'>Sponsorship Inquiry</Link>
     </div>
    </div>
   </div>

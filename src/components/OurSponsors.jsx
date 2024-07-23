@@ -6,10 +6,12 @@ import CoquitlamExpressLogo from '../assets/coquitlamexpresslogo.png';
 import HausLogo from '../assets/hauslogo.png';
 import LagaLogo from '../assets/lagalogo.png';
 import OrganikaLogo from '../assets/organikalogo.png';
+import CageLogo from '../assets/cage.png';
 // import AbbyCanucksLogo from '../assets/abbycanuckslogo.png';
 
 const logos = [
  { src: HausLogo, alt: 'Haus Logo' },
+ { src: CageLogo, alt: 'Cage Logo' },
  { src: CoquitlamExpressLogo, alt: 'Coquitlam Express Logo' },
  { src: OrganikaLogo, alt: 'Organika Logo' },
  { src: LagaLogo, alt: 'Laga Logo' },
