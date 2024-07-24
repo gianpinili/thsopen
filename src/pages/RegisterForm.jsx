@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Alert, Snackbar, AlertTitle } from '@mui/material';
 import CheckIcon from '@mui/icons-material/Check';
-// import emailjs from 'emailjs-com';
+import emailjs from 'emailjs-com';
 
 function RegisterForm() {
  const [firstPlayer, setFirstPlayer] = useState('');
@@ -15,7 +15,6 @@ function RegisterForm() {
  const [food, setFood] = useState('');
  const [alert, setAlert] = useState({ open: false, severity: '', message: '', message2: '', title: '' });
  const [isValid, setIsValid] = useState(false);
- // const productId = 'gid://shopify/ProductVariant/7316169883714'; // Hardcoded product ID
 
  const handleSubmit = async (e) => {
   e.preventDefault();
@@ -30,24 +29,24 @@ function RegisterForm() {
    return;
   }
 
-  // const serviceId = 'service_ibimpz9';
-  // const templateId = 'template_lsi2yzv';
-  // const userId = '2FUujzUnE_rq_sE64';
+  const serviceId = 'service_ibimpz9';
+  const templateId = 'template_lsi2yzv';
+  const userId = '2FUujzUnE_rq_sE64';
 
-  // const templateParams = {
-  //   firstPlayer,
-  //   contactPlayerOne,
-  //   secondPlayer,
-  //   contactPlayerTwo,
-  //   thirdPlayer,
-  //   contactPlayerThree,
-  //   fourthPlayer,
-  //   contactPlayerFour,
-  //   food
-  // };
+  const templateParams = {
+   firstPlayer,
+   contactPlayerOne,
+   secondPlayer,
+   contactPlayerTwo,
+   thirdPlayer,
+   contactPlayerThree,
+   fourthPlayer,
+   contactPlayerFour,
+   food
+  };
 
   try {
-   // await emailjs.send(serviceId, templateId, templateParams, userId);
+   await emailjs.send(serviceId, templateId, templateParams, userId);
    setAlert({
     open: true,
     severity: 'success',
@@ -98,7 +97,6 @@ function RegisterForm() {
      className="py-14 flex flex-col gap-4 rounded-lg w-[90vw] md:w-[70vw] lg:w-[60vw] xl:w-[50vw]"
      onSubmit={handleSubmit}
     >
-     {/* Your form fields */}
      <div className="flex flex-col gap-4">
       <div className="">
        <label htmlFor="firstPlayer" className="md:text-[1.2rem] 2xl:text-[1.35rem]">
