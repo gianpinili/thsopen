@@ -240,7 +240,7 @@ function RegisterForm() {
      </div>
      <div className="flex justify-center">
       <button className="border border-black bg-white mt-4 text-black px-8 py-2 rounded-lg hover:text-white hover:bg-black duration-300 font-semibold">
-       Submit
+       Register
       </button>
      </div>
      <p className='opacity-60 italic mt-2'>* Registration is not complete until payment of $900.00 per foursome is received. An email confirmation will be sent once confirmed. *</p>

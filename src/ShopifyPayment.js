@@ -5,7 +5,7 @@ const ShopifyPayment = () => {
   useEffect(() => {
     // Direct checkout URL
     const checkoutUrl =
-      "https://www.thehockeyshop.com/checkouts/bin/2839501a6d7cf3149543898c26591d3a?locale=en&skip_shop_pay=true";
+      "www.thehockeyshop.com/checkouts/bin/ffd69365c2b47fc1552cf2fe1a4486cc";
 
     // Redirect to the checkout URL
     window.location.href = checkoutUrl;
