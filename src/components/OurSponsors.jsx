@@ -10,11 +10,11 @@ import CageLogo from '../assets/cage.png';
 // import AbbyCanucksLogo from '../assets/abbycanuckslogo.png';
 
 const logos = [
- { src: HausLogo, alt: 'Haus Logo' },
- { src: CageLogo, alt: 'Cage Logo' },
- { src: CoquitlamExpressLogo, alt: 'Coquitlam Express Logo' },
- { src: OrganikaLogo, alt: 'Organika Logo' },
- { src: LagaLogo, alt: 'Laga Logo' },
+ { src: HausLogo, alt: 'Haus Logo', href: 'https://hausofgolf.ca/' },
+ { src: CageLogo, alt: 'Cage Logo', href: 'https://www.bvrberbros.com/' },
+ { src: CoquitlamExpressLogo, alt: 'Coquitlam Express Logo', href: 'https://www.coquitlamexpress.ca/' },
+ { src: OrganikaLogo, alt: 'Organika Logo', href: 'https://organika.com/' },
+ { src: LagaLogo, alt: 'Laga Logo', href: 'http://www.lagasports.com/' },
  // { src: AbbyCanucksLogo, alt: 'Abby Canucks Logo' },
 ];
 
@@ -81,7 +81,9 @@ function OurSponsors() {
     >
      {logos.map((logo, index) => (
       <div key={index} className="flex justify-center items-center p-4 mt-6">
-       <img src={logo.src} alt={logo.alt} className=" w-[70%] lg:w-[70%] rounded-md" draggable="false" />
+       <a href={logo.href} target="_blank" rel="noreferrer" className='w-[85%] md:w-[80%]'>
+        <img src={logo.src} alt={logo.alt} className=" w-[100%] rounded-md" draggable="false" />
+       </a>
       </div>
      ))}
     </Carousel>
