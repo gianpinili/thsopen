@@ -16,6 +16,7 @@ function Register() {
   }
  };
 
+
  return (
   <>
    <RegisterHero />
