@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Alert, Snackbar, AlertTitle } from '@mui/material';
 import CheckIcon from '@mui/icons-material/Check';
 import emailjs from 'emailjs-com';
+import ShopifyPayment from '../ShopifyPayment';
 
 function RegisterForm() {
  const [firstPlayer, setFirstPlayer] = useState('');
@@ -13,9 +14,9 @@ function RegisterForm() {
  const [contactPlayerThree, setContactPlayerThree] = useState('');
  const [contactPlayerFour, setContactPlayerFour] = useState('');
  const [food, setFood] = useState('');
- const [alert, setAlert] = useState({ open: false, severity: '', message: '', message2: '', title: '' });
- const [isValid, setIsValid] = useState(false);
- // const productId = 'gid://shopify/ProductVariant/7316169883714'; // Hardcoded product ID
+ const [alert, setAlert] = useState({ open: false, severity: '', message: '' });
+ const [isPaymentInitiated, setIsPaymentInitiated] = useState(false);
+ const productId = 'gid://shopify/ProductVariant/7316169883714'; // Hardcoded product ID
 
  const handleSubmit = async (e) => {
   e.preventDefault();
@@ -65,8 +66,8 @@ function RegisterForm() {
    setContactPlayerFour('');
    setFood('');
 
-   // Set the form as valid to show the link for payment
-   setIsValid(true);
+   // Initiate the Shopify payment
+   setIsPaymentInitiated(true);
   } catch (error) {
    setAlert({
     open: true,
@@ -81,10 +82,9 @@ function RegisterForm() {
   setAlert({ ...alert, open: false });
  };
 
- const checkoutUrl = "https://www.thehockeyshop.com/checkouts/bin/2839501a6d7cf3149543898c26591d3a?locale=en&skip_shop_pay=true";
-
  return (
   <>
+   {isPaymentInitiated && <ShopifyPayment productId={productId} />}
    <h1 className="bg-[#1c1c1c] pt-10 font-poppins font-extrabold tracking-tight text-4xl sm:text-[2.5rem] uppercase md:text-[2.75rem] lg:text-[3rem] xl:text-[3.25rem] 2xl:text-[3.5rem] 2xl:leading-[3rem] text-center">
     Registration Form
    </h1>
@@ -93,7 +93,6 @@ function RegisterForm() {
      className="py-14 flex flex-col gap-4 rounded-lg w-[90vw] md:w-[70vw] lg:w-[60vw] xl:w-[50vw]"
      onSubmit={handleSubmit}
     >
-     {/* Your form fields */}
      <div className="flex flex-col gap-4">
       <div className="">
        <label htmlFor="firstPlayer" className="md:text-[1.2rem] 2xl:text-[1.35rem]">
@@ -241,19 +240,12 @@ function RegisterForm() {
      </div>
      <div className="flex justify-center">
       <button className="border border-black bg-white mt-4 text-black px-8 py-2 rounded-lg hover:text-white hover:bg-black duration-300 font-semibold">
-       Submit
+       Register
       </button>
      </div>
      <p className='opacity-60 italic mt-2'>* Registration is not complete until payment of $900.00 per foursome is received. An email confirmation will be sent once confirmed. *</p>
     </form>
    </div>
-   {isValid && (
-    <div className="flex justify-center">
-     <a href={checkoutUrl} className="border border-black bg-white mt-4 text-black px-8 py-2 rounded-lg hover:text-white hover:bg-black duration-300 font-semibold">
-      Complete Payment
-     </a>
-    </div>
-   )}
    <Snackbar
     open={alert.open}
     autoHideDuration={6000}
