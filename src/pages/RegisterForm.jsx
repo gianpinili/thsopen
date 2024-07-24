@@ -8,10 +8,7 @@ function RegisterForm() {
  const [secondPlayer, setSecondPlayer] = useState('');
  const [thirdPlayer, setThirdPlayer] = useState('');
  const [fourthPlayer, setFourthPlayer] = useState('');
- const [contactPlayerOne, setContactPlayerOne] = useState('');
- const [contactPlayerTwo, setContactPlayerTwo] = useState('');
- const [contactPlayerThree, setContactPlayerThree] = useState('');
- const [contactPlayerFour, setContactPlayerFour] = useState('');
+ const [emailContact, setEmailContact] = useState('');
  const [food, setFood] = useState('');
  const [alert, setAlert] = useState({ open: false, severity: '', message: '', message2: '', title: '' });
  const [isValid, setIsValid] = useState(false);
@@ -19,7 +16,7 @@ function RegisterForm() {
  const handleSubmit = async (e) => {
   e.preventDefault();
 
-  if (!firstPlayer || !secondPlayer || !thirdPlayer || !fourthPlayer || !contactPlayerOne || !contactPlayerTwo || !contactPlayerThree || !contactPlayerFour || !food) {
+  if (!firstPlayer || !secondPlayer || !thirdPlayer || !fourthPlayer || !emailContact || !food) {
    setAlert({
     open: true,
     severity: 'error',
@@ -35,13 +32,10 @@ function RegisterForm() {
 
   const templateParams = {
    firstPlayer,
-   contactPlayerOne,
+   emailContact,
    secondPlayer,
-   contactPlayerTwo,
    thirdPlayer,
-   contactPlayerThree,
    fourthPlayer,
-   contactPlayerFour,
    food
   };
 
@@ -58,10 +52,7 @@ function RegisterForm() {
    setSecondPlayer('');
    setThirdPlayer('');
    setFourthPlayer('');
-   setContactPlayerOne('');
-   setContactPlayerTwo('');
-   setContactPlayerThree('');
-   setContactPlayerFour('');
+   setEmailContact('');
    setFood('');
 
    // Set the form as valid to show the link for payment
@@ -112,19 +103,6 @@ function RegisterForm() {
        />
       </div>
       <div className="">
-       <label htmlFor="contactPlayerOne" className="w-1/3 md:text-[1.2rem] 2xl:text-[1.35rem]">
-        Player One Email <span className="text-red-500">*</span>
-       </label>
-       <input
-        type="text"
-        id="contactPlayerOne"
-        className="bg-transparent border rounded-md w-full p-2 focus:border-[#cefac6] focus:outline-none"
-        placeholder="Player One Email"
-        value={contactPlayerOne}
-        onChange={(e) => setContactPlayerOne(e.target.value)}
-       />
-      </div>
-      <div className="">
        <label htmlFor="secondPlayer" className="md:text-[1.2rem] 2xl:text-[1.35rem]">
         Player Two <span className="text-red-500">*</span>
        </label>
@@ -135,19 +113,6 @@ function RegisterForm() {
         placeholder="Player #2"
         value={secondPlayer}
         onChange={(e) => setSecondPlayer(e.target.value)}
-       />
-      </div>
-      <div className="">
-       <label htmlFor="contactPlayerTwo" className="w-1/3 md:text-[1.2rem] 2xl:text-[1.35rem]">
-        Player Two Email <span className="text-red-500">*</span>
-       </label>
-       <input
-        type="text"
-        id="contactPlayerTwo"
-        className="bg-transparent border rounded-md w-full p-2 focus:border-[#cefac6] focus:outline-none"
-        placeholder="Player Two Email"
-        value={contactPlayerTwo}
-        onChange={(e) => setContactPlayerTwo(e.target.value)}
        />
       </div>
      </div>
@@ -165,19 +130,6 @@ function RegisterForm() {
       />
      </div>
      <div className="">
-      <label htmlFor="contactPlayerThree" className="w-1/3 md:text-[1.2rem] 2xl:text-[1.35rem]">
-       Player Three Email <span className="text-red-500">*</span>
-      </label>
-      <input
-       type="text"
-       id="contactPlayerThree"
-       className="bg-transparent border rounded-md w-full p-2 focus:border-[#cefac6] focus:outline-none"
-       placeholder="Player Three Email"
-       value={contactPlayerThree}
-       onChange={(e) => setContactPlayerThree(e.target.value)}
-      />
-     </div>
-     <div className="">
       <label htmlFor="fourthPlayer" className="w-1/3 md:text-[1.2rem] 2xl:text-[1.35rem]">
        Player Four <span className="text-red-500">*</span>
       </label>
@@ -191,16 +143,16 @@ function RegisterForm() {
       />
      </div>
      <div className="">
-      <label htmlFor="contactPlayerFour" className="w-1/3 md:text-[1.2rem] 2xl:text-[1.35rem]">
-       Player Four Email <span className="text-red-500">*</span>
+      <label htmlFor="contactPlayerOne" className="w-1/3 md:text-[1.2rem] 2xl:text-[1.35rem]">
+       Email <span className="text-red-500">*</span>
       </label>
       <input
        type="text"
-       id="contactPlayerFour"
+       id="contactPlayerOne"
        className="bg-transparent border rounded-md w-full p-2 focus:border-[#cefac6] focus:outline-none"
-       placeholder="Player Four Email"
-       value={contactPlayerFour}
-       onChange={(e) => setContactPlayerFour(e.target.value)}
+       placeholder="email@example.com"
+       value={emailContact}
+       onChange={(e) => setEmailContact(e.target.value)}
       />
      </div>
      <div>
