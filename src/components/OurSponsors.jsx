@@ -21,19 +21,19 @@ const logos = [
 const responsive = {
  superLargeDesktop: {
   breakpoint: { max: 4000, min: 1536 },
-  items: 3
+  items: 4
  },
  desktop: {
   breakpoint: { max: 1536, min: 1024 },
-  items: 3
+  items: 4
  },
  tablet: {
   breakpoint: { max: 1024, min: 768 },
-  items: 2
+  items: 3
  },
  mobile: {
   breakpoint: { max: 768, min: 0 },
-  items: 1
+  items: 2
  }
 };
 
@@ -81,7 +81,7 @@ function OurSponsors() {
     >
      {logos.map((logo, index) => (
       <div key={index} className="flex justify-center items-center p-4 mt-6">
-       <a href={logo.href} target="_blank" rel="noreferrer" className='w-[85%] md:w-[80%]'>
+       <a href={logo.href} target="_blank" rel="noreferrer" className='w-[70%] md:w-[60%]'>
         <img src={logo.src} alt={logo.alt} className=" w-[100%] rounded-md" draggable="false" />
        </a>
       </div>

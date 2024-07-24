@@ -181,6 +181,17 @@ function RegisterForm() {
        />
        <label htmlFor="vegetarian" className="md:text-[1.1rem] 2xl:text-[1.25rem]">Vegetarian</label>
       </div>
+      <div className="flex gap-1">
+       <input
+        type="radio"
+        id="none"
+        name="food"
+        value="none"
+        checked={food === 'none'}
+        onChange={(e) => setFood(e.target.value)}
+       />
+       <label htmlFor="none" className="md:text-[1.1rem] 2xl:text-[1.25rem]">None</label>
+      </div>
       <div className="flex gap-1 items-center">
        <input
         type="radio"
@@ -191,12 +202,12 @@ function RegisterForm() {
         onChange={(e) => setFood(e.target.value)}
        />
        <label htmlFor="other" className="md:text-[1.1rem] 2xl:text-[1.25rem]">Other</label>
-       <input type="text" id="other" className="bg-transparent border-b w-full p-2 focus:border-[#cefac6] focus:outline-none" onChange={(e) => setFood(e.target.value)} value={food} />
       </div>
+      <input type="text" id="other" className="bg-transparent border-b w-full p-2 focus:border-[#cefac6] focus:outline-none" onChange={(e) => setFood(e.target.value)} value={food} />
      </div>
      <div className="flex justify-center">
       <button className="border border-black bg-white mt-4 text-black px-8 py-2 rounded-lg hover:text-white hover:bg-black duration-300 font-semibold">
-       Submit
+       Register
       </button>
      </div>
      <p className='opacity-60 italic mt-2'>* Registration is not complete until payment of $900.00 per foursome is received. An email confirmation will be sent once confirmed. *</p>
