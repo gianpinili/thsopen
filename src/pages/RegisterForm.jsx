@@ -12,11 +12,22 @@ function RegisterForm() {
  const [food, setFood] = useState('');
  const [alert, setAlert] = useState({ open: false, severity: '', message: '', message2: '', title: '' });
  const [isValid, setIsValid] = useState(false);
+ const [errors, setErrors] = useState({});
 
  const handleSubmit = async (e) => {
   e.preventDefault();
 
-  if (!firstPlayer || !secondPlayer || !thirdPlayer || !fourthPlayer || !emailContact || !food) {
+  const newErrors = {};
+  if (!firstPlayer) newErrors.firstPlayer = 'Player One is required';
+  if (!secondPlayer) newErrors.secondPlayer = 'Player Two is required';
+  if (!thirdPlayer) newErrors.thirdPlayer = 'Player Three is required';
+  if (!fourthPlayer) newErrors.fourthPlayer = 'Player Four is required';
+  if (!emailContact) newErrors.emailContact = 'Email is required';
+  if (!food) newErrors.food = 'Food preference is required';
+
+  setErrors(newErrors);
+
+  if (Object.keys(newErrors).length > 0) {
    setAlert({
     open: true,
     severity: 'error',
@@ -83,7 +94,7 @@ function RegisterForm() {
    <h1 className="bg-[#1c1c1c] pt-10 font-poppins font-extrabold tracking-tight text-4xl sm:text-[2.5rem] uppercase md:text-[2.75rem] lg:text-[3rem] xl:text-[3.25rem] 2xl:text-[3.5rem] 2xl:leading-[3rem] text-center">
     Registration Form
    </h1>
-   <div className="bg-[#1c1c1c] px-4 py-10 flex justify-center">
+   <div className="bg-[#1c1c1c] px-4 py-10 flex justify-center font-poppins">
     <form
      className="py-14 flex flex-col gap-4 rounded-lg w-[90vw] md:w-[70vw] lg:w-[60vw] xl:w-[50vw]"
      onSubmit={handleSubmit}
@@ -96,11 +107,12 @@ function RegisterForm() {
        <input
         type="text"
         id="firstPlayer"
-        className="bg-transparent border rounded-md w-full p-2 focus:border-[#cefac6] focus:outline-none"
+        className={`bg-transparent border rounded-md w-full p-2 focus:outline-none ${errors.firstPlayer ? 'border-red-500' : 'focus:border-[#cefac6]'}`}
         placeholder="Player #1"
         value={firstPlayer}
         onChange={(e) => setFirstPlayer(e.target.value)}
        />
+       {errors.firstPlayer && <p className="text-red-500 error-animation">{errors.firstPlayer}</p>}
       </div>
       <div className="">
        <label htmlFor="secondPlayer" className="md:text-[1.2rem] 2xl:text-[1.35rem]">
@@ -109,11 +121,12 @@ function RegisterForm() {
        <input
         type="text"
         id="secondPlayer"
-        className="bg-transparent border rounded-md w-full p-2 focus:border-[#cefac6] focus:outline-none"
+        className={`bg-transparent border rounded-md w-full p-2 focus:outline-none ${errors.secondPlayer ? 'border-red-500' : 'focus:border-[#cefac6]'}`}
         placeholder="Player #2"
         value={secondPlayer}
         onChange={(e) => setSecondPlayer(e.target.value)}
        />
+       {errors.secondPlayer && <p className="text-red-500 error-animation">{errors.secondPlayer}</p>}
       </div>
      </div>
      <div className="">
@@ -123,11 +136,12 @@ function RegisterForm() {
       <input
        type="text"
        id="thirdPlayer"
-       className="bg-transparent border rounded-md w-full p-2 focus:border-[#cefac6] focus:outline-none"
+       className={`bg-transparent border rounded-md w-full p-2 focus:outline-none ${errors.thirdPlayer ? 'border-red-500' : 'focus:border-[#cefac6]'}`}
        placeholder="Player #3"
        value={thirdPlayer}
        onChange={(e) => setThirdPlayer(e.target.value)}
       />
+      {errors.thirdPlayer && <p className="text-red-500 error-animation">{errors.thirdPlayer}</p>}
      </div>
      <div className="">
       <label htmlFor="fourthPlayer" className="w-1/3 md:text-[1.2rem] 2xl:text-[1.35rem]">
@@ -136,11 +150,12 @@ function RegisterForm() {
       <input
        type="text"
        id="fourthPlayer"
-       className="bg-transparent border rounded-md w-full p-2 focus:border-[#cefac6] focus:outline-none"
+       className={`bg-transparent border rounded-md w-full p-2 focus:outline-none ${errors.fourthPlayer ? 'border-red-500' : 'focus:border-[#cefac6]'}`}
        placeholder="Player #4"
        value={fourthPlayer}
        onChange={(e) => setFourthPlayer(e.target.value)}
       />
+      {errors.fourthPlayer && <p className="text-red-500 error-animation">{errors.fourthPlayer}</p>}
      </div>
      <div className="">
       <label htmlFor="contactPlayerOne" className="w-1/3 md:text-[1.2rem] 2xl:text-[1.35rem]">
@@ -149,11 +164,12 @@ function RegisterForm() {
       <input
        type="text"
        id="contactPlayerOne"
-       className="bg-transparent border rounded-md w-full p-2 focus:border-[#cefac6] focus:outline-none"
+       className={`bg-transparent border rounded-md w-full p-2 focus:outline-none ${errors.emailContact ? 'border-red-500' : 'focus:border-[#cefac6]'}`}
        placeholder="email@example.com"
        value={emailContact}
        onChange={(e) => setEmailContact(e.target.value)}
       />
+      {errors.emailContact && <p className="text-red-500 error-animation">{errors.emailContact}</p>}
      </div>
      <div>
       <p className="md:text-[1.2rem] 2xl:text-[1.35rem]">
@@ -204,13 +220,14 @@ function RegisterForm() {
        <label htmlFor="other" className="md:text-[1.1rem] 2xl:text-[1.25rem]">Other</label>
       </div>
       <input type="text" id="other" className="bg-transparent border-b w-full p-2 focus:border-[#cefac6] focus:outline-none" onChange={(e) => setFood(e.target.value)} value={food} />
+      {errors.food && <p className="text-red-500 error-animation">{errors.food}</p>}
      </div>
      <div className="flex justify-center">
       <button className="border border-black bg-white mt-4 text-black px-8 py-2 rounded-lg hover:text-white hover:bg-black duration-300 font-semibold">
        Submit & Pay
       </button>
      </div>
-     <p className='opacity-60 italic mt-2'>* Registration is not complete until payment of $900.00 per foursome is received. An email confirmation will be sent once confirmed. *</p>
+     <p className='opacity-60 italic mt-2 text-red-300'>* Registration is not complete until payment of $900.00 per foursome is received. An email confirmation will be sent once confirmed. *</p>
     </form>
    </div>
    {isValid && (

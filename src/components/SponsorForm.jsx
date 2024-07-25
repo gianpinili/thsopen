@@ -16,13 +16,25 @@ function SponsorForm() {
   title: false,
   other: false
  });
- const [alert, setAlert] = useState({ open: false, severity: '', message: '' });
+ const [alert, setAlert] = useState({ open: false, severity: '', message: '', title: '' });
+ const [errors, setErrors] = useState({});
 
  const handleSubmit = async (e) => {
   e.preventDefault();
 
   const sponsorSelected = Object.values(sponsor).some((value) => value);
-  if (!name || !email || !number || !companyName || !contact || !sponsorSelected) {
+  const newErrors = {};
+
+  if (!name) newErrors.name = 'Name is required';
+  if (!email) newErrors.email = 'Email is required';
+  if (!number) newErrors.number = 'Number is required';
+  if (!companyName) newErrors.companyName = 'Company Name is required';
+  if (!contact) newErrors.contact = 'Contact method is required';
+  if (!sponsorSelected) newErrors.sponsor = 'At least one sponsor type is required';
+
+  setErrors(newErrors);
+
+  if (Object.keys(newErrors).length > 0) {
    setAlert({
     open: true,
     severity: 'error',
@@ -89,7 +101,7 @@ function SponsorForm() {
    <h1 className="bg-[#1c1c1c] pt-10 font-poppins font-extrabold tracking-tight text-4xl sm:text-[2.5rem] uppercase md:text-[2.75rem] lg:text-[3rem] xl:text-[3.25rem] 2xl:text-[3.5rem] 2xl:leading-[3rem] text-center">
     Sponsorship Form
    </h1>
-   <div className="bg-[#1c1c1c] px-4 py-10 flex justify-center">
+   <div className="bg-[#1c1c1c] px-4 py-10 flex justify-center font-poppins">
     <form
      className="py-14 flex flex-col gap-4 rounded-lg w-[90vw] md:w-[70vw] lg:w-[60vw] xl:w-[50vw]"
      onSubmit={handleSubmit}
@@ -102,11 +114,12 @@ function SponsorForm() {
        <input
         type="text"
         id="firstName"
-        className="bg-transparent border rounded-md w-full p-2 focus:border-[#cefac6] focus:outline-none"
+        className={`bg-transparent border rounded-md w-full p-2 focus:outline-none ${errors.name ? 'border-red-500' : 'focus:border-[#cefac6]'}`}
         placeholder="Name"
         value={name}
         onChange={(e) => setName(e.target.value)}
        />
+       {errors.name && <p className="text-red-500 error-animation">{errors.name}</p>}
       </div>
      </div>
      <div className="">
@@ -116,11 +129,12 @@ function SponsorForm() {
       <input
        type="email"
        id="email"
-       className="bg-transparent border rounded-md w-full p-2 focus:border-[#cefac6] focus:outline-none"
+       className={`bg-transparent border rounded-md w-full p-2 focus:outline-none ${errors.email ? 'border-red-500' : 'focus:border-[#cefac6]'}`}
        placeholder="example@company.com"
        value={email}
        onChange={(e) => setEmail(e.target.value)}
       />
+      {errors.email && <p className="text-red-500 error-animation">{errors.email}</p>}
      </div>
      <div className="">
       <label htmlFor="number" className="w-1/3 md:text-[1.2rem] 2xl:text-[1.35rem]">
@@ -129,11 +143,12 @@ function SponsorForm() {
       <input
        type="text"
        id="number"
-       className="bg-transparent border rounded-md w-full p-2 focus:border-[#cefac6] focus:outline-none"
+       className={`bg-transparent border rounded-md w-full p-2 focus:outline-none ${errors.number ? 'border-red-500' : 'focus:border-[#cefac6]'}`}
        placeholder="Phone #"
        value={number}
        onChange={(e) => setNumber(e.target.value)}
       />
+      {errors.number && <p className="text-red-500 error-animation">{errors.number}</p>}
      </div>
      <div className="">
       <label htmlFor="companyName" className="w-1/3 md:text-[1.2rem] 2xl:text-[1.35rem]">
@@ -142,11 +157,12 @@ function SponsorForm() {
       <input
        type="text"
        id="companyName"
-       className="bg-transparent border rounded-md w-full p-2 focus:border-[#cefac6] focus:outline-none"
+       className={`bg-transparent border rounded-md w-full p-2 focus:outline-none ${errors.companyName ? 'border-red-500' : 'focus:border-[#cefac6]'}`}
        placeholder="Company Name"
        value={companyName}
        onChange={(e) => setCompanyName(e.target.value)}
       />
+      {errors.companyName && <p className="text-red-500 error-animation">{errors.companyName}</p>}
      </div>
      <div className="flex flex-col gap-1">
       <p className="md:text-[1.2rem] 2xl:text-[1.35rem]">
@@ -159,6 +175,7 @@ function SponsorForm() {
         name="bronze"
         checked={sponsor.bronze}
         onChange={handleSponsorChange}
+        className={errors.sponsor ? 'border-red-500' : ''}
        />
        <label htmlFor="bronze" className="md:text-[1.1rem] 2xl:text-[1.25rem]">Bronze Sponsor</label>
       </div>
@@ -169,6 +186,7 @@ function SponsorForm() {
         name="silver"
         checked={sponsor.silver}
         onChange={handleSponsorChange}
+        className={errors.sponsor ? 'border-red-500' : ''}
        />
        <label htmlFor="silver" className="md:text-[1.1rem] 2xl:text-[1.25rem]">Silver Sponsor</label>
       </div>
@@ -179,6 +197,7 @@ function SponsorForm() {
         name="gold"
         checked={sponsor.gold}
         onChange={handleSponsorChange}
+        className={errors.sponsor ? 'border-red-500' : ''}
        />
        <label htmlFor="gold" className="md:text-[1.1rem] 2xl:text-[1.25rem]">Gold Sponsor</label>
       </div>
@@ -189,6 +208,7 @@ function SponsorForm() {
         name="title"
         checked={sponsor.title}
         onChange={handleSponsorChange}
+        className={errors.sponsor ? 'border-red-500' : ''}
        />
        <label htmlFor="title" className="md:text-[1.1rem] 2xl:text-[1.25rem]">Title Sponsor</label>
       </div>
@@ -199,6 +219,7 @@ function SponsorForm() {
         name="other"
         checked={sponsor.other}
         onChange={handleSponsorChange}
+        className={errors.sponsor ? 'border-red-500' : ''}
        />
        <label htmlFor="other" className="md:text-[1.1rem] 2xl:text-[1.25rem]">Other (Donation or any other way you want to help)</label>
       </div>
@@ -215,6 +236,7 @@ function SponsorForm() {
         value="email"
         checked={contact === 'email'}
         onChange={(e) => setContact(e.target.value)}
+        className={errors.contact ? 'border-red-500' : ''}
        />
        <label htmlFor="emailContact" className="md:text-[1.1rem] 2xl:text-[1.25rem]">Email</label>
       </div>
@@ -226,6 +248,7 @@ function SponsorForm() {
         value="phone"
         checked={contact === 'phone'}
         onChange={(e) => setContact(e.target.value)}
+        className={errors.contact ? 'border-red-500' : ''}
        />
        <label htmlFor="phoneContact" className="md:text-[1.1rem] 2xl:text-[1.25rem]">Phone</label>
       </div>

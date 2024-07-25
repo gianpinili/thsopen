@@ -36,7 +36,7 @@ function Nav() {
       (max-width: 1536px) 1536w
       2048w'
               type='image/webp' />
-            <img className='w-[40%] md:max-w-[150px] max-h-[70px] ml-[3rem]  z-50 ' src={Logo} alt="THS Open Logo" width={500}
+            <img className='w-[40%] md:max-w-[150px] max-h-[70px] ml-[3rem]  z-50 hover:scale-110 duration-300' src={Logo} alt="THS Open Logo" width={500}
               height={500} />
           </picture>
         </Link>
@@ -63,11 +63,16 @@ function Nav() {
               <Link to={'/events'} onClick={toggleModal} className='text-3xl'>Events</Link>
               <Link to={'/merch'} onClick={toggleModal} className='text-3xl'>Merch</Link>
               <Link to={'/sponsorship'} onClick={toggleModal} className='text-3xl'>Sponsorship</Link>
-              <Link to={'/register'} onClick={toggleModal} className='text-3xl'></Link>
+              <Link to={'/register'} onClick={toggleModal} className='text-3xl'>Register</Link>
+              <Link to={'/contact'} onClick={toggleModal} className='text-3xl'>Contact</Link>
+            </div>
+            <div className=' mt-[10rem]'>
+              <Link to={'/'} onClick={toggleModal} className='flex justify-center'><img src={LogoW} alt="THS Open Logo" className='w-[30%]' /></Link>
             </div>
           </div>
         </div >
-      )}
+      )
+      }
     </>
   );
 }
