@@ -63,7 +63,6 @@ function SponsorForm() {
     open: true,
     severity: 'success',
     message: 'Thank you for inquiring about sponsoring! We will get back to you as soon as possible.',
-    message2: 'Shop THS Open Merch here: <a href="https://www.thehockeyshop.com/collections/ths-open" target="_blank" rel="noopener noreferrer">THS Open Merch</a>',
     title: 'Hooray!'
    });
    setName('');
@@ -78,6 +77,9 @@ function SponsorForm() {
     title: false,
     other: false
    });
+
+   // Redirect to the provided URL after form submission
+   window.location.href = 'https://support.canucksautism.ca/site/Donation2?idb=423691636&df_id=1500&FR_ID=1280&mfc_pref=T&PROXY_ID=3280&1500.donation=form1&PROXY_TYPE=22';
   } catch (error) {
    setAlert({
     open: true,
@@ -254,10 +256,11 @@ function SponsorForm() {
       </div>
      </div>
      <div className="flex justify-center">
-      <button className="border border-black bg-white mt-4 text-black px-8 py-2 rounded-lg hover:text-white hover:bg-black duration-300  font-semibold">
+      <button className="border border-black bg-white mt-4 text-black px-8 py-2 rounded-lg hover:text-white hover:bg-black duration-300 font-semibold">
        Submit
       </button>
      </div>
+     <p className='opacity-60 italic mt-2 text-red-300 text-center'>* Upon confirmation, you will receive a donation receipt via email for tax purposes. *</p>
     </form>
    </div>
    <Snackbar
@@ -280,7 +283,6 @@ function SponsorForm() {
      <span dangerouslySetInnerHTML={{ __html: alert.message2 }} />
     </Alert>
    </Snackbar>
-
   </>
  );
 }

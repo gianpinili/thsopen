@@ -7,28 +7,41 @@ function Sponsor() {
  const sponsorData = [
   {
    level: "Title Sponsor",
-   included: ["Title Sponsor, eg., 'THS Open Presented by [Your Company]'"]
-  },
-  {
-   level: "Gold Sponsor",
-   included: ["Burger and Brew Sponsor"]
-  },
-  {
-   level: "Silver Sponsor",
-   included: [
-    "Golf Cart Sponsor #1",
-    "Golf Cart Sponsor #2",
-    "Beverage Ticket Sponsor",
-    "Putting Challenge Sponsor",
-    "Open to sponsorship ideas"
+   activation: ["Title sponsor named in all tournament communication and signage.",
+    "THS Open presented by The Hockey Shop"
+   ],
+   contribution: ["$5000 Donation to CAN",
+    "Proceeds of all THS Open Merch Sales",
+    "Tee gifts"
    ]
   },
   {
-   level: "Bronze Sponsor",
-   included: [
-    "Includes signage or activation on a hole",
-    "We also welcome and appreciate any branded items for tee gifts and raffle prizes."
-   ]
+   level: "Gold Sponsor (5 Spots Available)",
+   activation: ["Cart Sponsor A - name and logo on every hole A cart",
+    "Cart Sponsor B - name and logo on every hole B cart",
+    "Burger and Beer Sponsor - name and logo on every table during dinner",
+    "Scorecard Sponsor - name and logo on score keeping app during the round",
+    "Trophy Sponsor - name and logo listed on the trophy plate for winning team",
+    "All include logo, name and website listed on THS Open website and tournament communications"
+   ],
+   contribution: ["$1000 Donation to CAN"]
+  },
+  {
+   level: "Silver Sponsor (18 Spots Available)",
+   activation: [
+    "Hole Sponsorship - activation on 1 hole during the tournament",
+    "Presence at the tournament is encouraged! Feel free to bring snacks, drinks or swag for golfers to make the tee box memorable and fun. THS Staff can assist with hole activation if you're unable to staff the hole on the day of the tournament.",
+    "Logo, name and website listed on THS Open website and tournament communications."
+   ],
+   contribution: ["$500 Donation to CAN"]
+  },
+  {
+   level: "Bronze Sponsor (Open)",
+   activation: [
+    "Logo, name and website listed on THS Open website and tournament communications.",
+    "No presence on the day of the tournament."
+   ],
+   contribution: ["$250 Donation to CAN"]
   }
  ];
 
@@ -57,8 +70,15 @@ function Sponsor() {
        {expandedSponsor === sponsor.level ? <ChevronUp className="text-black" /> : <ChevronDown className="text-black" />}
       </div>
       <div className={`overflow-hidden transition-all duration-[1.5s] ${expandedSponsor === sponsor.level ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'}`}>
+       <p className='font-semibold mt-2 underline'>Activation</p>
        <ul className="text-black mt-2 ml-4 list-disc text-sm md:px-[2rem] md:text-lg">
-        {sponsor.included.map((item, index) => (
+        {sponsor.activation.map((item, index) => (
+         <li key={index}>{item}</li>
+        ))}
+       </ul>
+       <p className='font-semibold mt-2 underline'>Contribution</p>
+       <ul className="text-black mt-2 ml-4 list-disc text-sm md:px-[2rem] md:text-lg">
+        {sponsor.contribution.map((item, index) => (
          <li key={index}>{item}</li>
         ))}
        </ul>

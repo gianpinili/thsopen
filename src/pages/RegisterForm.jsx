@@ -227,7 +227,7 @@ function RegisterForm() {
        Submit & Pay
       </button>
      </div>
-     <p className='opacity-60 italic mt-2 text-red-300'>* Registration is not complete until payment of $900.00 per foursome is received. An email confirmation will be sent once confirmed. *</p>
+     <p className='opacity-60 italic mt-2 text-red-300 text-center'>* Registration is not complete until payment of $900.00 per foursome is received. An email confirmation will be sent once confirmed. *</p>
     </form>
    </div>
    {isValid && (

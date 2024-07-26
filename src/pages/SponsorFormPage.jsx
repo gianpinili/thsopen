@@ -6,10 +6,14 @@ function SponsorFormPage() {
  //scroll to top on mount
  window.scrollTo(0, 0);
 
+
  return (
   <>
+
    <SponsorDescription />
-   <SponsorForm />
+   <div id="sponsor-form">
+    <SponsorForm />
+   </div>
   </>
  )
 }
