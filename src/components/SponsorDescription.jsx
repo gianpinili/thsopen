@@ -76,12 +76,16 @@ function SponsorDescription() {
       <p className="font-semibold text-lg md:text-2xl border-b border-white">
        {sponsor.level}
       </p>
-      <p className="underline my-2 pl-6">Activation:</p>
-      <ul className="list-disc md:pl-20 px-[2rem]">
-       {sponsor.activation.map((item, i) => (
-        <li key={i}>{item}</li>
-       ))}
-      </ul>
+      {sponsor.level !== "Title Sponsor - The Hockey Shop" && (
+       <>
+        <p className="underline my-2 pl-6">Activation:</p>
+        <ul className="list-disc md:pl-20 px-[2rem]">
+         {sponsor.activation.map((item, i) => (
+          <li key={i}>{item}</li>
+         ))}
+        </ul>
+       </>
+      )}
       <p className="underline my-2 pl-6">Contribution:</p>
       <ul className="list-disc md:pl-20 px-[2rem]">
        {sponsor.contribution.map((item, i) => (

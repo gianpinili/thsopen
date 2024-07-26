@@ -70,12 +70,16 @@ function Sponsor() {
        {expandedSponsor === sponsor.level ? <ChevronUp className="text-black" /> : <ChevronDown className="text-black" />}
       </div>
       <div className={`overflow-hidden transition-all duration-[1.5s] ${expandedSponsor === sponsor.level ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'}`}>
-       <p className='font-semibold mt-2 underline'>Activation</p>
-       <ul className="text-black mt-2 ml-4 list-disc text-sm md:px-[2rem] md:text-lg">
-        {sponsor.activation.map((item, index) => (
-         <li key={index}>{item}</li>
-        ))}
-       </ul>
+       {sponsor.level !== "Title Sponsor" && (
+        <>
+         <p className='font-semibold mt-2 underline'>Activation</p>
+         <ul className="text-black mt-2 ml-4 list-disc text-sm md:px-[2rem] md:text-lg">
+          {sponsor.activation.map((item, index) => (
+           <li key={index}>{item}</li>
+          ))}
+         </ul>
+        </>
+       )}
        <p className='font-semibold mt-2 underline'>Contribution</p>
        <ul className="text-black mt-2 ml-4 list-disc text-sm md:px-[2rem] md:text-lg">
         {sponsor.contribution.map((item, index) => (

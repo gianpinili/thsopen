@@ -74,7 +74,6 @@ function SponsorForm() {
     bronze: false,
     silver: false,
     gold: false,
-    title: false,
     other: false
    });
 
@@ -202,17 +201,6 @@ function SponsorForm() {
         className={errors.sponsor ? 'border-red-500' : ''}
        />
        <label htmlFor="gold" className="md:text-[1.1rem] 2xl:text-[1.25rem]">Gold Sponsor</label>
-      </div>
-      <div className="flex gap-1">
-       <input
-        type="checkbox"
-        id="title"
-        name="title"
-        checked={sponsor.title}
-        onChange={handleSponsorChange}
-        className={errors.sponsor ? 'border-red-500' : ''}
-       />
-       <label htmlFor="title" className="md:text-[1.1rem] 2xl:text-[1.25rem]">Title Sponsor</label>
       </div>
       <div className="flex gap-1">
        <input

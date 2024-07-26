@@ -1,11 +1,9 @@
-import { ChevronDown, ChevronUp } from 'lucide-react';
+import { ChevronDown, ChevronUp, MoveDown } from 'lucide-react';
 import { useState, useEffect } from 'react';
 import useIntersectionObserver from '../useIntersectionObserver';
 import MitchHero from '../assets/mitchblacknwhite.jpg';
-import { MoveDown } from 'lucide-react';
 import OurSponsors from '../components/OurSponsors';
 import { Link } from 'react-router-dom';
-
 
 function SponsorPage() {
 
@@ -49,6 +47,7 @@ function SponsorPage() {
    contribution: ["$250 Donation to CAN"]
   }
  ];
+
  const scrollTo = (id) => {
   const element = document.getElementById(id);
   if (element) {
@@ -86,7 +85,7 @@ function SponsorPage() {
     <div className='md:w-1/2 flex flex-col md:px-[2rem] md:pt-[5rem] lg:px-[4rem] xl:px-[6rem] 2xl:px-[8rem] items-center md:items-start'>
      <h1 className="text-white font-poppins font-extrabold text-2xl md:text-3xl lg:text-4xl text-left uppercase tracking-tighter">For all sponsorship inquiries, please reach out to us using the form here:</h1>
      <div className='flex my-8'>
-      <Link to={'/sponsor-form'} className='rounded-md border border-white px-8 py-5 text-white font-bold hover:bg-black hover:text-white duration-300 uppercase md:mt-[3rem]'>Sponsorship Inquiry</Link>
+      <Link to={'/sponsor-form'} className='rounded-md border border-white px-8 py-5 text-white font-bold hover:border-black hover:bg-white hover:text-black duration-300 uppercase md:mt-[3rem]'>Sponsorship Inquiry</Link>
      </div>
     </div>
     <div id="sponsors" className="text-white mt-10 bg-black py-6 px-[.5rem] md:px-[1rem] font-spacemono md:w-1/2 md:mt-[6rem]">
@@ -97,12 +96,16 @@ function SponsorPage() {
         {expandedSponsor === sponsor.level ? <ChevronUp className="text-white" /> : <ChevronDown className="text-white" />}
        </div>
        <div className={`overflow-hidden transition-all duration-[1.5s] ${expandedSponsor === sponsor.level ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'}`}>
-        <p className='font-semibold mt-2 underline'>Activation</p>
-        <ul className="text-white mt-2 ml-4 list-disc text-sm md:px-[2rem] md:text-lg">
-         {sponsor.activation.map((item, index) => (
-          <li key={index}>{item}</li>
-         ))}
-        </ul>
+        {sponsor.level !== "Title Sponsor" && (
+         <>
+          <p className='font-semibold mt-2 underline'>Activation</p>
+          <ul className="text-white mt-2 ml-4 list-disc text-sm md:px-[2rem] md:text-lg">
+           {sponsor.activation.map((item, index) => (
+            <li key={index}>{item}</li>
+           ))}
+          </ul>
+         </>
+        )}
         <p className='font-semibold mt-2 underline'>Contribution</p>
         <ul className="text-white mt-2 ml-4 list-disc text-sm md:px-[2rem] md:text-lg">
          {sponsor.contribution.map((item, index) => (
