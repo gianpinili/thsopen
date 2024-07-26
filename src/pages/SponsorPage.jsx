@@ -30,7 +30,7 @@ function SponsorPage() {
    contribution: ["$1000 Donation to CAN"]
   },
   {
-   level: "Silver Sponsor (18 Spots Available)",
+   level: "Silver Sponsor (15 Spots Available)",
    activation: [
     "Hole Sponsorship - activation on 1 hole during the tournament",
     "Presence at the tournament is encouraged! Feel free to bring snacks, drinks or swag for golfers to make the tee box memorable and fun. THS Staff can assist with hole activation if you're unable to staff the hole on the day of the tournament.",
@@ -81,14 +81,14 @@ function SponsorPage() {
      <MoveDown onClick={() => scrollTo('sponsors')} className="border rounded-full p-2 w-[50px] h-[50px] hover:bg-[#ffffff] hover:text-black duration-300 cursor-pointer hover:scale-110 mx-auto" />
     </p>
    </div>
-   <div className="pt-[5rem]  md:pt-[1rem] md:pb-[7rem] bg-black flex flex-col md:flex-row px-[1rem]">
+   <div className="pt-[5rem]  md:pt-[1rem] md:pb-[7rem] bg-black flex flex-col md:flex-row px-[1rem] items-center">
     <div className='md:w-1/2 flex flex-col md:px-[2rem] md:pt-[5rem] lg:px-[4rem] xl:px-[6rem] 2xl:px-[8rem] items-center md:items-start'>
      <h1 className="text-white font-poppins font-extrabold text-2xl md:text-3xl lg:text-4xl text-left uppercase tracking-tighter">For all sponsorship inquiries, please reach out to us using the form here:</h1>
      <div className='flex my-8'>
       <Link to={'/sponsor-form'} className='rounded-md border border-white px-8 py-5 text-white font-bold hover:border-black hover:bg-white hover:text-black duration-300 uppercase md:mt-[3rem]'>Sponsorship Inquiry</Link>
      </div>
     </div>
-    <div id="sponsors" className="text-white mt-10 bg-black py-6 px-[.5rem] md:px-[1rem] font-spacemono md:w-1/2 md:mt-[6rem]">
+    <div id="sponsors" className="text-white mt-10 bg-black py-6 px-[.5rem] md:px-[1rem] font-spacemono md:w-1/2 md:mt-[3rem]">
      {sponsorData.map((sponsor, index) => (
       <div key={index} className="border-b border-gray-400 py-4 text-white md:px-[2rem]">
        <div className="mb-3 text-white flex justify-between items-center cursor-pointer" onClick={() => toggleSponsor(sponsor.level)}>

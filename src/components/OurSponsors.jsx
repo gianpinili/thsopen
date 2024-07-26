@@ -7,6 +7,7 @@ import HausLogo from '../assets/hauslogo.png';
 import LagaLogo from '../assets/lagalogo.png';
 import OrganikaLogo from '../assets/organikalogo.png';
 import CageLogo from '../assets/cage.png';
+import MarconLogo from '../assets/marconlogo.png';
 // import AbbyCanucksLogo from '../assets/abbycanuckslogo.png';
 
 const logos = [
@@ -15,7 +16,7 @@ const logos = [
  { src: CoquitlamExpressLogo, alt: 'Coquitlam Express Logo', href: 'https://www.coquitlamexpress.ca/' },
  { src: OrganikaLogo, alt: 'Organika Logo', href: 'https://organika.com/' },
  { src: LagaLogo, alt: 'Laga Logo', href: 'http://www.lagasports.com/' },
- // { src: AbbyCanucksLogo, alt: 'Abby Canucks Logo' },
+ { src: MarconLogo, alt: 'Marcon Logo', href: 'https://marconmetalfab.com/' },
 ];
 
 const responsive = {
