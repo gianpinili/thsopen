@@ -37,7 +37,7 @@ const GoogleMapComponent = () => {
  }, [map]);
 
  return (
-  <div style={{ height: '60vh', width: '80%', margin: '0 auto' }}>
+  <div style={{ height: '57vh', width: '80%', margin: '0 auto' }}>
    <div ref={mapRef} style={{ height: '100%' }}></div>
   </div>
  );

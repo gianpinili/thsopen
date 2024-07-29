@@ -1,14 +1,14 @@
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
-import Logo from '../assets/thsopenlogo.png';
 import LogoW from '../assets/thsopenlogo.webp';
-import LogoMD from '../assets/thsopenlogo-md.webp';
-import LogoLG from '../assets/thsopenlogo-lg.webp';
-import LogoXL from '../assets/thsopenlogo-xl.webp';
+// import LogoMD from '../assets/thsopenlogo-md.webp';
+// import LogoLG from '../assets/thsopenlogo-lg.webp';
+// import LogoXL from '../assets/thsopenlogo-xl.webp';
+import PropTypes from 'prop-types';
 
 
-function Nav() {
+function Nav({ textColor, logoSrc }) {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const location = useLocation();
 
@@ -22,9 +22,9 @@ function Nav() {
 
   return (
     <>
-      <div className='font-spacemono fixed top-0 flex justify-between items-center pt-6 pb-6 md:mb-14 z-20 bg-transparent bg-opacity-95 w-full max-h-[10rem] text-white'>
+      <div className={`font-spacemono fixed top-0 flex justify-between items-center pt-6 pb-6 md:mb-14 z-20 bg-transparent bg-opacity-95 w-full max-h-[10rem] text-white textColor ${textColor}`}>
         <Link to={'/'} onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className='flex mr-[4rem] justify-between'>
-          <picture>
+          {/* <picture>
             <source
               srcSet={`${LogoW} 2048w,
       ${LogoMD} 768w,
@@ -35,12 +35,12 @@ function Nav() {
       (max-width: 1280px) 1280w,
       (max-width: 1536px) 1536w
       2048w'
-              type='image/webp' />
-            <img className='w-[40%] md:max-w-[150px] max-h-[70px] ml-[3rem]  z-50 hover:scale-110 duration-300' src={Logo} alt="THS Open Logo" width={500}
-              height={500} />
-          </picture>
+              type='image/webp' /> */}
+          <img className='w-[40%] md:max-w-[150px] max-h-[70px] ml-[3rem]  z-50 hover:scale-110 duration-300' src={logoSrc} alt="THS Open Logo" width={500}
+            height={500} />
+          {/* </picture> */}
         </Link>
-        <div className='hidden md:flex gap-6 ml-[-7rem]'>
+        <div className='hidden md:flex gap-6 ml-[-7rem] xl:text-lg'>
           <Link to={'/about'} className={`${getNavLinkClass('/about')} duration-200`}>About</Link>
           <Link to={'/sponsorship'} className={`${getNavLinkClass('/sponsorship')} duration-200`}>Sponsor</Link>
           <Link to={'/events'} className={`${getNavLinkClass('/events')} duration-200`}>Events</Link>
@@ -75,6 +75,11 @@ function Nav() {
       }
     </>
   );
+}
+
+Nav.propTypes = {
+  textColor: PropTypes.string.isRequired,
+  logoSrc: PropTypes.string.isRequired
 }
 
 export default Nav;

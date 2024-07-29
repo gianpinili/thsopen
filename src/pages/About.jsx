@@ -1,6 +1,7 @@
 import TheShop from '../assets/thehockeyshop.jpg';
 import AboutThsOpen from '../components/AboutThsOpen.jsx';
-import GoogleMap from '../assets/map.png';
+// import GoogleMap from '../assets/map.png';
+import Map from '../components/GoogleMaps.jsx';
 import { useEffect } from 'react';
 
 function About() {
@@ -30,12 +31,13 @@ function About() {
    <div className='my-[8rem]'>
     <div>
      <h1 className='text-5xl font-poppins font-bold md:text-[3rem] lg:text-[4rem] xl:text-[4.5rem] lg:leading-[2.75rem] uppercase tracking-tighter md:mb-8 mx-4 md:mx-10 my-4 lg:mx-14 xl:mx-[4rem] 2xl:mx-[4.5rem] md:mt-20'>Our Location</h1>
-     <div className='overflow-hidden relative'>
+     <Map />
+     <p className='text-center font-spacemono mt-3'>20202 66 Ave Building F1, Langley, BC V2Y 1P3</p>
+     {/* <div className='overflow-hidden relative'>
       <a href="https://www.google.com/maps/place/The+Hockey+Shop+Source+For+Sports/@49.1220325,-122.7062901,13z/data=!3m1!5s0x5485d82ad368e0e3:0xcf147e38754dbcc0!4m10!1m2!2m1!1sthe+hockey+shop!3m6!1s0x5485d82ad463e66d:0x34d1a44f690a7f44!8m2!3d49.1219802!4d-122.6649995!15sCg90aGUgaG9ja2V5IHNob3BaESIPdGhlIGhvY2tleSBzaG9wkgEUc3BvcnRpbmdfZ29vZHNfc3RvcmXgAQA!16s%2Fg%2F1xpwjgfv?entry=ttu" target='_blank' className='overflow-hidden relative w-80 h-80'>
        <img className='rounded-lg mx-auto h-[50vh] object-cover hover:scale-110 duration-300 transform transition-transform overflow-hidden' src={GoogleMap} alt="Google Maps" />
       </a>
-     </div>
-     <p className='text-center font-spacemono mt-3'>20202 66 Ave Building F1, Langley, BC V2Y 1P3</p>
+     </div> */}
     </div>
    </div>
   </>

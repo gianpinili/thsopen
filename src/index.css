@@ -101,3 +101,11 @@ body {
 .error-animation {
   animation: errorBeat 2s ease 0s 1 normal forwards;
 }
+
+.text-white {
+  color: white;
+}
+
+.text-black {
+  color: black;
+}
