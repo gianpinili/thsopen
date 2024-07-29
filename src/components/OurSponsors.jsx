@@ -8,6 +8,7 @@ import LagaLogo from '../assets/lagalogo.png';
 import OrganikaLogo from '../assets/organikalogo.png';
 import CageLogo from '../assets/cage.png';
 import MarconLogo from '../assets/marconlogo.png';
+import FireLogo from '../assets/VDFHC.png';
 // import AbbyCanucksLogo from '../assets/abbycanuckslogo.png';
 
 const logos = [
@@ -17,6 +18,7 @@ const logos = [
  { src: OrganikaLogo, alt: 'Organika Logo', href: 'https://organika.com/' },
  { src: LagaLogo, alt: 'Laga Logo', href: 'http://www.lagasports.com/' },
  { src: MarconLogo, alt: 'Marcon Logo', href: 'https://marconmetalfab.com/' },
+ { src: FireLogo, alt: 'VFDHC Logo', href: 'https://www.vfdhc.com/' }
 ];
 
 const responsive = {
