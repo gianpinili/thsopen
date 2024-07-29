@@ -8,6 +8,7 @@ function RegisterForm() {
  const [secondPlayer, setSecondPlayer] = useState('');
  const [thirdPlayer, setThirdPlayer] = useState('');
  const [fourthPlayer, setFourthPlayer] = useState('');
+ const [teamName, setTeamName] = useState('');
  const [emailContact, setEmailContact] = useState('');
  const [food, setFood] = useState('');
  const [alert, setAlert] = useState({ open: false, severity: '', message: '', message2: '', title: '' });
@@ -22,6 +23,7 @@ function RegisterForm() {
   if (!secondPlayer) newErrors.secondPlayer = 'Player Two is required';
   if (!thirdPlayer) newErrors.thirdPlayer = 'Player Three is required';
   if (!fourthPlayer) newErrors.fourthPlayer = 'Player Four is required';
+  if (!teamName) newErrors.teamName = 'Team Name is required';
   if (!emailContact) newErrors.emailContact = 'Email is required';
   if (!food) newErrors.food = 'Food preference is required';
 
@@ -47,6 +49,7 @@ function RegisterForm() {
    secondPlayer,
    thirdPlayer,
    fourthPlayer,
+   teamName,
    food
   };
 
@@ -63,6 +66,7 @@ function RegisterForm() {
    setSecondPlayer('');
    setThirdPlayer('');
    setFourthPlayer('');
+   setTeamName('');
    setEmailContact('');
    setFood('');
 
@@ -156,6 +160,20 @@ function RegisterForm() {
        onChange={(e) => setFourthPlayer(e.target.value)}
       />
       {errors.fourthPlayer && <p className="text-red-500 error-animation">{errors.fourthPlayer}</p>}
+     </div>
+     <div className="">
+      <label htmlFor="teamName" className="w-1/3 md:text-[1.2rem] 2xl:text-[1.35rem]">
+       Team Name <span className="text-red-500">*</span>
+      </label>
+      <input
+       type="text"
+       id="teamName"
+       className={`bg-transparent border rounded-md w-full p-2 focus:outline-none ${errors.teamName ? 'border-red-500' : 'focus:border-[#cefac6]'}`}
+       placeholder="Team Name"
+       value={teamName}
+       onChange={(e) => setTeamName(e.target.value)}
+      />
+      {errors.teamName && <p className="text-red-500 error-animation">{errors.teamName}</p>}
      </div>
      <div className="">
       <label htmlFor="contactPlayerOne" className="w-1/3 md:text-[1.2rem] 2xl:text-[1.35rem]">
