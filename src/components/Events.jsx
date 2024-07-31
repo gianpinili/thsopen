@@ -21,7 +21,7 @@ function Events() {
        </a>
        <p className='mt-2 text-[.8rem]'>Langley, British Columbia</p>
       </div>
-      <Link to={'/events'} className='border px-8 py-3 rounded-md mx-auto text-sm hover:bg-white hover:text-black hover:duration-300' aria-label='Go to events page' aria-labelledby='Go to events page'>Learn More</Link>
+      <Link to={'/events'} className='border px-8 py-3 rounded-md mx-auto text-sm hover:bg-white hover:text-black hover:duration-300' aria-label='Go to events page' aria-description='Go to events page' aria-labelledby='Go to events page'>Learn More</Link>
      </div>
     </div>
    </section>
