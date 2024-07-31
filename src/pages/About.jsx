@@ -2,6 +2,7 @@ import TheShop from '../assets/thehockeyshop.jpg';
 import AboutThsOpen from '../components/AboutThsOpen.jsx';
 import GoogleMap from '../assets/map.png';
 import { useEffect } from 'react';
+import { Helmet } from 'react-helmet';
 
 function About() {
 
@@ -11,6 +12,10 @@ function About() {
 
  return (
   <>
+   <Helmet>
+    <title>About Us | THS Open</title>
+    <meta name="description" content="About the THS Open. An opportunity to play golf while supporting a fantastic cause. All proceeds from the event will go to the Canucks Autism Network." />
+   </Helmet>
    <section className="my-[1rem] md:my-[10rem] lg:my-[8rem] xl:my-[6rem] flex flex-col md:flex-row m-4 font-spacemono md:gap-4 lg:mx-10 xl:mx-[3rem] 2xl:mx-[4rem]">
     <div className="flex flex-col justify-center gap-[1.25rem] md:w-1/2 mt-[6rem] md:mt-[0rem] mb-[2rem] md:mx-6 lg:pr-10 xl:pr-20">
      <h1 className="text-5xl font-poppins font-bold md:text-[3rem] lg:text-[4rem] xl:text-[4.5rem] lg:leading-[2.75rem] uppercase tracking-tighter md:mb-8">About Us</h1>

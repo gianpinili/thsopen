@@ -9,6 +9,7 @@ import image3XL from '../assets/image3-xl.webp';
 import { useEffect } from 'react';
 import { MoveDown, MoveRight } from 'lucide-react';
 import useIntersectionObserver from '../useIntersectionObserver';
+import { Helmet } from 'react-helmet';
 
 function EventsList() {
   const scrollTo = (id) => {
@@ -27,6 +28,10 @@ function EventsList() {
 
   return (
     <>
+      <Helmet>
+        <title>Events | THS Open</title>
+        <meta name="description" content="THS Open events list." />
+      </Helmet>
       <div className="relative ">
         <div>
           <picture
@@ -75,7 +80,7 @@ function EventsList() {
             <p>Get ready to tee off for a great cause at the 1st Annual THS Open, proudly presented by The Hockey Shop! We&apos;re excited to invite you to join us at the stunning Newlands Golf and Country Club [Championship Course] on September 16, 2024, for a day of fun, competition, and breathtaking scenery.</p>
             <p>This isn&apos;t just any golf tournament - it&apos;s an opportunity to enjoy 18 holes of challenging play while supporting a fantastic cause. All proceeds from the event will go to the Canucks Autism Network (CAN), helping deliver programs for children, youth, and adults, while promoting inclusion and acceptance across BC and beyond.</p>
             <div className="mt-5 flex justify-start">
-              <Link to={'/events/thsopen2024'} className="border-white flex gap-2 border px-3 py-4 hover:bg-white hover:text-black duration-300 hover:scale-105 rounded-md">
+              <Link to={'/events/thsopen2024'} className="border-white flex gap-2 border px-3 py-4 hover:bg-white hover:text-black duration-300 hover:scale-105 rounded-md" aria-label="View Event">
                 View Event<MoveRight className="w-[30px]" />
               </Link>
             </div>

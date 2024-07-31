@@ -8,6 +8,7 @@ import Donation from "../components/Donation";
 import PropTypes from 'prop-types';
 import BlackLogo from '../assets/thsopenblacklogo.png';
 import Logo from '../assets/thsopenlogo.png';
+import { Helmet } from 'react-helmet';
 
 function Home({ setNavTextColor, setLogoSrc }) {
  const sponsorRef = useRef(null);
@@ -44,6 +45,10 @@ function Home({ setNavTextColor, setLogoSrc }) {
 
  return (
   <div>
+   <Helmet>
+    <title>Home | THS Open</title>
+    <meta name="description" content="The Hockey Shop is hosting the THS Open. An opportunity to play golf while supporting a fantastic cause. All proceeds from the event will go to the Canucks Autism Network." />
+   </Helmet>
    <Hero />
    <Events />
    <div ref={sponsorRef}>

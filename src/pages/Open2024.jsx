@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { MoveLeft } from 'lucide-react';
 import { useEffect } from 'react';
 import useIntersectionObserver from '../useIntersectionObserver'; // Adjust the path if necessary
+import { Helmet } from 'react-helmet';
 
 function Open2024() {
  useEffect(() => {
@@ -13,6 +14,10 @@ function Open2024() {
 
  return (
   <>
+   <Helmet>
+    <title>2024 | THS Open</title>
+    <meta name='description' content='THS Open 2024' />
+   </Helmet>
    <div className="py-[10rem] bg-[#1c1c1c] px-[1rem] md:px-[1.5rem] font-spacemono flex flex-col md:flex-row md:justify-center gap-12 md:gap-[6rem] xl:gap-0">
     {/* LEFT SIDE */}
     <div

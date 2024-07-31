@@ -1,5 +1,6 @@
 import SponsorDescription from "../components/SponsorDescription"
 import SponsorForm from "../components/SponsorForm"
+import { Helmet } from 'react-helmet';
 
 function SponsorFormPage() {
 
@@ -9,7 +10,10 @@ function SponsorFormPage() {
 
  return (
   <>
-
+   <Helmet>
+    <title>Sponsor | THS Open</title>
+    <meta name="description" content="Sponsorship sign up form for THS Open." />
+   </Helmet>
    <SponsorDescription />
    <div id="sponsor-form">
     <SponsorForm />

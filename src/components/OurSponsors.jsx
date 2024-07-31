@@ -9,6 +9,7 @@ import OrganikaLogo from '../assets/organikalogo.png';
 import CageLogo from '../assets/cage.png';
 import MarconLogo from '../assets/marconlogo.png';
 import FireLogo from '../assets/VDFHC.png';
+// import LangleyRivermenlogo from '../assets/langleyrivermenlogo.png';
 // import AbbyCanucksLogo from '../assets/abbycanuckslogo.png';
 
 const logos = [
@@ -16,9 +17,11 @@ const logos = [
  { src: CageLogo, alt: 'Cage Logo', href: 'https://www.bvrberbros.com/' },
  { src: CoquitlamExpressLogo, alt: 'Coquitlam Express Logo', href: 'https://www.coquitlamexpress.ca/' },
  { src: OrganikaLogo, alt: 'Organika Logo', href: 'https://organika.com/' },
- { src: LagaLogo, alt: 'Laga Logo', href: 'http://www.lagasports.com/' },
+ // { src: LangleyRivermenlogo, alt: 'Langley Rivermen Logo', href: 'https://www.langleyrivermen.com/' },
  { src: MarconLogo, alt: 'Marcon Logo', href: 'https://marconmetalfab.com/' },
- { src: FireLogo, alt: 'VFDHC Logo', href: 'https://www.vfdhc.com/' }
+ { src: LagaLogo, alt: 'Laga Logo', href: 'http://www.lagasports.com/' },
+ { src: FireLogo, alt: 'VFDHC Logo', href: 'https://www.vfdhc.com/' },
+ // { src: AbbyCanucksLogo, alt: 'Abbotsford Canucks', href: 'https://abbotsford.canucks.com/' }
 ];
 
 const responsive = {

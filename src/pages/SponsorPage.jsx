@@ -4,6 +4,7 @@ import useIntersectionObserver from '../useIntersectionObserver';
 import MitchHero from '../assets/mitchblacknwhite.jpg';
 import OurSponsors from '../components/OurSponsors';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 
 function SponsorPage() {
 
@@ -69,6 +70,10 @@ function SponsorPage() {
 
  return (
   <>
+   <Helmet>
+    <title>Sponsor | THS Open</title>
+    <meta name="description" content="Sponsorship opportunities for THS Open." />
+   </Helmet>
    <div>
     <div
      ref={headerRef}

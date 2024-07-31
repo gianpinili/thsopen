@@ -2,6 +2,7 @@ import RegisterHero from "../components/RegisterHero"
 import { useEffect } from "react"
 import PriceInfo from "../components/PriceInfo";
 import RegisterForm from "./RegisterForm";
+import { Helmet } from "react-helmet";
 
 function Register() {
 
@@ -19,6 +20,10 @@ function Register() {
 
  return (
   <>
+   <Helmet>
+    <title>Register | THS Open</title>
+    <meta name="description" content="Register for the THS Open." />
+   </Helmet>
    <RegisterHero />
    <div className="mt-[5rem] font-spacemono flex flex-col md:flex-row mx-[1rem] gap-12 mb-12 sm:mx-[2rem] md:gap-4 lg:mx-[3rem] lg:gap-8 2xl:mx-[5rem]">
     <div className="flex flex-col gap-12 md:gap-[5rem] items-start md:w-1/2 md:pl-[1rem] lg:pl-[3rem]">
