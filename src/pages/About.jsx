@@ -28,7 +28,7 @@ function About() {
     </div>
     <div className='md:w-1/2 flex items-center relative'>
      <a href="https://www.youtube.com/watch?v=0dNEJ6YoWWY&ab_channel=TheHockeyShop" target='_blank' className='absolute top-[10%] md:top-[15%] left-1/2 transform -translate-x-1/2 text-white -translate-y-1/2 border border-[#ffffff]  px-4 sm:px-8 md:px-14 md:py-4 py-3 rounded-md  hover:opacity-50 duration-300 opacity-70 uppercase text-center'>Store tour</a>
-     <img src={TheShop} alt="The Hockey Shop" className='rounded-md' />
+     <img src={TheShop} alt="The Hockey Shop" className='rounded-md' loading='lazy' />
     </div>
    </section>
    <AboutThsOpen />
@@ -38,7 +38,7 @@ function About() {
      <p className='text-center font-spacemono mt-3'>20202 66 Ave Building F1, Langley, BC V2Y 1P3</p>
      <div className='overflow-hidden relative'>
       <a href="https://www.google.com/maps/place/The+Hockey+Shop+Source+For+Sports/@49.1220325,-122.7062901,13z/data=!3m1!5s0x5485d82ad368e0e3:0xcf147e38754dbcc0!4m10!1m2!2m1!1sthe+hockey+shop!3m6!1s0x5485d82ad463e66d:0x34d1a44f690a7f44!8m2!3d49.1219802!4d-122.6649995!15sCg90aGUgaG9ja2V5IHNob3BaESIPdGhlIGhvY2tleSBzaG9wkgEUc3BvcnRpbmdfZ29vZHNfc3RvcmXgAQA!16s%2Fg%2F1xpwjgfv?entry=ttu" target='_blank' className='overflow-hidden relative w-80 h-80'>
-       <img className='rounded-lg mx-auto h-[50vh] object-cover hover:scale-110 duration-300 transform transition-transform overflow-hidden' src={GoogleMap} alt="Google Maps" />
+       <img className='rounded-lg mx-auto h-[50vh] object-cover hover:scale-110 duration-300 transform transition-transform overflow-hidden' src={GoogleMap} alt="Google Maps" loading='lazy' />
       </a>
      </div>
     </div>

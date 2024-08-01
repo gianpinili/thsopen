@@ -19,7 +19,7 @@ function MerchPage() {
      <a href="https://www.thehockeyshop.com/collections/ths-open" target='_blank' className='border px-6 py-4 rounded-md hover:bg-white hover:text-black duration-300 text-center lg:w-2/3 md:mt-8'>Shop THS Merch</a>
     </div>
     <div className='md:w-1/2 flex items-center relative mt-[5rem] md:mt-0'>
-     <img src={MitchMerch} alt="The Hockey Shop" className='rounded-md md:h-[100vh] object-cover' />
+     <img src={MitchMerch} alt="The Hockey Shop" className='rounded-md md:h-[100vh] object-cover' loading='lazy' />
     </div>
    </section>
    <MerchGallery />

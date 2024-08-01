@@ -37,7 +37,7 @@ function Nav({ textColor, logoSrc }) {
       2048w'
               type='image/webp' /> */}
           <img className='w-[40%] md:max-w-[150px] max-h-[70px] ml-[3rem]  z-50 hover:scale-110 duration-300' src={logoSrc} alt="THS Open Logo" width={500}
-            height={500} />
+            height={500} loading='lazy' />
           {/* </picture> */}
         </Link>
         <div className='hidden md:flex gap-6 ml-[-7rem] xl:text-lg'>
@@ -67,7 +67,7 @@ function Nav({ textColor, logoSrc }) {
               <Link to={'/contact'} onClick={toggleModal} className='text-3xl'>Contact</Link>
             </div>
             <div className=' mt-[10rem]'>
-              <Link to={'/'} onClick={toggleModal} className='flex justify-center'><img src={LogoW} alt="THS Open Logo" className='w-[30%]' /></Link>
+              <Link to={'/'} onClick={toggleModal} className='flex justify-center'><img src={LogoW} alt="THS Open Logo" className='w-[30%]' loading='lazy' /></Link>
             </div>
           </div>
         </div >
