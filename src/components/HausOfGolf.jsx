@@ -24,7 +24,7 @@ function HausOfGolf() {
      <li>They&apos;re a vibe</li>
     </ul>
     <div className="mt-6 lg:flex lg:mx-auto">
-     <Link to={"/events"} className="border border-white px-10 py-3 rounded-md hover:bg-white hover:text-black hover:font-bold duration-300 ">Learn More</Link>
+     <Link to={"/events"} className="border border-white px-10 py-3 rounded-md hover:bg-white hover:text-black hover:font-bold duration-300 ">Learn More: THS Open</Link>
     </div>
    </div>
   </section>
