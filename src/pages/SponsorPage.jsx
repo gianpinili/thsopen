@@ -5,11 +5,13 @@ import MitchHero from '../assets/mitchblacknwhite.jpg';
 import OurSponsors from '../components/OurSponsors';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
+import { v4 as uuidv4 } from 'uuid';
 
 function SponsorPage() {
 
  const sponsorData = [
   {
+   id: uuidv4(),
    level: "Title Sponsor",
    activation: ["Title sponsor named in all tournament communication and signage.",
     "THS Open presented by The Hockey Shop"
@@ -20,6 +22,7 @@ function SponsorPage() {
    ]
   },
   {
+   id: uuidv4(),
    level: "Gold Sponsor (5 Spots Available)",
    activation: ["Cart Sponsor A - name and logo on every hole A cart",
     "Cart Sponsor B - name and logo on every hole B cart",
@@ -31,6 +34,7 @@ function SponsorPage() {
    contribution: ["$1000 Donation to CAN"]
   },
   {
+   id: uuidv4(),
    level: "Silver Sponsor (15 Spots Available)",
    activation: [
     "Hole Sponsorship - activation on 1 hole during the tournament",
@@ -40,6 +44,7 @@ function SponsorPage() {
    contribution: ["$500 Donation to CAN"]
   },
   {
+   id: uuidv4(),
    level: "Bronze Sponsor (Open)",
    activation: [
     "Logo, name and website listed on THS Open website and tournament communications.",
@@ -94,8 +99,8 @@ function SponsorPage() {
      </div>
     </div>
     <div id="sponsors" className="text-white mt-10 bg-black py-6 px-[.5rem] md:px-[1rem] font-spacemono md:w-1/2 md:mt-[3rem]">
-     {sponsorData.map((sponsor, index) => (
-      <div key={index} className="border-b border-gray-400 py-4 text-white md:px-[2rem]">
+     {sponsorData.map((sponsor,) => (
+      <div key={sponsor.id} className="border-b border-gray-400 py-4 text-white md:px-[2rem]">
        <div className="mb-3 text-white flex justify-between items-center cursor-pointer" onClick={() => toggleSponsor(sponsor.level)}>
         <h2 className="font-poppins text-xl md:text-2xl font-bold uppercase tracking-tighter text-white bg-black">{sponsor.level}</h2>
         {expandedSponsor === sponsor.level ? <ChevronUp className="text-white" /> : <ChevronDown className="text-white" />}
@@ -105,16 +110,16 @@ function SponsorPage() {
          <>
           <p className='font-semibold mt-2 underline'>Activation</p>
           <ul className="text-white mt-2 ml-4 list-disc text-sm md:px-[2rem] md:text-lg">
-           {sponsor.activation.map((item, index) => (
-            <li key={index}>{item}</li>
+           {sponsor.activation.map((item, idx) => (
+            <li key={idx}>{item}</li>
            ))}
           </ul>
          </>
         )}
         <p className='font-semibold mt-2 underline'>Contribution</p>
         <ul className="text-white mt-2 ml-4 list-disc text-sm md:px-[2rem] md:text-lg">
-         {sponsor.contribution.map((item, index) => (
-          <li key={index}>{item}</li>
+         {sponsor.contribution.map((item, idx) => (
+          <li key={idx}>{item}</li>
          ))}
         </ul>
        </div>
