@@ -37,14 +37,14 @@ function Open2024() {
       <a href="https://maps.app.goo.gl/Pbj9RJAodRFLGJx67" target='_blank'>
        <p>Haus of Golf</p>
        <p className='text-[#ffffff]'>6286 203 St. A130,</p>
-       <p>Langle TWP, BC V2Y3S1</p>
+       <p>Langley TWP, BC V2Y3S1</p>
        <p>Entrance off 62nd Avenue</p>
       </a>
      </div>
      <div className='hover:scale-110 duration-300'>
       <p className='font-semibold border-b text-start mb-2 pb-1'>Tournament Course</p>
       <a href="https://maps.app.goo.gl/G1WHT2uoKsyTC1cQ6" target='_blank'>
-       <p>Newlands Golf Club</p>
+       <p>Newlands Golf & Country Club</p>
        <p className='text-[#ffffff]'>Championship Course</p>
        <p>21025 48 Ave, Langley, BC V3A 3M3</p>
       </a>

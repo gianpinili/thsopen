@@ -7,7 +7,7 @@ import CoquitlamExpressLogo from '../assets/coquitlamexpresslogo.png';
 import HausLogo from '../assets/hauslogo.png';
 import LagaLogo from '../assets/lagalogo.png';
 import OrganikaLogo from '../assets/organikalogo.png';
-import CageLogo from '../assets/cage.png';
+import CageLogo from '../assets/cage.jpg';
 import MarconLogo from '../assets/marconlogo.png';
 import FireLogo from '../assets/VDFHC.png';
 // import LangleyRivermenlogo from '../assets/langleyrivermenlogo.png';
@@ -16,9 +16,9 @@ import FireLogo from '../assets/VDFHC.png';
 
 const logos = [
  { uuid: uuidv4(), src: HausLogo, alt: 'Haus Logo', href: 'https://hausofgolf.ca/' },
- { uuid: uuidv4(), src: CageLogo, alt: 'Cage Logo', href: 'https://www.bvrberbros.com/' },
- { uuid: uuidv4(), src: CoquitlamExpressLogo, alt: 'Coquitlam Express Logo', href: 'https://www.coquitlamexpress.ca/' },
  { uuid: uuidv4(), src: OrganikaLogo, alt: 'Organika Logo', href: 'https://organika.com/' },
+ { uuid: uuidv4(), src: CoquitlamExpressLogo, alt: 'Coquitlam Express Logo', href: 'https://www.coquitlamexpress.ca/' },
+ { uuid: uuidv4(), src: CageLogo, alt: 'Cage Logo', href: 'https://www.bvrberbros.com/' },
  // { uuid: uuidv4(), src: LangleyRivermenlogo, alt: 'Langley Rivermen Logo', href: 'https://www.langleyrivermen.com/' },
  { uuid: uuidv4(), src: MarconLogo, alt: 'Marcon Logo', href: 'https://marconmetalfab.com/' },
  { uuid: uuidv4(), src: LagaLogo, alt: 'Laga Logo', href: 'http://www.lagasports.com/' },
