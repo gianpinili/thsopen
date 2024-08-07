@@ -86,16 +86,16 @@ function SponsorDescription() {
        <>
         <p className="underline my-2 pl-6">Activation:</p>
         <ul className="list-disc md:pl-20 px-[2rem]">
-         {sponsor.activation.map((item, i) => (
-          <li key={i}>{item}</li>
+         {sponsor.activation.map((item) => (
+          <li key={item}>{item}</li>
          ))}
         </ul>
        </>
       )}
       <p className="underline my-2 pl-6">Contribution:</p>
       <ul className="list-disc md:pl-20 px-[2rem]">
-       {sponsor.contribution.map((item, i) => (
-        <li key={i}>{item}</li>
+       {sponsor.contribution.map((item) => (
+        <li key={item}>{item}</li>
        ))}
       </ul>
      </div>

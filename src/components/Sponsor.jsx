@@ -79,16 +79,16 @@ function Sponsor() {
         <>
          <p className='font-semibold mt-2 underline'>Activation</p>
          <ul className="text-black mt-2 ml-4 list-disc text-sm md:px-[2rem] md:text-lg">
-          {sponsor.activation.map((item, idx) => (
-           <li key={idx}>{item}</li>
+          {sponsor.activation.map((item) => (
+           <li key={item}>{item}</li>
           ))}
          </ul>
         </>
        )}
        <p className='font-semibold mt-2 underline'>Contribution</p>
        <ul className="text-black mt-2 ml-4 list-disc text-sm md:px-[2rem] md:text-lg">
-        {sponsor.contribution.map((item, idx) => (
-         <li key={idx}>{item}</li>
+        {sponsor.contribution.map((item) => (
+         <li key={item}>{item}</li>
         ))}
        </ul>
       </div>
