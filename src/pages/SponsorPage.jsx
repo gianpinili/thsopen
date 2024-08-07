@@ -35,7 +35,7 @@ function SponsorPage() {
   },
   {
    id: uuidv4(),
-   level: "Silver Sponsor (15 Spots Available)",
+   level: "Silver Sponsor (6 Spots Available)",
    activation: [
     "Hole Sponsorship - activation on 1 hole during the tournament",
     "Presence at the tournament is encouraged! Feel free to bring snacks, drinks or swag for golfers to make the tee box memorable and fun. THS Staff can assist with hole activation if you're unable to staff the hole on the day of the tournament.",

@@ -24,7 +24,7 @@ function ContactInfo() {
      </div>
      <div className="flex flex-col relative bg-black rounded-md w-full p-4 min-h-[10rem] md:min-h-[13rem] text-center">
       <h3 className="font-poppins font-bold mt-10 text-xl">Email Us</h3>
-      <a href="mailto:sales@thehockeyshop.com" className='hover:scale-110 duration-300'>sales@thehockeyshop.com</a>
+      <a href="mailto:thsopenbc@gmail.com" className='hover:scale-110 duration-300'>thsopenbc@gmail.com</a>
       <div className='absolute border rounded-full px-2 py-2 bg-white text-black top-[-1rem] left-1/2 translate-x-[-50%]'>
        <AtSign className='w-[30px] h-[30px]' />
       </div>
