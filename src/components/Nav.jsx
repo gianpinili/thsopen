@@ -29,7 +29,7 @@ function Nav({ textColor, logoSrc }) {
           <Link to={'/sponsorship'} className={`${getNavLinkClass('/sponsorship')} duration-200`}>Sponsor</Link>
           <Link to={'/events'} className={`${getNavLinkClass('/events')} duration-200`}>Events</Link>
           <Link to={'/merch'} className={`${getNavLinkClass('/merch')} duration-200`}>Merch</Link>
-          <Link to={'/contact'} className={`${getNavLinkClass('/merch')} duration-200`}>Contact</Link>
+          <Link to={'/contact'} className={`${getNavLinkClass('/contact')} duration-200`}>Contact</Link>
         </div>
         <div className='hidden md:block'>
           <Link to={'/register'} className='border-white border py-2 px-4 hover:bg-slate-200 hover:text-black duration-200 rounded-md hover:scale-110 mr-10'>Register</Link>
