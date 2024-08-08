@@ -1,6 +1,9 @@
+import { v4 as uuidv4 } from 'uuid';
+
 function SponsorDescription() {
  const sponsorLevels = [
   {
+   id: uuidv4(),
    level: "Bronze Sponsor",
    activation: [
     "Logo, name and website listed on THS Open website and tournament communications.",
@@ -9,7 +12,8 @@ function SponsorDescription() {
    contribution: ["$250 Donation to CAN"],
   },
   {
-   level: "Silver Sponsor (15 Spots Available)",
+   id: uuidv4(),
+   level: "Silver Sponsor (6 Spots Available)",
    activation: [
     "Hole Sponsorship - activation on 1 hole during the tournament.",
     "Presence at the tournament is encouraged! Feel free to bring snacks, drinks or swag for golfers to make the tee box memorable and fun. THS staff can assist with hole activation if you're unable to staff the hole on the day of the tournament.",
@@ -18,6 +22,7 @@ function SponsorDescription() {
    contribution: ["$500 Donation to CAN"],
   },
   {
+   id: uuidv4(),
    level: "Gold Sponsor (5 Spots Available)",
    activation: [
     "Cart Sponsor A - name and logo on every hole A cart.",
@@ -30,6 +35,7 @@ function SponsorDescription() {
    contribution: ["$1000 Donation to CAN"],
   },
   {
+   id: uuidv4(),
    level: "Title Sponsor - The Hockey Shop",
    activation: [
     "Title sponsor named in all tournament communication and signage.",
@@ -71,8 +77,8 @@ function SponsorDescription() {
     <h3 className="font-semibold text-2xl md:text-3xl xl:text-4xl mt-8">
      Sponsor Levels
     </h3>
-    {sponsorLevels.map((sponsor, index) => (
-     <div key={index} className="my-4 md:pl-10 flex flex-col gap-3">
+    {sponsorLevels.map((sponsor) => (
+     <div key={sponsor.id} className="my-4 md:pl-10 flex flex-col gap-3">
       <p className="font-semibold text-lg md:text-2xl border-b border-white">
        {sponsor.level}
       </p>
@@ -80,16 +86,16 @@ function SponsorDescription() {
        <>
         <p className="underline my-2 pl-6">Activation:</p>
         <ul className="list-disc md:pl-20 px-[2rem]">
-         {sponsor.activation.map((item, i) => (
-          <li key={i}>{item}</li>
+         {sponsor.activation.map((item) => (
+          <li key={item}>{item}</li>
          ))}
         </ul>
        </>
       )}
       <p className="underline my-2 pl-6">Contribution:</p>
       <ul className="list-disc md:pl-20 px-[2rem]">
-       {sponsor.contribution.map((item, i) => (
-        <li key={i}>{item}</li>
+       {sponsor.contribution.map((item) => (
+        <li key={item}>{item}</li>
        ))}
       </ul>
      </div>

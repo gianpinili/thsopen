@@ -9,6 +9,7 @@ import image3XL from '../assets/image3-xl.webp';
 import { useEffect } from 'react';
 import { MoveDown, MoveRight } from 'lucide-react';
 import useIntersectionObserver from '../useIntersectionObserver';
+import { Helmet } from 'react-helmet';
 
 function EventsList() {
   const scrollTo = (id) => {
@@ -27,6 +28,10 @@ function EventsList() {
 
   return (
     <>
+      <Helmet>
+        <title>Events | THS Open</title>
+        <meta name="description" content="THS Open events list." />
+      </Helmet>
       <div className="relative ">
         <div>
           <picture
@@ -34,9 +39,9 @@ function EventsList() {
             className={`h-[100vh]  opacity-0 bg-no-repeat bg-cover bg-center relative transition-opacity duration-[2s] ${isHeaderIntersecting ? 'opacity-100' : 'opacity-0'}`}
           >
             <source srcSet={MitchHeroMobile} media="(max-width: 768px)" />
-            <img src={MitchHero} alt="Mitch Hero" className="w-full h-[100vh] object-cover" />
+            <img src={MitchHero} alt="Mitch Hero" className="w-full h-[100vh] object-cover" loading="lazy" />
           </picture>
-          <p className="text-[#ffffff] text-[4.5rem] font-bold font-poppins absolute top-[28%] md:top-[30%] lg:top-[33%] xl:top-[35%] left-[50%] translate-x-[-50%] translate-y-[-50%] md:text-[6rem] lg:text-[8rem] xl:text-[10rem] 2xl:text-[11rem]">
+          <p className="text-[#ffffff] text-[4.5rem] font-bold font-poppins absolute top-[25%] md:top-[30%] lg:top-[33%] xl:top-[35%] left-[50%] translate-x-[-50%] translate-y-[-50%] md:text-[6rem] lg:text-[8rem] xl:text-[10rem] 2xl:text-[11rem]">
             <span className="title-shadow">EVENTS</span>
             <MoveDown onClick={() => scrollTo('events')} className="border rounded-full p-2 w-[50px] h-[50px] hover:bg-white hover:text-black duration-300 cursor-pointer hover:scale-110 mx-auto" />
           </p>
@@ -75,7 +80,7 @@ function EventsList() {
             <p>Get ready to tee off for a great cause at the 1st Annual THS Open, proudly presented by The Hockey Shop! We&apos;re excited to invite you to join us at the stunning Newlands Golf and Country Club [Championship Course] on September 16, 2024, for a day of fun, competition, and breathtaking scenery.</p>
             <p>This isn&apos;t just any golf tournament - it&apos;s an opportunity to enjoy 18 holes of challenging play while supporting a fantastic cause. All proceeds from the event will go to the Canucks Autism Network (CAN), helping deliver programs for children, youth, and adults, while promoting inclusion and acceptance across BC and beyond.</p>
             <div className="mt-5 flex justify-start">
-              <Link to={'/events/thsopen2024'} className="border-white flex gap-2 border px-3 py-4 hover:bg-white hover:text-black duration-300 hover:scale-105 rounded-md">
+              <Link to={'/events/thsopen2024'} className="border-white flex gap-2 border px-3 py-4 hover:bg-white hover:text-black duration-300 hover:scale-105 rounded-md" aria-label="View Event">
                 View Event<MoveRight className="w-[30px]" />
               </Link>
             </div>

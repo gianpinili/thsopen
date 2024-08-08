@@ -1,9 +1,14 @@
 import MitchMerch from '../assets/mitchmerch.jpg';
 import MerchGallery from '../components/MerchGallery';
+import { Helmet } from 'react-helmet';
 
 function MerchPage() {
  return (
   <>
+   <Helmet>
+    <title>Merchandise | THS Open</title>
+    <meta name="description" content="Shop THS Open Merchandise. All proceeds go to the Canucks Autism Network." />
+   </Helmet>
    <section className="my-[2rem] md:my-[10rem] lg:my-[8rem] xl:my-[6rem] flex flex-col-reverse md:flex-row m-4 font-spacemono md:gap-4 lg:mx-10 xl:mx-[3rem] 2xl:mx-[4rem] relative">
     <div className="flex flex-col justify-center gap-[1.25rem] md:w-1/2 md:mt-[0rem] mb-[2rem] md:mx-6 lg:pr-10 xl:pr-20 z-10 mt-[-10rem]">
      <h1 className="text-5xl font-poppins font-bold md:text-[3rem] lg:text-[4rem] xl:text-[4.5rem] uppercase tracking-tighter md:mb-8 lg:leading-[3rem] xl:leading-[3.5rem] mb-[7rem]">THS Open Merch</h1>
@@ -14,7 +19,7 @@ function MerchPage() {
      <a href="https://www.thehockeyshop.com/collections/ths-open" target='_blank' className='border px-6 py-4 rounded-md hover:bg-white hover:text-black duration-300 text-center lg:w-2/3 md:mt-8'>Shop THS Merch</a>
     </div>
     <div className='md:w-1/2 flex items-center relative mt-[5rem] md:mt-0'>
-     <img src={MitchMerch} alt="The Hockey Shop" className='rounded-md md:h-[100vh] object-cover' />
+     <img src={MitchMerch} alt="The Hockey Shop" className='rounded-md md:h-[100vh] object-cover' loading='lazy' />
     </div>
    </section>
    <MerchGallery />

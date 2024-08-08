@@ -2,9 +2,6 @@ import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
 import LogoW from '../assets/thsopenlogo.webp';
-// import LogoMD from '../assets/thsopenlogo-md.webp';
-// import LogoLG from '../assets/thsopenlogo-lg.webp';
-// import LogoXL from '../assets/thsopenlogo-xl.webp';
 import PropTypes from 'prop-types';
 
 
@@ -24,27 +21,15 @@ function Nav({ textColor, logoSrc }) {
     <>
       <div className={`font-spacemono fixed top-0 flex justify-between items-center pt-6 pb-6 md:mb-14 z-20 bg-transparent bg-opacity-95 w-full max-h-[10rem] text-white textColor ${textColor}`}>
         <Link to={'/'} onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className='flex mr-[4rem] justify-between'>
-          {/* <picture>
-            <source
-              srcSet={`${LogoW} 2048w,
-      ${LogoMD} 768w,
-      ${LogoLG} 1024w,
-      ${LogoXL} 1280w`}
-              sizes='(max-width: 768px) 768w,
-      (max-width: 1024px) 1024w,
-      (max-width: 1280px) 1280w,
-      (max-width: 1536px) 1536w
-      2048w'
-              type='image/webp' /> */}
           <img className='w-[40%] md:max-w-[150px] max-h-[70px] ml-[3rem]  z-50 hover:scale-110 duration-300' src={logoSrc} alt="THS Open Logo" width={500}
-            height={500} />
-          {/* </picture> */}
+            height={500} loading='lazy' />
         </Link>
         <div className='hidden md:flex gap-6 ml-[-7rem] xl:text-lg'>
           <Link to={'/about'} className={`${getNavLinkClass('/about')} duration-200`}>About</Link>
           <Link to={'/sponsorship'} className={`${getNavLinkClass('/sponsorship')} duration-200`}>Sponsor</Link>
           <Link to={'/events'} className={`${getNavLinkClass('/events')} duration-200`}>Events</Link>
           <Link to={'/merch'} className={`${getNavLinkClass('/merch')} duration-200`}>Merch</Link>
+          <Link to={'/contact'} className={`${getNavLinkClass('/contact')} duration-200`}>Contact</Link>
         </div>
         <div className='hidden md:block'>
           <Link to={'/register'} className='border-white border py-2 px-4 hover:bg-slate-200 hover:text-black duration-200 rounded-md hover:scale-110 mr-10'>Register</Link>
@@ -67,7 +52,7 @@ function Nav({ textColor, logoSrc }) {
               <Link to={'/contact'} onClick={toggleModal} className='text-3xl'>Contact</Link>
             </div>
             <div className=' mt-[10rem]'>
-              <Link to={'/'} onClick={toggleModal} className='flex justify-center'><img src={LogoW} alt="THS Open Logo" className='w-[30%]' /></Link>
+              <Link to={'/'} onClick={toggleModal} className='flex justify-center'><img src={LogoW} alt="THS Open Logo" className='w-[30%]' loading='lazy' /></Link>
             </div>
           </div>
         </div >

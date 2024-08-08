@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import useIntersectionObserver from '../useIntersectionObserver'; // Adjust the path if necessary
 import Newlands from '../assets/newlands.jpg';
 import ContactInfo from '../components/ContactInfo';
+import { Helmet } from 'react-helmet';
 
 function Contact() {
 
@@ -13,6 +14,10 @@ function Contact() {
 
  return (
   <>
+   <Helmet>
+    <title>Contact | THS Open</title>
+    <meta name="description" content="Contact us below for any questions or inquiries for the THS Open." />
+   </Helmet>
    <div className="relative mt-[8rem] bg-[#1c1c1c]">
     <div>
      <div

@@ -1,4 +1,5 @@
 import Carousel from 'react-multi-carousel';
+import { v4 as uuidv4 } from 'uuid';
 import 'react-multi-carousel/lib/styles.css';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import PropTypes from 'prop-types';
@@ -6,19 +7,23 @@ import CoquitlamExpressLogo from '../assets/coquitlamexpresslogo.png';
 import HausLogo from '../assets/hauslogo.png';
 import LagaLogo from '../assets/lagalogo.png';
 import OrganikaLogo from '../assets/organikalogo.png';
-import CageLogo from '../assets/cage.png';
+import CageLogo from '../assets/cage.jpg';
 import MarconLogo from '../assets/marconlogo.png';
 import FireLogo from '../assets/VDFHC.png';
+// import LangleyRivermenlogo from '../assets/langleyrivermenlogo.png';
 // import AbbyCanucksLogo from '../assets/abbycanuckslogo.png';
 
+
 const logos = [
- { src: HausLogo, alt: 'Haus Logo', href: 'https://hausofgolf.ca/' },
- { src: CageLogo, alt: 'Cage Logo', href: 'https://www.bvrberbros.com/' },
- { src: CoquitlamExpressLogo, alt: 'Coquitlam Express Logo', href: 'https://www.coquitlamexpress.ca/' },
- { src: OrganikaLogo, alt: 'Organika Logo', href: 'https://organika.com/' },
- { src: LagaLogo, alt: 'Laga Logo', href: 'http://www.lagasports.com/' },
- { src: MarconLogo, alt: 'Marcon Logo', href: 'https://marconmetalfab.com/' },
- { src: FireLogo, alt: 'VFDHC Logo', href: 'https://www.vfdhc.com/' }
+ { uuid: uuidv4(), src: HausLogo, alt: 'Haus Logo', href: 'https://hausofgolf.ca/' },
+ { uuid: uuidv4(), src: OrganikaLogo, alt: 'Organika Logo', href: 'https://organika.com/' },
+ { uuid: uuidv4(), src: CoquitlamExpressLogo, alt: 'Coquitlam Express Logo', href: 'https://www.coquitlamexpress.ca/' },
+ { uuid: uuidv4(), src: CageLogo, alt: 'Cage Logo', href: 'https://www.bvrberbros.com/' },
+ // { uuid: uuidv4(), src: LangleyRivermenlogo, alt: 'Langley Rivermen Logo', href: 'https://www.langleyrivermen.com/' },
+ { uuid: uuidv4(), src: MarconLogo, alt: 'Marcon Logo', href: 'https://marconmetalfab.com/' },
+ { uuid: uuidv4(), src: LagaLogo, alt: 'Laga Logo', href: 'http://www.lagasports.com/' },
+ { uuid: uuidv4(), src: FireLogo, alt: 'VFDHC Logo', href: 'https://www.vfdhc.com/' },
+ // { src: AbbyCanucksLogo, alt: 'Abbotsford Canucks', href: 'https://abbotsford.canucks.com/' }
 ];
 
 const responsive = {
@@ -82,10 +87,10 @@ function OurSponsors() {
      customRightArrow={<CustomRightArrow />}
      itemClass="carousel-item-padding-40-px"
     >
-     {logos.map((logo, index) => (
-      <div key={index} className="flex justify-center items-center p-4 mt-6">
+     {logos.map((logo) => (
+      <div key={logo.uuid} className="flex justify-center items-center p-4 mt-6">
        <a href={logo.href} target="_blank" rel="noreferrer" className='w-[70%] md:w-[60%]'>
-        <img src={logo.src} alt={logo.alt} className=" w-[100%] rounded-md" draggable="false" />
+        <img src={logo.src} alt={logo.alt} className=" w-[100%] rounded-md" draggable="false" loading='lazy' />
        </a>
       </div>
      ))}
