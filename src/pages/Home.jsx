@@ -25,7 +25,7 @@ function Home({ setNavTextColor, setLogoSrc }) {
    },
    {
     threshold: 1,
-    rootMargin: '700px 0px 0px 0px', // Bottom margin to delay the out of view detection 
+    rootMargin: '1000px 0px 300px 0px', // Bottom margin to delay the out of view detection 
    }
   );
 
