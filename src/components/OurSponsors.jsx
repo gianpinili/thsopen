@@ -9,7 +9,7 @@ import LagaLogo from '../assets/lagalogo.png';
 import OrganikaLogo from '../assets/organikalogo.png';
 import CageLogo from '../assets/cage.jpg';
 import MarconLogo from '../assets/marconlogo.png';
-import FireLogo from '../assets/VDFHC.png';
+import FireLogo from '../assets/vfdhc.png';
 // import LangleyRivermenlogo from '../assets/langleyrivermenlogo.png';
 // import AbbyCanucksLogo from '../assets/abbycanuckslogo.png';
 

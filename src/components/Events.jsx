@@ -8,7 +8,7 @@ function Events() {
   <section id='events' className="font-spacemono relative px-4 pb-10 md:px-10 md:pb-20 lg:pb-[8rem] xl:pb-[10rem] lg:px-14 xl:px-[3rem] 2xl:px-[8rem] bg-[#1c1c1c]">
    <div className='flex flex-col md:flex-row-reverse relative'>
     <div className='relative flex-1'>
-     <img src={MitchBall} alt="Newlands Golf" className='bnw-filter rounded-md z-20 absolute h-auto w-[50%] top-[17rem] -translate-x-1/2 translate-y-1/2 left-[27%] max-w-[500px] sm:top-[8rem] sm:w-[45%] md:top-[28rem] lg:top-[24rem] lg:left-[32%] xl:top-[22rem] 2xl:top-[18rem] 2xl:max-w-[390px]' loading='lazy' />
+     <img src={MitchBall} alt="Newlands Golf" className='bnw-filter rounded-md z-10 absolute h-auto w-[50%] top-[17rem] -translate-x-1/2 translate-y-1/2 left-[27%] max-w-[500px] sm:top-[8rem] sm:w-[45%] md:top-[28rem] lg:top-[24rem] lg:left-[32%] xl:top-[22rem] 2xl:top-[18rem] 2xl:max-w-[390px]' loading='lazy' />
      <img src={MitchEvent} alt="THS Open" className='bnw-filter rounded-md absolute top-[10rem] right-0 h-auto w-[70%] max-w-[300px] sm:top-[8rem] sm:right-10 sm:max-w-[325px] md:top-[16rem] md:right-0 lg:top-[7rem] lg:max-w-[350px] xl:max-w-[400px] 2xl:top-[7rem] 2xl:max-w-[400px] ' loading='lazy' />
     </div>
     <div className='flex flex-col gap-10 items-center justify-center mt-[30rem] sm:mt-[28rem] md:mt-0 md:flex-1'>
