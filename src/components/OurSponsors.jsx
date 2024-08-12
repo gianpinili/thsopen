@@ -47,7 +47,7 @@ const responsive = {
 
 const CustomLeftArrow = ({ onClick }) => {
  return (
-  <button onClick={onClick} className="absolute left-0 z-10 transform -translate-y-1/2 top-1/2">
+  <button onClick={onClick} className="absolute left-0 z-10 transform -translate-y-1/2 top-1/2" aria-label='Previous'>
    <ChevronLeft size={32} />
   </button>
  );
@@ -59,7 +59,7 @@ CustomLeftArrow.propTypes = {
 
 const CustomRightArrow = ({ onClick }) => {
  return (
-  <button onClick={onClick} className="absolute right-0 z-10 transform -translate-y-1/2 top-1/2">
+  <button onClick={onClick} className="absolute right-0 z-10 transform -translate-y-1/2 top-1/2" aria-label='Next'>
    <ChevronRight size={32} />
   </button>
  );

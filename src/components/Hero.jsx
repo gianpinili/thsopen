@@ -60,6 +60,7 @@ function Hero() {
      style={{ pointerEvents: 'none' }}
     >
      <source src={heroVid} type="video/mp4" />
+     <track kind="captions" srcLang='en' label='No audio content.' default />
      Your browser does not support the video tag.
     </video>
     <video
@@ -72,6 +73,7 @@ function Hero() {
      style={{ pointerEvents: 'none' }}
     >
      <source src={heroVidMobile} type="video/mp4" />
+     <track kind="captions" srcLang='en' label='No audio content.' default />
      Your browser does not support the video tag.
     </video>
    </div>
