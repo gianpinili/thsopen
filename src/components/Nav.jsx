@@ -22,7 +22,7 @@ function Nav({ textColor, logoSrc }) {
       <div className={`font-spacemono fixed top-0 flex justify-between items-center pt-6 pb-6 md:mb-14 z-20 bg-transparent bg-opacity-95 w-full max-h-[10rem] text-white textColor ${textColor}`}>
         <Link to={'/'} onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className='flex mr-[4rem] justify-between'>
           <img className='w-[40%] md:max-w-[150px] max-h-[70px] ml-[3rem] z-50 hover:scale-110 duration-300' src={logoSrc} alt="THS Open Logo" width={500}
-            height={500} loading='lazy' />
+            height={500} />
         </Link>
         <div className='hidden md:flex gap-6 ml-[-7rem] xl:text-lg'>
           <Link to={'/about'} className={`${getNavLinkClass('/about')} duration-200`}>About</Link>

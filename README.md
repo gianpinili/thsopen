@@ -8,8 +8,27 @@ We look forward to seeing you out there and making the first THS Open a huge suc
 
 - FORMAT: Texas Scramble
 
-## Development
+## Development Changes
 
+- v1 (dev branch), main (deploy branch)
 - Clone repository
 - npm i (install dependencies)
 - npm run dev (run on localhost)
+- git add . (add changes to staging area)
+- git status (ensure changes made are in staging area)
+- git commit -m "commit message" (small description of changes made)
+- git push (push to remote repository, automatically deploy on Netlify(Must be on main branch to deploy))
+
+## URL
+
+https://thsopen.com/
+
+### Tech Stack
+
+- React.js, Tailwind CSS
+  - React Motion, Lucide React, React Multi Carousel, MUI, UUID, Axios, React Helmet, EmailJS
+
+### Author
+
+- Ian Pinili - https://gianpinili.com/
+- The Hockey Shop Source for Sports - THS Open Team

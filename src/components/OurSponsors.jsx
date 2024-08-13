@@ -90,7 +90,7 @@ function OurSponsors() {
      {logos.map((logo) => (
       <div key={logo.uuid} className="flex justify-center items-center p-4 mt-6">
        <a href={logo.href} target="_blank" rel="noreferrer" className='w-[70%] md:w-[60%]'>
-        <img src={logo.src} alt={logo.alt} className=" w-[100%] rounded-md" draggable="false" loading='lazy' />
+        <img src={logo.src} alt={logo.alt} className=" w-[100%] rounded-md" draggable="false" loading='lazy' width={'100%'} />
        </a>
       </div>
      ))}
