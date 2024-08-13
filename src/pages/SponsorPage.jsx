@@ -101,10 +101,10 @@ function SponsorPage() {
     <div id="sponsors" className="text-white mt-10 bg-black py-6 px-[.5rem] md:px-[1rem] font-spacemono md:w-1/2 md:mt-[3rem]">
      {sponsorData.map((sponsor,) => (
       <div key={sponsor.id} className="border-b border-gray-400 py-4 text-white md:px-[2rem]">
-       <div className="mb-3 text-white flex justify-between items-center cursor-pointer" onClick={() => toggleSponsor(sponsor.level)}>
+       <button className="mb-3 text-white w-full flex justify-between items-center cursor-pointer" onClick={() => toggleSponsor(sponsor.level)}>
         <h2 className="font-poppins text-xl md:text-2xl font-bold uppercase tracking-tighter text-white bg-black">{sponsor.level}</h2>
         {expandedSponsor === sponsor.level ? <ChevronUp className="text-white" /> : <ChevronDown className="text-white" />}
-       </div>
+       </button>
        <div className={`overflow-hidden transition-all duration-[1.5s] ${expandedSponsor === sponsor.level ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'}`}>
         {sponsor.level !== "Title Sponsor" && (
          <>
