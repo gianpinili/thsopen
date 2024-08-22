@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { useState, useEffect } from 'react';
+import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
 import Nav from './components/Nav';
 import Home from './pages/Home';
 import About from './pages/About';
@@ -16,6 +16,16 @@ import './index.css';
 function App() {
   const [navTextColor, setNavTextColor] = useState('text-white');
   const [logoSrc, setLogoSrc] = useState('./assets/thsopenlogo.png');
+
+  const location = useLocation();
+
+  useEffect(() => {
+    if (typeof window.gtag === 'function') {
+      window.gtag('config', 'G-PC5GX8FG0B', {
+        page_path: location.pathname,
+      });
+    }
+  }, [location]);
 
   return (
     <BrowserRouter>
