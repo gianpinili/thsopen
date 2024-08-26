@@ -4,7 +4,7 @@ import HausWall from '../assets/haussecond.jpg';
 
 function HausOfGolf() {
  return (
-  <section className="flex flex-col lg:flex-row-reverse font-spacemono mx-4 my-20 lg:gap-8 lg:px-10 xl:px-14 2xl:px-20">
+  <section className="flex flex-col lg:flex-row-reverse font-spacemono mx-4 my-20 lg:gap-8 lg:px-10 xl:px-14 2xl:px-20 lg:h-[100vh]">
    <div className="lg:w-1/2 relative flex flex-col gap-2 items-center justify-center lg:gap-6">
     <img src={HausBay} alt="Haus of Golf" className="rounded-md xl:mt-[-15rem] 2xl:mt-[-10rem]" width={'100%'} height={'100%'} loading="lazy" />
     <img src={HausWall} alt="Haus of Golf" className="w-[80%] lg:w-[90%] rounded-md xl:w-[55%] 2xl:w-[50%] xl:absolute xl:bottom-10 xl:max-w-[500px] 2xl:bottom-[-2rem]" width={'100%'} height={'100%'} loading="lazy" />

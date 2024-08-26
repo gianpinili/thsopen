@@ -38,7 +38,7 @@ function Merch() {
       ref={ref}
       className={`py-12 bg-black text-white px-[1.5rem] md:px-[2rem] lg:px-[3rem] font-spacemono 2xl:px-[8rem] transition-opacity duration-[1s] ${isIntersecting ? 'opacity-100' : 'opacity-0'}`}
     >
-      <div className='mt-[1rem] mb-12 flex flex-col-reverse lg:flex-row-reverse md:items-center md:gap-10 md:justify-center'>
+      <div className='mt-[1rem] mb-12 lg:h-[80vh] flex flex-col-reverse lg:flex-row-reverse md:items-center md:gap-10 md:justify-center'>
         <div className='md:w-1/2 lg:px-[3rem] mt-[3rem]  lg:mt-[-3rem] xl:mt-[-5rem]'>
           <h1 className="font-poppins font-bold text-[4rem] md:text-[6rem] uppercase tracking-tighter">MERCH</h1>
           <p className="my-3 mb-10 md:text-xl">Swing for acceptance. All proceeds go to Canucks Autism Network (CAN), helping deliver programs for children, youth, and adults, while promoting inclusion and acceptance across BC and beyond.</p>
