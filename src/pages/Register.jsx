@@ -1,14 +1,17 @@
-import RegisterHero from "../components/RegisterHero"
-import { useEffect } from "react"
+import { useState, useEffect } from "react";
+import RegisterHero from "../components/RegisterHero";
 import PriceInfo from "../components/PriceInfo";
-import RegisterForm from "./RegisterForm";
+import GroupRegisterForm from "../components/GroupRegisterForm";
+import SingleRegisterForm from "../components/SingleRegisterForm";
 import { Helmet } from "react-helmet";
 
 function Register() {
+ // State to track which form is active
+ const [isGroupRegistration, setIsGroupRegistration] = useState(true);
 
  useEffect(() => {
   window.scrollTo(0, 0);
- })
+ }, []);
 
  const scrollTo = (id) => {
   const element = document.getElementById(id);
@@ -17,6 +20,9 @@ function Register() {
   }
  };
 
+ const handleFormToggle = (isGroup) => {
+  setIsGroupRegistration(isGroup);
+ };
 
  return (
   <>
@@ -36,17 +42,35 @@ function Register() {
     </div>
     <div className="flex flex-col gap-6 md:w-1/2 md:pr-[1rem] lg:text-[1.25rem] xl:text-[1.3rem]">
      <p><span className="font-bold">Format:</span> Texas Scramble</p>
-     <p>Each player in the four-person scramble hits a drive. The team chooses the best drive and selects that position for the next shot. Each player hits from the chosen spot, and the process continues until someone from the team sinks a putt. THe group records its score for the hole and moves on to the next teeing ground.</p>
+     <p>Each player in the four-person scramble hits a drive. The team chooses the best drive and selects that position for the next shot. Each player hits from the chosen spot, and the process continues until someone from the team sinks a putt. The group records its score for the hole and moves on to the next teeing ground.</p>
      <p>Minimum of 3 drives per player must be used.</p>
-     <p className="font-bold">$900 - Foursome</p>
+     <div>
+      <p className="font-bold">$900 - Foursome</p>
+      <p className="font-bold">$225 - Single</p>
+     </div>
     </div>
    </div>
    <PriceInfo />
    <div id="register">
-    <RegisterForm />
+    <div className="bg-[#1c1c1c] flex justify-center gap-4 py-4">
+     <button
+      className={`py-2 px-4 ${isGroupRegistration ? 'bg-white text-black' : 'bg-transparent text-white'} hover:bg-white rounded-md hover:text-black duration-300`}
+      onClick={() => handleFormToggle(true)}
+     >
+      Group Registration
+     </button>
+     <button
+      className={`py-2 px-4 ${!isGroupRegistration ? 'bg-white text-black' : 'bg-transparent text-white'} hover:bg-white rounded-md hover:text-black duration-300`}
+      onClick={() => handleFormToggle(false)}
+     >
+      Single Registration
+     </button>
+    </div>
+    {/* Conditionally render the forms */}
+    {isGroupRegistration ? <GroupRegisterForm /> : <SingleRegisterForm />}
    </div>
   </>
- )
+ );
 }
 
-export default Register
+export default Register;

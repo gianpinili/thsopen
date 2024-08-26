@@ -3,7 +3,7 @@ import { Alert, Snackbar, AlertTitle } from '@mui/material';
 import CheckIcon from '@mui/icons-material/Check';
 import emailjs from 'emailjs-com';
 
-function RegisterForm() {
+function GroupRegisterForm() {
  const [firstPlayer, setFirstPlayer] = useState('');
  const [secondPlayer, setSecondPlayer] = useState('');
  const [thirdPlayer, setThirdPlayer] = useState('');
@@ -96,7 +96,7 @@ function RegisterForm() {
  return (
   <>
    <h1 className="bg-[#1c1c1c] pt-10 font-poppins font-extrabold tracking-tight text-4xl sm:text-[2.5rem] uppercase md:text-[2.75rem] lg:text-[3rem] xl:text-[3.25rem] 2xl:text-[3.5rem] 2xl:leading-[3rem] text-center">
-    Registration Form
+    Group Registration Form
    </h1>
    <div className="bg-[#1c1c1c] px-4 py-10 flex justify-center font-poppins">
     <form
@@ -279,4 +279,4 @@ function RegisterForm() {
  );
 }
 
-export default RegisterForm;
+export default GroupRegisterForm;

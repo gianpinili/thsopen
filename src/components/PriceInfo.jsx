@@ -5,7 +5,7 @@ function PriceInfo() {
   <>
    <div className="font-spacemono py-14 md:px-14 lg:px-[6rem] xl:px-[8rem] px-4 bg-[#1c1c1c] ">
     <h1 className="font-poppins font-extrabold tracking-tight text-3xl sm:text-[1.5rem] uppercase md:text-[1.75rem] lg:text-[2rem] xl:text-[2.25rem] 2xl:text-[2.5rem] 2xl:leading-[3rem]">Registration Info</h1>
-    <h3 className="font-semibold text-xl my-4">What&apos;s included in the price? - $900 Foursome</h3>
+    <h3 className="font-semibold text-xl my-4">What&apos;s included in the price? - $900 Foursome | $225 Single</h3>
     <div className="my-8">
      <p className="underline font-semibold">Warmup @ Haus of Golf</p>
      <ul className="list-disc pl-10 px-[2rem]">
