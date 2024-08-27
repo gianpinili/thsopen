@@ -117,3 +117,16 @@ body {
     margin-left: 2rem;
   }
 }
+
+/* between 480px and 640px */
+@media (min-width: 490px) and (max-width: 540px) {
+  .move {
+    margin-top: -3rem;
+  }
+}
+
+@media (min-width: 540px) and (max-width: 640px) {
+  .move {
+    margin-top: -6rem;
+  }
+}
