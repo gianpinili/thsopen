@@ -6,53 +6,15 @@ import OurSponsors from '../components/OurSponsors';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 import { v4 as uuidv4 } from 'uuid';
+import sponsorLevels from '../data/sponsorLevels';
 
 function SponsorPage() {
 
- const sponsorData = [
-  {
-   id: uuidv4(),
-   level: "Title Sponsor",
-   activation: ["Title sponsor named in all tournament communication and signage.",
-    "THS Open presented by The Hockey Shop"
-   ],
-   contribution: ["$5000 Donation to CAN",
-    "Proceeds of all THS Open Merch Sales",
-    "Tee gifts"
-   ]
-  },
-  {
-   id: uuidv4(),
-   level: "Gold Sponsor (4 Spots Available)",
-   activation: ["Cart Sponsor A - name and logo on every hole A cart",
-    "Cart Sponsor B - name and logo on every hole B cart",
-    "Burger and Beer Sponsor - name and logo on every table during dinner",
-    "Scorecard Sponsor - name and logo on score keeping app during the round",
-    "Trophy Sponsor - name and logo listed on the trophy plate for winning team",
-    "All include logo, name and website listed on THS Open website and tournament communications"
-   ],
-   contribution: ["$1000 Donation to CAN"]
-  },
-  {
-   id: uuidv4(),
-   level: "Silver Sponsor (4 Spots Available)",
-   activation: [
-    "Hole Sponsorship - activation on 1 hole during the tournament",
-    "Presence at the tournament is encouraged! Feel free to bring snacks, drinks or swag for golfers to make the tee box memorable and fun. THS Staff can assist with hole activation if you're unable to staff the hole on the day of the tournament.",
-    "Logo, name and website listed on THS Open website and tournament communications."
-   ],
-   contribution: ["$500 Donation to CAN"]
-  },
-  {
-   id: uuidv4(),
-   level: "Bronze Sponsor (Open)",
-   activation: [
-    "Logo, name and website listed on THS Open website and tournament communications.",
-    "No presence on the day of the tournament."
-   ],
-   contribution: ["$250 Donation to CAN"]
-  }
- ];
+ //add uuids to each sponsor level
+ const sponsorLevel = sponsorLevels.map(sponsor => ({
+  ...sponsor,
+  id: uuidv4()
+ }))
 
  const scrollTo = (id) => {
   const element = document.getElementById(id);
@@ -99,7 +61,7 @@ function SponsorPage() {
      </div>
     </div>
     <div id="sponsors" className="text-white mt-10 bg-black py-6 px-[.5rem] md:px-[1rem] font-spacemono md:w-1/2 md:mt-[3rem]">
-     {sponsorData.map((sponsor,) => (
+     {sponsorLevel.map((sponsor,) => (
       <div key={sponsor.id} className="border-b border-gray-400 py-4 text-white md:px-[2rem]">
        <button className="mb-3 text-white w-full flex justify-between items-center cursor-pointer" onClick={() => toggleSponsor(sponsor.level)}>
         <h2 className="font-poppins text-xl md:text-2xl font-bold uppercase tracking-tighter text-white bg-black">{sponsor.level}</h2>
