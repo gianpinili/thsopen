@@ -1,6 +1,6 @@
 # The Hockey Shop hosts THS Open
 
-This isn't just any golf torunament -- it's an opportunity to enjoy 18 holes of challenging play while supporting a fantastic cause.
+This isn't just any golf tournament -- it's an opportunity to enjoy 18 holes of challenging play while supporting a fantastic cause.
 
 All proceeds from the event will go to the Canucks Autism Network (CAN) helping to raise acceptance and support for autism.
 
@@ -25,6 +25,9 @@ Running local set up will install all necessary bundles and dependencies.
 - cd thsopen
 - npm i (install dependencies)
 - npm run dev (run on localhost:xxxx)
+- git branch (checks which branch you are in)
+- git checkout -b (branchname)
+- git checkout (branchname) (switch over to specified branch)
 
 ## Deploying
 
