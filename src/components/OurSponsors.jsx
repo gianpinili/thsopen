@@ -11,8 +11,6 @@ import CageLogo from '../assets/cage.jpg';
 import MarconLogo from '../assets/marconlogo.png';
 import FireLogo from '../assets/vfdhc.png';
 import BarDownLogo from '../assets/bardownlogo.png';
-// import LangleyRivermenlogo from '../assets/langleyrivermenlogo.png';
-// import AbbyCanucksLogo from '../assets/abbycanuckslogo.png';
 
 
 const logos = [

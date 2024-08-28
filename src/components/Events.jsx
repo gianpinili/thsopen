@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
 import MitchBall from '../assets/golfball.jpg';
-// import MitchEvent from '../assets/mitchpickup.jpg';
 import Cup from '../assets/thscup.jpg';
 
 function Events() {

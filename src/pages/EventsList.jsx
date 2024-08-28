@@ -86,8 +86,8 @@ function EventsList() {
               {/* LEFT SIDE */}
               <div className="flex flex-col gap-4 relative md:w-1/3">
                 <picture>
-                  {event.image.webpSources.map((source, index) => (
-                    <source key={index} srcSet={source.srcSet} sizes={source.size} type="image/webp" />
+                  {event.image.webpSources.map((source) => (
+                    <source key={source.id} srcSet={source.srcSet} sizes={source.size} type="image/webp" />
                   ))}
                   <img src={event.image.src} alt={event.image.alt} className="w-full md:min-h-[200px] rounded-md" loading='lazy' width={500} height={500} />
                 </picture>
@@ -100,8 +100,8 @@ function EventsList() {
               <div className="flex flex-col gap-4 justify-evenly font-spacemono md:w-1/2">
                 <h4 className="font-bold font-poppins text-[1.25rem]">{event.title}</h4>
                 <p>{event.time}</p>
-                {event.description.map((paragraph, index) => (
-                  <p key={index} dangerouslySetInnerHTML={{ __html: paragraph }}></p>
+                {event.description.map((paragraph) => (
+                  <p key={event.id} dangerouslySetInnerHTML={{ __html: paragraph }}></p>
                 ))}
                 <div className="mt-5 flex justify-start">
                   <Link to={`/events/${event.id}`} className="border-white flex gap-2 border px-3 py-4 hover:bg-white hover:text-black duration-300 hover:scale-105 rounded-md" aria-label="View Event">

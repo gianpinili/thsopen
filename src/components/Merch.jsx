@@ -10,7 +10,7 @@ import hatImage1MD from '../assets/hatimage1-md.webp';
 import hatImage1LG from '../assets/hatimage1-lg.webp';
 import hatImage1XL from '../assets/hatimage1-xl.webp';
 import hatImage12xl from '../assets/hatimage1-2xl.webp';
-import shirtImage from '../assets/shirtimage2.png';
+import shirtImage from '../assets/shirtimage.png';
 import shirtImageW from '../assets/shirtimage2.png';
 import shirtImage1 from '../assets/shirtimage3.png';
 import shirtImage1W from '../assets/shirtimage3.webp';
@@ -58,8 +58,10 @@ function Merch() {
              (max-width: 1536px) 1536px,
              2048px'
               type="image/webp" />
-            <img src={hatImage} alt="THS Open Merch" className='min-w-[9rem] md:max-w-[17.5rem] cursor-pointer hover:scale-105 duration-300' loading='lazy' onClick={() => toggleModal(hatImage)} width={500}
-              height={500} />
+            <button onClick={() => toggleModal(hatImage)}>
+              <img src={hatImage} alt="THS Open Merch" className='min-w-[9rem] md:max-w-[17.5rem] cursor-pointer hover:scale-105 duration-300' loading='lazy' width={500}
+                height={500} />
+            </button>
           </picture>
           <picture>
             <source
@@ -73,18 +75,24 @@ function Merch() {
              (max-width: 1280px) 1280px,
              (max-width: 1536px) 1536px,'
               type="image/webp" />
-            <img src={hatImage1} alt="THS Open Merch" className='min-w-[9rem] md:max-w-[17.5rem] cursor-pointer hover:scale-105 duration-300' loading='lazy' onClick={() => toggleModal(hatImage1)} width={500}
-              height={500} />
+            <button onClick={() => toggleModal(hatImage1)}>
+              <img src={hatImage1} alt="THS Open Merch" className='min-w-[9rem] md:max-w-[17.5rem] cursor-pointer hover:scale-105 duration-300' loading='lazy' width={500}
+                height={500} />
+            </button>
           </picture>
           <picture>
             <source srcSet={shirtImage1W} type="image/webp" />
-            <img src={shirtImage1} alt="THS Open Merch" className='min-w-[9rem] md:max-w-[17.5rem] cursor-pointer hover:scale-105 duration-300' loading='lazy' onClick={() => toggleModal(shirtImage1)} width={500}
-              height={500} />
+            <button onClick={() => toggleModal(shirtImage1)}>
+              <img src={shirtImage1} alt="THS Open Merch" className='min-w-[9rem] md:max-w-[17.5rem] cursor-pointer hover:scale-105 duration-300' loading='lazy' width={500}
+                height={500} />
+            </button>
           </picture>
           <picture>
-            <source srcSet={shirtImageW} type="image/webp" />
-            <img src={shirtImage} alt="THS Open Merch" className='min-w-[9rem] md:max-w-[17.5rem] cursor-pointer hover:scale-105 duration-300' loading='lazy' onClick={() => toggleModal(shirtImage)} width={500}
-              height={500} />
+            <source srcSet={shirtImage} type="image/webp" />
+            <button onClick={() => toggleModal(shirtImageW)}>
+              <img src={shirtImageW} alt="THS Open Merch" className='min-w-[9rem] md:max-w-[17.5rem] cursor-pointer hover:scale-105 duration-300' loading='lazy' width={500}
+                height={500} />
+            </button>
           </picture>
         </div>
       </div>
