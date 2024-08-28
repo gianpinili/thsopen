@@ -17,6 +17,14 @@ function Nav({ textColor, logoSrc }) {
     return location.pathname === path ? 'border-b border-white scale-125' : 'hover:border-b border-white hover:scale-125';
   };
 
+  const paths = ['/sponsorship', '/sponsor-form', '/merch', '/contact', '/register', '/about', '/events'];
+
+  if (paths.includes(location.pathname)) {
+    textColor = 'text-white';
+    logoSrc = LogoW;
+  }
+
+
   return (
     <>
       <div className={`font-spacemono fixed top-0 flex justify-between items-center pt-6 pb-6 md:mb-14 z-20 bg-transparent bg-opacity-95 w-full max-h-[10rem] text-white textColor ${textColor}`}>

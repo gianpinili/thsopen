@@ -6,7 +6,7 @@ import Cup from '../assets/thscup.jpg';
 function Events() {
  return (
 
-  <section id='events' className="font-spacemono relative px-4 pb-10 md:px-10 md:pb-20 lg:pb-[8rem] xl:pb-[10rem] lg:px-14 xl:px-[3rem] 2xl:px-[8rem] bg-[#1c1c1c]">
+  <section id='events' className="font-spacemono relative px-4 pb-10 md:pt-[5rem] md:px-10 md:pb-20 lg:pb-[8rem] xl:pb-[10rem] lg:px-14 xl:px-[3rem] 2xl:px-[8rem] bg-[#1c1c1c]">
    <div className='flex flex-col md:flex-row-reverse relative'>
     <div className='relative flex-1'>
      <img src={MitchBall} alt="Newlands Golf" className='bnw-filter move rounded-md z-10 absolute h-auto w-[50%] top-[17rem] -translate-x-1/2 translate-y-1/2 left-[27%] max-w-[500px] sm:top-[8rem] sm:w-[45%] md:top-[28rem] lg:top-[24rem] lg:left-[32%] xl:top-[22rem] 2xl:top-[18rem] 2xl:max-w-[390px]' loading='lazy' />
