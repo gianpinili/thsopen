@@ -104,7 +104,7 @@ function EventsList() {
                   <p key={event.id} dangerouslySetInnerHTML={{ __html: paragraph }}></p>
                 ))}
                 <div className="mt-5 flex justify-start">
-                  <Link to={`/events/${event.id}`} className="border-white flex gap-2 border px-3 py-4 hover:bg-white hover:text-black duration-300 hover:scale-105 rounded-md" aria-label="View Event">
+                  <Link to="/events/thsopen2024" className="border-white flex gap-2 border px-3 py-4 hover:bg-white hover:text-black duration-300 hover:scale-105 rounded-md" aria-label="View Event">
                     View Event<MoveRight className="w-[30px]" />
                   </Link>
                 </div>
