@@ -96,7 +96,7 @@ function SingleRegisterForm() {
         type="text"
         id="firstPlayer"
         className={`bg-transparent border rounded-md w-full p-2 focus:outline-none ${errors.firstPlayer ? 'border-red-500' : 'focus:border-[#cefac6]'}`}
-        placeholder="Player #1"
+        placeholder="Tiger Woods"
         value={firstPlayer}
         onChange={(e) => setFirstPlayer(e.target.value)}
        />

@@ -110,13 +110,13 @@ function SponsorForm() {
      <div className="flex flex-col gap-4">
       <div className="">
        <label htmlFor="firstName" className="md:text-[1.2rem] 2xl:text-[1.35rem]">
-        First Name <span className="text-red-500">*</span>
+        Name <span className="text-red-500">*</span>
        </label>
        <input
         type="text"
         id="firstName"
         className={`bg-transparent border rounded-md w-full p-2 focus:outline-none ${errors.name ? 'border-red-500' : 'focus:border-[#cefac6]'}`}
-        placeholder="Name"
+        placeholder="Wayne Gretzky"
         value={name}
         onChange={(e) => setName(e.target.value)}
        />
@@ -145,7 +145,7 @@ function SponsorForm() {
        type="text"
        id="number"
        className={`bg-transparent border rounded-md w-full p-2 focus:outline-none ${errors.number ? 'border-red-500' : 'focus:border-[#cefac6]'}`}
-       placeholder="Phone #"
+       placeholder="###-###-####"
        value={number}
        onChange={(e) => setNumber(e.target.value)}
       />
