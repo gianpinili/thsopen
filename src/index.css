@@ -13,6 +13,11 @@ body {
   color: white;
 }
 
+::selection {
+  background-color: #dbf4dd;
+  color: rgb(13, 44, 17);
+}
+
 .scale-y-200 {
   transform: scaleY(2);
   transform-origin: bottom;
