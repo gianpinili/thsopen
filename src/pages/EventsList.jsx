@@ -50,8 +50,30 @@ function EventsList() {
           { srcSet: `${image3XL} 1280w`, size: "1280w" }
         ]
       }
+    },
+    {
+      id: uuidv4(),
+      date: {
+        // month: "",
+        day: "TBD"
+      },
+      title: "THS OPEN 2025",
+      time: "Time: TBD",
+      description: [
+        "Get ready for an incredible day on the greens at the THS Open, hosted by The Hockey Shop! We’re thrilled to invite you to the beautiful Newlands Golf and Country Club [Championship Course] for a day of thrilling golf, friendly competition, and picturesque views.",
+        "Details and the event date will be announced soon. Don’t miss out on this fantastic event! ⛳🏌️‍♂️🏌️‍♀️"
+      ],
+      image: {
+        src: image3,
+        alt: "Newlands Golf Course",
+        webpSources: [
+          { srcSet: `${image3W} 2048w`, size: "2048w" },
+          { srcSet: `${image3MD} 768w`, size: "768w" },
+          { srcSet: `${image3LG} 1024w`, size: "1024w" },
+          { srcSet: `${image3XL} 1280w`, size: "1280w" }
+        ]
+      }
     }
-
     // Add more events here if needed
   ];
 
