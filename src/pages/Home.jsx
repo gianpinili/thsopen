@@ -2,7 +2,7 @@ import { useEffect, useRef } from 'react';
 import Hero from "../components/Hero";
 import Events from "../components/Events";
 import Sponsor from "../components/Sponsor";
-import Haus from "../components/HausOfGolf";
+// import Haus from "../components/HausOfGolf";
 import Merch from "../components/Merch";
 import Donation from "../components/Donation";
 import PropTypes from 'prop-types';
@@ -54,7 +54,7 @@ function Home({ setNavTextColor, setLogoSrc }) {
    <div ref={sponsorRef}>
     <Sponsor />
    </div>
-   <Haus />
+   {/* <Haus /> */}
    <Merch />
    <Donation />
   </div>

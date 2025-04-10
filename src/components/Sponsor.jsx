@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { ChevronDown, ChevronUp } from 'lucide-react';
 import useIntersectionObserver from '../useIntersectionObserver';
 import { Link } from 'react-router-dom';
-import OurSponsors from './OurSponsors';
+// import OurSponsors from './OurSponsors';
 import { v4 as uuidv4 } from 'uuid';
 import sponsorLevels from '../data/sponsorLevels';
 
@@ -61,7 +61,7 @@ function Sponsor() {
      <Link to={'/sponsor-form'} className='rounded-md border-2 border-black px-3 py-5 hover:bg-black hover:text-white duration-300 uppercase'>Sponsorship Inquiry</Link>
     </div>
    </div>
-   <OurSponsors />
+   {/* <OurSponsors /> */}
   </div>
  );
 }

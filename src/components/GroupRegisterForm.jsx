@@ -91,7 +91,7 @@ function GroupRegisterForm() {
   setAlert({ ...alert, open: false });
  };
 
- const checkoutUrl = "https://the-hockey-shop-cad.myshopify.com/cart/41551747186754:1?channel=buy_button";
+ const checkoutUrl = "https://www.thehockeyshop.com/checkouts/cn/Z2NwLXVzLWNlbnRyYWwxOjAxSlJFVFQ5SkNTN0pGRUNSN1NUMEpBTTdL";
 
  return (
   <>
@@ -245,7 +245,7 @@ function GroupRegisterForm() {
        Submit & Pay
       </button>
      </div>
-     <p className='opacity-60 italic mt-2 text-red-300 text-center'>* Registration is not complete until payment of $900.00 per foursome is received. An email confirmation will be sent once confirmed. *</p>
+     <p className='opacity-60 italic mt-2 text-red-300 text-center'>* Registration is not complete until payment of $1000.00 per foursome is received. An email confirmation will be sent once confirmed. *</p>
     </form>
    </div>
    {isValid && (

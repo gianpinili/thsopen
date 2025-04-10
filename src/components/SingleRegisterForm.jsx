@@ -75,7 +75,7 @@ function SingleRegisterForm() {
   setAlert({ ...alert, open: false });
  };
 
- const checkoutUrl = "https://www.thehockeyshop.com/checkouts/bin/5dfa1e2acf4891b11faa717c35bcac5c?locale=en&skip_shop_pay=true";
+ const checkoutUrl = "https://www.thehockeyshop.com/checkouts/cn/Z2NwLXVzLWNlbnRyYWwxOjAxSlJFVFQ5SkNTN0pGRUNSN1NUMEpBTTdL?auto_redirect=false&edge_redirect=true&locale=en-CA&skip_shop_pay=true";
 
  return (
   <>
@@ -172,7 +172,7 @@ function SingleRegisterForm() {
         Submit & Pay
        </button>
       </div>
-      <p className='opacity-60 italic mt-2 text-red-300 text-center'>* Registration is not complete until payment of $225.00 is received. An email confirmation will be sent once confirmed. *</p>
+      <p className='opacity-60 italic mt-2 text-red-300 text-center'>* Registration is not complete until payment of $250.00 is received. An email confirmation will be sent once confirmed. *</p>
       <p className='  mt-2 text-white text-center flex flex-col'><span className='text-red-500 text-2xl'>*DISCLAIMER*</span> Please note that if you register as a single player, you will be placed into a team.</p>
      </div>
     </form>

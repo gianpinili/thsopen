@@ -6,6 +6,7 @@ import image3W from '../assets/image3.webp';
 import image3MD from '../assets/image3-md.webp';
 import image3LG from '../assets/image3-lg.webp';
 import image3XL from '../assets/image3-xl.webp';
+import Redwoods from '../assets/redwoods-golf.png';
 import { useEffect } from 'react';
 import { MoveDown, MoveRight } from 'lucide-react';
 import useIntersectionObserver from '../useIntersectionObserver';
@@ -31,21 +32,21 @@ function EventsList() {
     {
       id: uuidv4(),
       date: {
-        month: "Sep.",
-        day: "16"
+        month: "Jul.",
+        day: "3"
       },
-      title: "THS OPEN 2024",
-      time: "1:00 PM - 5:30 PM",
+      title: "THS OPEN 2025",
+      time: "10:30 AM - 5:00 PM",
       description: [
-        "Get ready to tee off for a great cause at the 1st Annual THS Open, proudly presented by The Hockey Shop! We&apos;re excited to invite you to join us at the stunning Newlands Golf and Country Club [Championship Course] on September 16, 2024, for a day of fun, competition, and breathtaking scenery.",
-        "This isn&apos;t just any golf tournament - it&apos;s an opportunity to enjoy 18 holes of challenging play while supporting a fantastic cause. All proceeds from the event will go to the Canucks Autism Network (CAN), helping deliver programs for children, youth, and adults, while promoting inclusion and acceptance across BC and beyond."
+        "Get ready to tee off for a great cause at the 2nd Annual THS Open, proudly presented by The Hockey Shop! Mark your calendars for July 3, 2025, as Redwoods Golf Course sets the stage for a day that blends unforgettable sights, thrilling moments, and a spirit of camaraderie.",
       ],
+      link: "/events/thsopen2025",
       image: {
-        src: image3,
+        src: Redwoods,
         alt: "Newlands Golf Course",
         webpSources: [
-          { srcSet: `${image3W} 2048w`, size: "2048w" },
-          { srcSet: `${image3MD} 768w`, size: "768w" },
+          { srcSet: `${Redwoods} 2048w`, size: "2048w" },
+          { srcSet: `${Redwoods} 768w`, size: "768w" },
           { srcSet: `${image3LG} 1024w`, size: "1024w" },
           { srcSet: `${image3XL} 1280w`, size: "1280w" }
         ]
@@ -54,15 +55,15 @@ function EventsList() {
     {
       id: uuidv4(),
       date: {
-        // month: "",
-        day: "TBD"
+        month: "Sep.",
+        day: "16"
       },
-      title: "THS OPEN 2025",
-      time: "Time: TBD",
+      title: "THS OPEN 2024",
+      time: "1:00 PM - 5:30 PM",
       description: [
-        "Get ready for an incredible day on the greens at the THS Open, hosted by The Hockey Shop! We’re thrilled to invite you to the beautiful Newlands Golf and Country Club [Championship Course] for a day of thrilling golf, friendly competition, and picturesque views.",
-        "Details and the event date will be announced soon. Don’t miss out on this fantastic event! ⛳🏌️‍♂️🏌️‍♀️"
+        "Get ready to tee off for a great cause at the 1st Annual THS Open, proudly presented by The Hockey Shop! We&apos;re excited to invite you to join us at the stunning Newlands Golf and Country Club [Championship Course] on September 16, 2024, for a day of fun, competition, and breathtaking scenery."
       ],
+      link: "/events/thsopen2024",
       image: {
         src: image3,
         alt: "Newlands Golf Course",
@@ -101,7 +102,7 @@ function EventsList() {
         <div
           id="events"
           ref={eventListRef}
-          className={`flex flex-col  py-8 gap-8 md:gap-[5rem] px-[1rem] md:px-[2rem] lg:px-[2.5rem] xl:px-[3.5rem] 2xl:px-[4.5rem] transition-opacity duration-[2s] ${isEventListIntersecting ? 'opacity-100' : 'opacity-0'}`}
+          className={`flex flex-col  py-10 gap-8 md:gap-[5rem] px-[1rem] md:px-[2rem] lg:px-[2.5rem] xl:px-[3.5rem] 2xl:px-[4.5rem] transition-opacity duration-[2s] ${isEventListIntersecting ? 'opacity-100' : 'opacity-0'}`}
         >
           {events.map((event) => (
             <div key={event.id} className="flex flex-col md:flex-row gap-8">
@@ -111,7 +112,7 @@ function EventsList() {
                   {event.image.webpSources.map((source) => (
                     <source key={source.id} srcSet={source.srcSet} sizes={source.size} type="image/webp" />
                   ))}
-                  <img src={event.image.src} alt={event.image.alt} className="w-full md:min-h-[200px] rounded-md" loading='lazy' width={500} height={500} />
+                  <img src={event.image.src} alt={event.image.alt} className="w-full md:min-h-[200px] max-h-[275px] rounded-md" loading='lazy' width={500} height={500} />
                 </picture>
                 <div className="absolute right-0 border text-black bg-white py-3 px-5 text-center rounded-tr-md">
                   <p>{event.date.month}</p>
@@ -126,7 +127,7 @@ function EventsList() {
                   <p key={event.id} dangerouslySetInnerHTML={{ __html: paragraph }}></p>
                 ))}
                 <div className="mt-5 flex justify-start">
-                  <Link to="/events/thsopen2024" className="border-white flex gap-2 border px-3 py-4 hover:bg-white hover:text-black duration-300 hover:scale-105 rounded-md" aria-label="View Event">
+                  <Link to={event.link} className="border-white flex gap-2 border px-3 py-4 hover:bg-white hover:text-black duration-300 hover:scale-105 rounded-md" aria-label="View Event">
                     View Event<MoveRight className="w-[30px]" />
                   </Link>
                 </div>

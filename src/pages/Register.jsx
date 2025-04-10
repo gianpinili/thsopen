@@ -35,8 +35,8 @@ function Register() {
     <div className="flex flex-col gap-12 md:gap-[5rem] items-start md:w-1/2 md:pl-[1rem] lg:pl-[3rem]">
      <h1 className="font-poppins font-extrabold tracking-tight text-4xl sm:text-[2.5rem] uppercase md:text-[2.75rem] lg:text-[3rem] xl:text-[3.25rem] 2xl:text-[3.5rem] 2xl:leading-[3rem]">Register Your Team</h1>
      <div>
-      <p>THS Open 2024 - Sep. 16</p>
-      <p>Newlands Golf & Country Club [Championship Course]</p>
+      <p>THS Open 2025 - July 3rd, 2025</p>
+      <p>Redwoods Golf Course</p>
      </div>
      <button className="border px-14 py-2 rounded-md bg-white hover:bg-transparent hover:text-white text-black duration-300 cursor-pointer" onClick={() => scrollTo('register')}>Register Today</button>
     </div>
@@ -45,8 +45,8 @@ function Register() {
      <p>Each player in the four-person scramble hits a drive. The team chooses the best drive and selects that position for the next shot. Each player hits from the chosen spot, and the process continues until someone from the team sinks a putt. The group records its score for the hole and moves on to the next teeing ground.</p>
      <p>Minimum of 3 drives per player must be used.</p>
      <div>
-      <p className="font-bold">$900 - Foursome</p>
-      <p className="font-bold">$225 - Single</p>
+      <p className="font-bold">$1000 - Foursome</p>
+      <p className="font-bold">$250 - Single</p>
      </div>
     </div>
    </div>

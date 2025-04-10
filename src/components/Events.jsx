@@ -13,11 +13,11 @@ function Events() {
     </div>
     <div className='flex flex-col gap-10 items-center justify-center mt-[30rem] sm:mt-[28rem] md:mt-0 md:flex-1'>
      <h1 className="font-poppins z-20 pt-16 mt-[-32rem] mb-[26rem] pb-2 sm:pb-20 font-bold text-[5.2rem] md:text-[7rem] lg:text-[8rem] xl:text-[9rem] 2xl:text-[10rem] uppercase tracking-tighter relative md:mt-0 md:mb-[-2rem]">EVENTS</h1>
-     <p className='text-center text-sm lg:text-md xl:text-[1rem] leading-7 2xl:text-xl 2xl:px-6 md:mt-[-3rem] z-30'>Prepare to tee off for a fantastic cause at the THS Open, proudly presented by The Hockey Shop! We invite you to join us at the stunning Newlands Golf and Country Club [Championship course] for a day of fun, competition, and breathtaking scenery. Stay tuned for the upcoming date and details—you won&apos;t want to miss this exciting event! ⛳🏌️‍♂️🏌️‍♀️</p>
-     <p className="font-poppins font-semibold border-b pb-2 px-3">Coming Soon...</p>
+     <p className='text-center text-sm lg:text-md xl:text-[1rem] leading-7 2xl:text-xl 2xl:px-6 md:mt-[-3rem] z-30'>Prepare to tee off for a fantastic cause at the THS Open, proudly presented by The Hockey Shop! We invite you to join us at the picturesque Redwoods Golf Course for a day filled with fun, competition, and stunning scenery. More details are coming soon—you won&apos;t want to miss this exciting event! ⛳🏌️‍♂️🏌️‍♀️</p>
+     <p className="font-poppins font-semibold border-b pb-2 px-3 text-green-600 hover:scale-125 hover:duration-200">July 3rd, 2025</p>
      <div className='flex flex-col justify-center items-center'>
-      <a href="https://www.google.com/maps?rlz=1C1ONGR_enCA1054CA1054&gs_lcrp=EgZjaHJvbWUqCggAEAAY4wIYgAQyCggAEAAY4wIYgAQyDQgBEC4YrwEYxwEYgAQyBwgCEAAYgAQyBwgDEAAYgAQyBwgEEAAYgAQyBwgFEAAYgAQyBwgGEAAYgAQyBwgHEAAYgAQyBwgIEAAYgAQyBggJEEUYOagCALACAA&um=1&ie=UTF-8&fb=1&gl=ca&sa=X&geocode=KdMmNYm0z4VUMb_x0fIholZ8&daddr=21025+48+Ave,+Langley,+BC+V3A+3M3">
-       <p className='text-center text-sm font-semibold hover:scale-105 hover:duration-300'>Newlands Golf and Country Club [Championship Course]</p>
+      <a href="https://www.google.com/maps?gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIKCAEQLhjUAhiABDIQCAIQABiDARixAxjJAxiABDINCAMQLhjHARjRAxiABDINCAQQABiDARixAxiABDIQCAUQABiDARixAxiABBiKBTIQCAYQLhjHARixAxjRAxiABDIQCAcQABiDARixAxiABBiKBTIHCAgQABiABDINCAkQLhjHARjRAxiABNIBCDE5NjBqMGo3qAIAsAIA&um=1&ie=UTF-8&fb=1&gl=ca&sa=X&geocode=KVeafhE30oVUMeLKeYjsXlha&daddr=22011+88+Ave,+Langley+Twp,+BC+V1M+3S8">
+       <p className='text-center text-sm font-semibold hover:scale-105 hover:duration-300'>The Redwoods Golf Course</p>
       </a>
       <p className='mt-2 text-[.8rem]'>Langley, British Columbia</p>
      </div>
