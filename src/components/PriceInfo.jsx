@@ -45,6 +45,7 @@ function PriceInfo() {
     <ul className="list-disc pl-10 px-[2rem]">
      <li>Savour the perfect finish to your day on the course with a delectable prime rib buffet, served fresh and full of flavour after your round of golf!</li>
      <li>Silent auction (featuring Canucks jerseys, prizepacks, and more)</li>
+     <li>Player gifts!</li>
     </ul>
    </div>
   </div>
