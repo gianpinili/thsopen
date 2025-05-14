@@ -48,7 +48,7 @@ function Sponsor() {
          </ul>
         </>
        )}
-       <p className='font-semibold mt-2 underline'>Contribution</p>
+       <p className='font-semibold mt-2 underline'>How You&apos;re Helping</p>
        <ul className="text-black mt-2 ml-4 list-disc text-sm md:px-[2rem] md:text-lg">
         {sponsor.contribution.map((item) => (
          <li key={item}>{item}</li>
