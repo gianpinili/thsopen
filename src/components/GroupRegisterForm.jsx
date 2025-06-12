@@ -91,7 +91,7 @@ function GroupRegisterForm() {
   setAlert({ ...alert, open: false });
  };
 
- const checkoutUrl = "https://www.thehockeyshop.com/checkouts/cn/Z2NwLXVzLWNlbnRyYWwxOjAxSlJFVFQ5SkNTN0pGRUNSN1NUMEpBTTdL";
+ const checkoutUrl = "https://www.thehockeyshop.com/checkouts/cn/Z2NwLXVzLWNlbnRyYWwxOjAxSlhIODQzNkVLNFZIUVExUTlEUjkxTTNT?auto_redirect=false&edge_redirect=true&locale=en-CA&skip_shop_pay=true";
 
  return (
   <>
